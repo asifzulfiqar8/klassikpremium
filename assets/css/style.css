@@ -15,6 +15,15 @@
   width: 100%;
 }
 
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -23,7 +32,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.grid-cols-2 {
+.grid-cols-4 {
   display: grid;
   grid-template-columns: repeat(4, 25%);
 }
@@ -81,6 +90,13 @@
   background: var(--primary-color);
   padding: 80px 0;
   height: 83vh;
+}
+.hero__icon__box {
+  & {
+    img {
+      width: 32px;
+    }
+  }
 }
 
 /* media quries */
