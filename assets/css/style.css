@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Inter", sans-serif;
+}
 .container-fluid {
   width: 100%;
 }
@@ -23,7 +26,90 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
+.font-14 {
+  font-size: 14px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-26 {
+  font-size: 26px;
+}
+.font-34 {
+  font-size: 34px;
+}
+.font-54 {
+  font-size: 54px;
+}
+.font-normal {
+  font-weight: normal;
+}
+.font-semi-bold {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 600;
+}
+.font-extra-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 800;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.item-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.grid {
+  display: grid;
+}
+.w-100{
+  width: 100%;
+}
+.w-50{
+  width: 50%;
+}
+.w-25{
+  width: 25%;
+}
+.w-33{
+  width: 33%;
+}
+.gap-20{
+  gap: 20px;
+}
+.gap-40{
+  gap: 40px;
+}
+.gap-80{
+  gap: 80px;
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -88,13 +174,15 @@
 /* Swiper End */
 .hero {
   background: var(--primary-color);
-  padding: 80px 0;
-  height: 83vh;
 }
 .hero__icon__box {
+  width: 25%;
   & {
     img {
       width: 32px;
+    }
+    h3,span{
+      color: var(--white);
     }
   }
 }

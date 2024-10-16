@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,8 +21,8 @@
   <body>
     <header class="container-fluid"></header>
     <main>
-      <section class="container-fluid hero">
-        <section class="container hero__swiper">
+      <section class="container-fluid hero ">
+        <section class="container hero__swiper py-80">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -39,19 +47,33 @@
             <div class="swiper-pagination"></div>
           </div>
         </section>
-        <section class="hero__icons grid-cols-4 container">
-          <div class="hero__icon__box">
+        <section class="hero__icons py-50 container flex justify-center ">
+          <div class="hero__icon__box flex flex-col item-center justify-center">
             <img src="assets/images/hero-icon-1.png" alt="" />
-            <h3>Free Shipping</h3>
-            <span>Orders above $200</span>
+            <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
+            <span class="font-14 font-normal text-center">Orders above $200</span>
           </div>
-          <div class="hero__icon__box"></div>
-          <div class="hero__icon__box"></div>
-          <div class="hero__icon__box"></div>
+          <div class="hero__icon__box flex flex-col item-center justify-center">
+            <img src="assets/images/hero-icon-1.png" alt="" />
+            <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
+            <span class="font-14 font-normal text-center">Orders above $200</span>
+          </div>
+          <div class="hero__icon__box flex flex-col item-center justify-center">
+            <img src="assets/images/hero-icon-1.png" alt="" />
+            <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
+            <span class="font-14 font-normal text-center">Orders above $200</span>
+          </div>
+          <div class="hero__icon__box flex flex-col item-center justify-center">
+            <img src="assets/images/hero-icon-1.png" alt="" />
+            <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
+            <span class="font-14 font-normal text-center">Orders above $200</span>
+          </div>
+          
         </section>
       </section>
     </main>
     <footer></footer>
+    <!-- Swiper Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
