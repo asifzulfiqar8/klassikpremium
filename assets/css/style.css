@@ -8,11 +8,13 @@
   --black400: #a7a7a7;
   --black300: #cbcbcb;
   --black200: #eaeaea;
+  --black100: ##f5f5f5;
   --black50: #fafafb;
 }
 html,
 body {
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 .text-yellow {
   color: var(--secondary-color);
@@ -22,6 +24,12 @@ body {
 }
 .text-black {
   color: var(--primary-color);
+}
+.text-black-100 {
+  color: var(--black100);
+}
+.text-black-300 {
+  color: var(--black300);
 }
 .text-black-400 {
   color: var(--black400);
@@ -88,6 +96,9 @@ body {
 }
 .pb-50 {
   padding-bottom: 50px;
+}
+.font-12 {
+  font-size: 12px;
 }
 .font-14 {
   font-size: 14px;
@@ -215,10 +226,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.grid-cols-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 .grid-cols-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -227,6 +235,11 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.grid-cols-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* global end */
 
 /* Swiper Start */
@@ -378,6 +391,9 @@ body {
     .brand-logo {
       max-width: 230px;
     }
+    .line {
+      border-top: dashed 2px var(--primary-color);
+    }
   }
 }
 /* Products Carousels */
@@ -448,7 +464,7 @@ body {
 }
 /* Newsletter */
 .newsletter__wrapper {
-  padding: 100px 0;
+  padding: 100px 20px;
   & {
     span {
       margin-bottom: 20px;
@@ -507,6 +523,75 @@ body {
     }
   }
 }
+/* Categories Section */
+.categories__wrapper {
+  & {
+    .left {
+      width: 40%;
+    }
+    .right {
+      width: 58%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      & {
+        div {
+          width: 48%;
+        }
+        img {
+          aspect-ratio: 1;
+          object-fit: cover;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+      height: 100%;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Footer */
+.footer-links {
+  padding-bottom: 50px;
+  & {
+    .footer-links__wrapper h5 {
+      margin-bottom: 5px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.lower-footer {
+  padding-top: 20px;
+  border-top: solid 1px var(--black200);
+  & {
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: start;
+    }
+    span {
+      opacity: 0.6;
+    }
+    .footer-payment {
+      width: 100%;
+    }
+    .footer-logo {
+      width: 80%;
+    }
+    .footer-social__icons {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
 
 /* media quries */
 @media screen and (min-width: 1440px) {
@@ -517,11 +602,33 @@ body {
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 991px) {
+  .categories__wrapper {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    .left {
+      width: 100%;
+      & {
+        img {
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  .grid-cols-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(3, 1fr);
   }
   .grid-cols-3 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .pargraph__wrapper .paragraph3 {
+    grid-column: span 2;
   }
   .hero__icon__box {
     width: 50%;
@@ -532,17 +639,50 @@ body {
   .grid-cols-4 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media screen and (max-width: 576px) {
   .grid-cols-3 {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .pargraph__wrapper .paragraph3 {
+    grid-column: span 1;
+  }
+  .font-34 {
+    font-size: 28px;
+  }
+  .font-40 {
+    font-size: 32px;
+  }
+  .categories__wrapper {
+    & {
+      .right {
+        & {
+          justify-content: space-between;
+          div {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 676px) {
+  .grid-cols-5 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 375px) {
   .grid-cols-4 {
     grid-template-columns: repeat(1, 1fr);
   }
+  .grid-cols-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .hero__icon__box {
     width: 100%;
+  }
+  .font-34 {
+    font-size: 24px;
+  }
+  .font-40 {
+    font-size: 28px;
   }
 }

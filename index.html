@@ -97,7 +97,7 @@
         </section>
       </section>
       <!-- Featured Brands Section -->
-      <!-- <section
+      <section
         class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white"
       >
         <div class="brand-logos__title section-title-black container">
@@ -165,7 +165,7 @@
             />
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Product Carousels -->
       <section class="product-carousels pt-50 container-fluid bg-black">
         <!-- Carousel 1 -->
@@ -211,7 +211,7 @@
                       class="item-counter flex items-strech justify-between text-white bg-black-700"
                     >
                       <span>-</span>
-                      <span class="bg-black-800">1</span>
+                      <input type="number" value="1" min="1" class="bg-black-800 text-white" style="width: 40px; text-align: center;" />
                       <span>+</span>
                     </div>
                     <button
@@ -909,7 +909,38 @@
           </div>
         </section>
       </section>
-      <!--  -->
+      <!-- Categories Section -->
+      <section class="container-fluid categories bg-black">
+        <div class="container categories__wrapper flex justify-between py-80">
+          <div class="left category-card flex flex-col items-center">
+            <img src="assets/images/Cat1.png" alt="" />
+            <h2 class="font-34 font-semi-bold text-white">Red Wines</h2>
+            <a href="#" class="text-white font-16">Shop now </a>
+          </div>
+          <div class="right">
+            <div class="category-card flex flex-col items-center">
+              <img src="assets/images/Cat2.png" alt="" />
+              <h2 class="font-34 font-semi-bold text-white">French Wines</h2>
+              <a href="#" class="text-white font-16">Shop now </a>
+            </div>
+            <div class="category-card flex flex-col items-center">
+              <img src="assets/images/Cat3.png" alt="" />
+              <h2 class="font-34 font-semi-bold text-white">White Wines</h2>
+              <a href="#" class="text-white font-16">Shop now </a>
+            </div>
+            <div class="category-card flex flex-col items-center">
+              <img src="assets/images/Cat4.png" alt="" />
+              <h2 class="font-34 font-semi-bold text-white">Sweet Wines</h2>
+              <a href="#" class="text-white font-16">Shop now </a>
+            </div>
+            <div class="category-card flex flex-col items-center">
+              <img src="assets/images/Cat5.png" alt="" />
+              <h2 class="font-34 font-semi-bold text-white">White Wines</h2>
+              <a href="#" class="text-white font-16">Shop now </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Paragraphs Section -->
       <section class="container-fluid pargraphs bg-black">
         <div class="pargraph__wrapper container grid-cols-3 cgap-20 rgap-20">
@@ -1011,7 +1042,82 @@
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="container-fluid bg-black py-50">
+        <!-- Footer Links -->
+        <section class="container footer-links grid-cols-5 rgap-40">
+          <!-- Information -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Information</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300">About us</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Contact Us</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Conditions of Purchase</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Terms of Use</a>
+          </div>
+          <!-- Categories -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Categories</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Red Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Rose Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">White Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Champagne</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Spirits</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Delicatessen</a>
+          </div>
+          <!-- My Account -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">My Account</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300">My Orders</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">My Murchandise Return</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">My Credits Slip</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">My Personal Info</a>
+          </div>
+          <!-- Most Popular -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Most Popular</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Red Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Rose Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">White Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Champagne</a>
+          </div>
+          <!-- Top Search -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Top Search</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Critical Aclaimed</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Special Offers</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Iconic Wines</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Champagne</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Spirits</a>
+            <a href="#" class="link-item font-14 font-normal text-black-300">Delicatessen</a>
+          </div>
+        </div>
+      </section>
+      <!-- Lower Footer -->
+       <section class="lower-footer container grid-cols-5 rgap-50 cgap-10">
+        <img src="assets/images/Footer Logo.png" class="footer-logo" alt="">
+        <div class="footer-social">
+          <h5 class="font-18 font-semi-bold text-white">Follow Us:</h3>
+          <div class="footer-social__icons">
+            <img src="assets/images/Twitter.png" alt=""> 
+            <img src="assets/images/facebook.png" alt=""> 
+            <img src="assets/images/Pinterest.png" alt=""> 
+            <img src="assets/images/Youtube.png" alt=""> 
+            <img src="assets/images/Instagram.png" alt=""> 
+          </div>
+        </div>
+        <div class="contact">
+          <span class="font-12 font-normal text-white">Monday-Friday: 09:00-19:00</span>
+          <h5 class="font-14 font-normal text-white">+34 932 684 286 / +34 608 845 245</h5>
+        </div>
+        <div class="location">
+          <span class="font-12 font-normal text-white">Our Location:</span>
+          <h5 class="font-14 font-normal text-white">Avenida Cornella 144, 7.4<br>08950 Esplugues De Llobregat<br>Barcelona, Spain</h5>
+        </div>
+        
+          <img src="assets/images/payment methods.png" class="footer-payment" alt="">
+        
+       </section>
+    </footer>
     <!-- Swiper Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
