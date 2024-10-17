@@ -14,6 +14,51 @@
             padding-left: 20px;
         }
 
+        @media (max-width: 1024px) {
+          .font-54 {
+            font-size: 24px;
+          }
+          
+          .font-18 {
+            font-size: 12px;
+          }
+          .w-50 {
+            width: 92%;
+          }
+          .py-50{
+            padding-top: 30px;
+            padding-bottom: 30px;
+           }
+         
+              .full-content {
+                display: none;
+              }
+            }
+
+        @media (min-width: 1024px) {
+          .full-content {
+            display: block !important;
+          }
+          #toggle-content {
+            display: none; 
+          }
+        }
+        
+        .see-more-btn {
+            font-size: 14px;
+            color: #eeb046; 
+            border: none; 
+            cursor: pointer; 
+            background: transparent;
+        }
+        .see-more-btn:hover {
+            background-color: #a7a7a7;
+        }
+        .full-content {
+            display: none;
+        }
+      
+
     </style>
   </head>
   <body class="bg-black">
@@ -28,7 +73,8 @@
             blanditiis voluptatum deleniti.
           </p>
         </div>
-        <div class="flex flex-col py-50">
+
+        <div class="flex flex-col">
           <p class="text-black-400 font-18">
             This policy is effective from June 14 2019. <br>
             This Privacy Policy describes how and when Vivino ApS collects, uses
@@ -39,30 +85,29 @@
             <br><br><br>
             VIVINO ApS is an international online platform facilitator
             (hereinafter “Vivino”, “we”, “or”, “us”), providing a platform that
-            enables registered users (hereinafter “User”) to buy, rate and
-            review wine ratings and wine information (hereinafter the
-            “Services”) via the website or mobile application. It also enables
-            Users to follow other Users to see their ongoing reviews and connect
-            with contacts from social media etc.<br><br>
-            <br>
-            Our address is Njalsgade 21G, 5., 2300 Copenhagen S, Denmark, and
-            the platform is owned by VIVINO ApS, company registration number is
-            32081193. Vivino can be contacted at
-            <a class="text-black-400 font-18" href="https://help.vivino.com/s/">help.vivino.com</a>.
-            <br><br><br>
-            This privacy policy applies to all use of our websites,
-            <a class="text-black-400 font-18" href="https://www.vivino.com">www.vivino.com</a>, (hereinafter
-            “Web”), and all use of our application for mobile devices
-            (hereinafter “App”). The Web and the App together form our service
-            offers to you (hereinafter “Platform”).
-          </p>
-          <br><br>
-          <p class="text-white font-18">
-            The privacy policy may be amended from time to time by us with a
-            fair notice to you before the new privacy policy comes into force.
-            Please note, that you may use our Platform without signing up, in
-            which case we will only collect data based on your consent to our
-            cookie policy that you may find in 'Categories of personal data'.
+            enables registered users <span class="full-content" style="display:none;">(hereinafter “User”) to buy, rate and
+              review wine ratings and wine information (hereinafter the
+              “Services”) via the website or mobile application. It also enables
+              Users to follow other Users to see their ongoing reviews and connect
+              with contacts from social media etc.<br><br>
+              <br>
+              Our address is Njalsgade 21G, 5., 2300 Copenhagen S, Denmark, and
+              the platform is owned by VIVINO ApS, company registration number is
+              32081193. Vivino can be contacted at
+              <a class="text-black-400 font-18" href="https://help.vivino.com/s/">help.vivino.com</a>.
+              <br><br><br>
+              This privacy policy applies to all use of our websites,
+              <a class="text-black-400 font-18" href="https://www.vivino.com">www.vivino.com</a>, (hereinafter
+              “Web”), and all use of our application for mobile devices
+              (hereinafter “App”). The Web and the App together form our service
+              offers to you (hereinafter “Platform”).
+              <br><br><br>
+              The privacy policy may be amended from time to time by us with a
+              fair notice to you before the new privacy policy comes into force.
+              Please note, that you may use our Platform without signing up, in
+              which case we will only collect data based on your consent to our
+              cookie policy that you may find in 'Categories of personal data'.</span> 
+              <button id="toggle-content" class="see-more-btn">See More...</button>
           </p>
           <br><br>
         </div>
@@ -362,5 +407,22 @@
       </section>
     </main>
     <footer></footer>
+    <script>
+      document.getElementById("toggle-content").addEventListener("click", function() {
+        var fullContent = document.querySelector(".full-content");
+        var shortContent = document.querySelector(".short-content");
+        var button = document.getElementById("toggle-content");
+        
+        if (fullContent.style.display === "none") {
+          fullContent.style.display = "block";
+          shortContent.style.display = "none";
+          button.textContent = "See Less...";
+        } else {
+          fullContent.style.display = "none";
+          shortContent.style.display = "block";
+          button.textContent = "See More...";
+        }
+      });
+    </script>    
   </body>
 </html>
