@@ -21,7 +21,8 @@
   <body>
     <header class="container-fluid"></header>
     <main>
-      <section class="container-fluid hero bg-black">
+      <!-- Hero Section -->
+      <section class="container-fluid hero pb-50 bg-black">
         <!-- Swiper Hero Section -->
         <section class="container hero__swiper">
           <div class="swiper mySwiper">
@@ -95,12 +96,14 @@
           </div>
         </section>
       </section>
-      <!-- Featured Brands -->
-      <section
+      <!-- Featured Brands Section -->
+      <!-- <section
         class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white"
       >
-        <div class="brand-logos__title">
+        <div class="brand-logos__title section-title-black container">
+          <div class="line"></div>
           <h2 class="font-34 font-semi-bold text-center">Featured Brands</h2>
+          <div class="line"></div>
         </div>
         <div
           class="brand-logos__wrappper grid-cols-4 rgap-20 cgap-100 container"
@@ -162,16 +165,20 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Product Carousels -->
-      <section class="product-carousels container-fluid bg-black">
+      <section class="product-carousels pt-50 container-fluid bg-black">
         <!-- Carousel 1 -->
         <section
           class="container product-carousel__carousel-1 py-50-80 flex flex-col items-center rgap-50"
         >
-          <h2 class="font-22 font-bold text-center text-white">
-            Critically Aclaimed
-          </h2>
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Critically Aclaimed
+            </h2>
+            <div class="line"></div>
+          </div>
           <div class="swiper productSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -392,7 +399,13 @@
         <section
           class="container product-carousel__carousel-2 py-50-80 flex flex-col items-center rgap-50"
         >
-          <h2 class="font-22 font-bold text-center text-white">Iconic Wines</h2>
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Iconic Vines
+            </h2>
+            <div class="line"></div>
+          </div>
           <div class="swiper productSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -614,9 +627,13 @@
           <section
             class="container product-carousel__carousel-1 py-50-80 flex flex-col items-center rgap-50"
           >
-            <h2 class="font-22 font-bold text-center text-white">
-              Special Offers
-            </h2>
+            <div class="section-title-white">
+              <div class="line"></div>
+              <h2 class="font-22 font-bold text-center text-white">
+                Special Offers
+              </h2>
+              <div class="line"></div>
+            </div>
             <div class="swiper productSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -840,8 +857,39 @@
           </section>
         </section>
       </section>
-      <section class="our-story container-fluid">
-        
+      <!-- Our Story Section -->
+      <section class="our-stories container-fluid bg-black">
+        <section class="our-stories__wrapper container py-80 flex-col flex items-center rgap-50">
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Our Stories
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="our-stories__cards grid-cols-4 cgap-20 rgap-40">
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-1.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white">12/January/2024</span>
+              <h4 class="font-22 font-semi-bold text-white">The Process behind our award winning wines</h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-2.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white">12/January/2024</span>
+              <h4 class="font-22 font-semi-bold text-white">The Process behind our award winning wines</h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-3.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white">12/January/2024</span>
+              <h4 class="font-22 font-semi-bold text-white">The Process behind our award winning wines</h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-4.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white">12/January/2024</span>
+              <h4 class="font-22 font-semi-bold text-white">The Process behind our award winning wines</h4>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer></footer>
