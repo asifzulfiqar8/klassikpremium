@@ -6,6 +6,7 @@
   --black800: #2b2b2b;
   --black700: #454545;
   --black400: #a7a7a7;
+  --black300: #cbcbcb;
   --black200: #eaeaea;
 }
 .text-yellow {
@@ -100,6 +101,9 @@ body {
 }
 .font-34 {
   font-size: 34px;
+}
+.font-40 {
+  font-size: 40px;
 }
 .font-54 {
   font-size: 54px;
@@ -397,34 +401,30 @@ body {
   }
 }
 /* Newsletter */
-/* From Uiverse.io by Yaya12085 */
+.newsletter__wrapper {
+  padding: 100px 0;
+  &{
+    span{
+      margin-bottom: 20px;
+    }
+  }
+}
 .input-container {
   position: relative;
   padding: 16px;
   border-radius: 6px;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
-  border: solid 1px black;
+  border: solid 1px var(--black300);
   & {
     button {
-      position: absolute;
-      right: 4px;
-      top: 4px;
-      bottom: 4px;
-      z-index: 10;
       /* border-radius: 4px; */
       background-color: var(--primary-color);
       color: #fff;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
       border: none;
-      transition: 0.6s ease;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 20px;
+      cursor: pointer;
     }
     input {
       height: 100%;
