@@ -390,10 +390,54 @@ body {
 }
 /* Our Stories */
 .our-stories__wrapper .card {
-
   & {
     img {
       width: 100%;
+    }
+  }
+}
+/* Newsletter */
+/* From Uiverse.io by Yaya12085 */
+.input-container {
+  position: relative;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  border: solid 1px black;
+  & {
+    button {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      bottom: 4px;
+      z-index: 10;
+      /* border-radius: 4px; */
+      background-color: var(--primary-color);
+      color: #fff;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: none;
+      transition: 0.6s ease;
+    }
+    input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      padding: 0.625rem 70px 0.625rem 0.75rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 400;
+      color: rgb(69 90 100);
+      outline: none;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
