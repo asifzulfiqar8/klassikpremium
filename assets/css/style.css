@@ -289,6 +289,16 @@ body {
   }
 }
 /* Products Carousels */
+.product-carousels{
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 20px);
+    right: auto;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 20px);
+    left: auto;
+  }
+}
 .productSwiper .swiper-product {
   padding: 17px 20px;
   & {

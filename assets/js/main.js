@@ -28,16 +28,19 @@ var productSwiper = new Swiper(".productSwiper", {
     clickable: true,
   },
   breakpoints: {
-    // Adjust the number of products for different screen sizes
-    991: {
+    1280: {
       slidesPerView: 4,
       spaceBetween: 30,
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    950:{
+        slidesPerView: 3,
+      spaceBetween: 30,
     },
-    480: {
+    550: {  // Match 786px as the breakpoint
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    0: {  // At 0px or below
       slidesPerView: 1,
       spaceBetween: 10,
     },
