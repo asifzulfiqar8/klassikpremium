@@ -10,6 +10,10 @@
   --black200: #eaeaea;
   --black50: #fafafb;
 }
+html,
+body {
+  overflow-x: hidden !important;
+}
 .text-yellow {
   color: var(--secondary-color);
 }
@@ -485,6 +489,7 @@ body {
 }
 
 .pargraph__wrapper {
+  padding-bottom: 60px;
   & {
     div {
       display: flex;
