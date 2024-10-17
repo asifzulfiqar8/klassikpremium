@@ -8,6 +8,9 @@
   --black400: #a7a7a7;
   --black200: #eaeaea;
 }
+.text-yellow {
+  color: var(--secondary-color);
+}
 .text-white {
   color: var(--white);
 }
@@ -16,6 +19,9 @@
 }
 .text-black-400 {
   color: var(--black400);
+}
+.bg-yellow {
+  background-color: var(--secondary-color);
 }
 .bg-black {
   background-color: var(--primary-color);
@@ -47,7 +53,10 @@ body {
 .container-fluid {
   width: 100%;
 }
-
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .py-70 {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -124,6 +133,9 @@ body {
 .items-center {
   align-items: center;
 }
+.items-strech {
+  align-items: stretch;
+}
 .justify-center {
   justify-content: center;
 }
@@ -143,7 +155,7 @@ body {
   width: 33%;
 }
 .rgap-5 {
-  row-gap: 05px;
+  row-gap: 5px;
 }
 .rgap-10 {
   row-gap: 10px;
@@ -154,8 +166,14 @@ body {
 .rgap-40 {
   row-gap: 40px;
 }
+.rgap-50 {
+  row-gap: 50px;
+}
+.cgap-5 {
+  column-gap: 5px;
+}
 .cgap-10 {
-  column-gap: 40px;
+  column-gap: 10px;
 }
 .cgap-20 {
   column-gap: 20px;
@@ -188,7 +206,7 @@ body {
   width: 100%;
 }
 
-.swiper-slide {
+.swiper-slide,.product-swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,8 +289,52 @@ body {
   }
 }
 /* Products Carousels */
-.productSwiper .product {
+.productSwiper .swiper-product {
   padding: 17px 20px;
+  & {
+    img {
+      margin-bottom: 10px;
+    }
+    span{
+      margin-bottom: 10px;
+    }
+    .swiper-product__cart-container {
+      & {
+        .item-counter {
+          width: 48%;
+          border-radius: 8px;
+          & {
+            span {
+              width: 30%;
+              text-align: center;
+              padding: 18px 10px;
+              font-size: 18px;
+              font-family: 500;
+              cursor: pointer;
+            }
+            span:nth-child(2) {
+              margin: 2px 0;
+              cursor: auto;
+            }
+          }
+        }
+        button {
+          width: 48%;
+          padding: 18px 10px;
+          font-size: 18px;
+          font-family: 500;
+          cursor: pointer;
+          border: none;
+          & {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* media quries */
