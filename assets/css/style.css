@@ -8,6 +8,7 @@
   --black400: #a7a7a7;
   --black300: #cbcbcb;
   --black200: #eaeaea;
+  --black50: #fafafb;
 }
 .text-yellow {
   color: var(--secondary-color);
@@ -92,6 +93,9 @@ body {
 }
 .font-18 {
   font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
 }
 .font-22 {
   font-size: 22px;
@@ -211,6 +215,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .grid-cols-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -264,6 +272,40 @@ body {
   background: var(--white);
   width: 30px;
   height: 8px;
+}
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Options: auto | thin */
+  scrollbar-color: var(--secondary-color) var(--primary-color); /* thumb color and track color */
+}
+
+/* Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--primary-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+  }
 }
 /* Product Swiper */
 .product-carousel .swiper-slide {
@@ -403,8 +445,8 @@ body {
 /* Newsletter */
 .newsletter__wrapper {
   padding: 100px 0;
-  &{
-    span{
+  & {
+    span {
       margin-bottom: 20px;
     }
   }
@@ -442,6 +484,25 @@ body {
   }
 }
 
+.pargraph__wrapper {
+  & {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-top: 1px solid var(--black50);
+      padding: 30px 0;
+      & {
+        a {
+          color: var(--white);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 /* media quries */
 @media screen and (min-width: 1440px) {
   .container {
@@ -454,6 +515,9 @@ body {
   .grid-cols-4 {
     grid-template-columns: repeat(3, 1fr);
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .hero__icon__box {
     width: 50%;
     border: none;
@@ -465,6 +529,9 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media screen and (max-width: 375px) {
   .grid-cols-4 {
