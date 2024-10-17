@@ -1,28 +1,42 @@
-/* Global Color */
+/* global start */
 :root {
   --primary-color: #000000;
   --secondary-color: #fabd38;
   --white: #ffffff;
   --black800: #2b2b2b;
   --black700: #454545;
+  --black400: #a7a7a7;
   --black200: #eaeaea;
 }
-.bg-black{
+.text-white {
+  color: var(--white);
+}
+.text-black {
+  color: var(--primary-color);
+}
+.text-black-400 {
+  color: var(--black400);
+}
+.bg-black {
   background-color: var(--primary-color);
 }
-.bg-black-800{
+.bg-black-800 {
   background-color: var(--black800);
 }
-.bg-black-700{
+.bg-black-700 {
   background-color: var(--black700);
 }
-.bg-black-200{
+.bg-black-400 {
+  background-color: var(--black400);
+}
+
+.bg-black-200 {
   background-color: var(--black200);
 }
-.bg-white{
+.bg-white {
   background-color: var(--white);
 }
-/* global start */
+
 * {
   margin: 0;
   padding: 0;
@@ -42,11 +56,11 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.py-50-80{
+.py-50-80 {
   padding-top: 50px;
   padding-bottom: 80px;
 }
-.my-50{
+.my-50 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -220,29 +234,6 @@ body {
   text-align: center;
 }
 
-.product {
-  padding: 20px;
-  border: 1px solid #eee;
-  background-color: #fff;
-}
-
-.product img {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-  object-fit: contain;
-}
-
-.product h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.product p {
-  font-size: 16px;
-  color: #333;
-}
-
 /* Swiper End */
 
 .hero__swiper {
@@ -272,13 +263,16 @@ body {
 }
 
 /* Feature Brands */
-.brand-logos{
-  
-  &{
-    .brand-logo{
+.brand-logos {
+  & {
+    .brand-logo {
       max-width: 230px;
     }
   }
+}
+/* Products Carousels */
+.productSwiper .product {
+  padding: 17px 20px;
 }
 
 /* media quries */
@@ -290,7 +284,7 @@ body {
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 991px) {
-  .grid-cols-4{
+  .grid-cols-4 {
     grid-template-columns: repeat(3, 1fr);
   }
   .hero__icon__box {
@@ -299,14 +293,14 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .grid-cols-4{
+  .grid-cols-4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 576px) {
 }
 @media screen and (max-width: 375px) {
-  .grid-cols-4{
+  .grid-cols-4 {
     grid-template-columns: repeat(1, 1fr);
   }
   .hero__icon__box {
