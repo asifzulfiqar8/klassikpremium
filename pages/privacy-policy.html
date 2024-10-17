@@ -20,8 +20,13 @@
           }
           
           .font-18 {
-            font-size: 12px;
+            font-size: 14px;
           }
+
+          .font-34{
+             font-size: 24px;
+          }
+
           .w-50 {
             width: 92%;
           }
@@ -29,21 +34,46 @@
             padding-top: 30px;
             padding-bottom: 30px;
            }
-         
-              .full-content {
-                display: none;
-              }
+            .pt-50{
+              padding-top: 30px;
             }
+         
+           .full-content ,
+           .full-content-2,
+           .full-content-3,
+           .full-content-4,
+           .full-content-5,
+           .full-content-6,
+           .full-content-7,
+           .full-content-8,
+           .full-content-9
+            {
+             display: none;
+           }
+           .see-more-btn {
+            display: contents;
+        }
+        }
 
         @media (min-width: 1024px) {
-          .full-content {
+          .full-content, 
+          .full-content-2,
+          .full-content-3,
+          .full-content-4,
+          .full-content-5,
+          .full-content-6,
+          .full-content-7,
+          .full-content-8,
+          .full-content-9 {
             display: block !important;
           }
-          #toggle-content {
-            display: none; 
+          
+          .toggle-content
+           {
+            display: none !important; 
           }
         }
-        
+
         .see-more-btn {
             font-size: 14px;
             color: #eeb046; 
@@ -51,13 +81,6 @@
             cursor: pointer; 
             background: transparent;
         }
-        .see-more-btn:hover {
-            background-color: #a7a7a7;
-        }
-        .full-content {
-            display: none;
-        }
-      
 
     </style>
   </head>
@@ -75,7 +98,7 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="text-black-400 font-18">
+          <p class="text-black-400 font-18 pt-50">
             This policy is effective from June 14 2019. <br>
             This Privacy Policy describes how and when Vivino ApS collects, uses
             and shares your personal information when you use our Services. If
@@ -107,8 +130,8 @@
               Please note, that you may use our Platform without signing up, in
               which case we will only collect data based on your consent to our
               cookie policy that you may find in 'Categories of personal data'.</span> 
-              <button id="toggle-content" class="see-more-btn">See More...</button>
-          </p>
+              <button class="see-more-btn toggle-content" data-target="full-content">See More...</button>
+            </p>
           <br><br>
         </div>
 
@@ -142,6 +165,7 @@
               Platform to you.
             </li>
           </ul>
+          <div class="full-content-2">
           <br><br>
           <p class="text-black-400 font-18">
             We process your ratings of wine to provide you with the opportunity to allow other users to follow your ratings, we process your personal data the legal basis of: 
@@ -212,14 +236,16 @@
             still display marketing messages, but they will be generic and less
             relevant to you.
           </p>
-          <br><br>
+         </div>
+         <button class="see-more-btn toggle-content" data-target="full-content-2">See More...</button>
+         <br><br>
         </div>
         <div class="flex flex-col">
           <h5 class="font-semi-bold font-34 text-white">Categories of Personal Data</h5>
           <br>
           <p class="text-black-400 font-18">
             We mainly collect the personal data that you submit to us, including your contact information, reviews, and purchase history. We also collect information from different parts of the platform, including but not limited to how you use the platform, tracking information about your whereabouts on the Internet, and technical information about your devices and location.
-            <br><br>
+            <div class="full-content-3">
             Please visit 'Sharing of Data' to read more about your right to access and deletion of your personal data.
             <br><br>
             When signing up:
@@ -257,6 +283,8 @@
               When you purchase products, you are buying from a third-party vendor, not us. We pass your order details to the vendor, and they become an independent controller for your personal data. We also store and process your purchase information as part of our service to you.
             </li>
           </ul>
+          </div>
+          <button class="see-more-btn toggle-content" data-target="full-content-3">See More...</button>
         </div>
         <br><br>
         <div class="flex flex-col">
@@ -264,7 +292,10 @@
           <br><br>
           <p class="text-black-400 font-18">
             A cookie is a small text file stored on your device to recognize your device when you visit again (e.g., login, language, font size). Cookies allow us to customize the website to your browser. They typically do not contain personal data and are not programs that can carry viruses.
-            <br><br><br>
+          </p>
+            <div class="full-content-4">
+          <p class="text-black-400 font-18">
+            <br><br>
             When you visit our website, we collect information about you that allows us to identify your device. The information is used to customize and improve our content on the website and to get statistical information (not personal information), so we can provide you with the best possible experience. If you choose not to accept cookies at all you may not be able to use all the functions of our website. 
             <br><br><br>
             You can modify your browser, so cookies are not stored on your computer, tablet, mobile etc. See instructions here: http://minecookies.org/cookiehandtering. Be aware, however, that without cookies, you may not be able to use all the functions of our website. 
@@ -282,19 +313,28 @@
             <li class="text-black-400 font-18">Outreach</li>
             <li class="text-black-400 font-18">Pinterest</li>
           </ul>
+         </div>
         </div>
-         <br><br>
+          <button class="see-more-btn toggle-content" data-target="full-content-4">See More...</button>
+        <br><br>
         <div class="flex flex-col">
           <h5 class="font-semi-bold font-34 text-white">Notice about Google Adsense</h5>
           <br>
           <p class="text-black-400 font-18">
             We use Google Adsense to display ads on our site. <br><br><br>
             Through the use of Google Adsense, we collect a variety of data about you. This includes your IP addresses, your browsing histories, and device location.
-            Google Adsense enables us to serve targeted ads to you <br><br><br>
-            When we serve you targeted ads, we rely on your consent.  <br><br><br>
-            If you wish to opt out of personalised ads, you need to check Google’s Ad Settings.  <br><br><br>
+            Google Adsense enables us to serve targeted ads to you 
+          </p>
+          <div class="full-content-5">
+              <br><br>
+          <p class="text-black-400 font-18">
+            When we serve you targeted ads, we rely on your consent. <br><br><br>
+            If you wish to opt out of personalised ads, you need to check Google’s Ad Settings. <br><br><br>
             To learn more about how Google Adsense uses your data to show you personalized ads, you should visit Google’s policy for Advertisements at:
-            https://policies.google.com/technologies/ads?hl=en-US <br><br><br>
+            https://policies.google.com/technologies/ads?hl=en-US
+            </div>
+            <button class="see-more-btn toggle-content" data-target="full-content-5">See More...</button>
+            <br><br>
           </p>
         </div>
         <div class="flex flex-col">
@@ -307,18 +347,25 @@
         
         <div class="flex flex-col">
           <h5 class="font-semi-bold font-34 text-white">Sharing of Data</h5>
+          <br>
           <p class="text-black-400 font-18">
             Personal data about our users is an essential part of our business. We only share your personal data as described below apart from when we share it with a third-party vendor. 
             <br><br><br>
             We share your reviews with other Users if you have consented to us sharing your reviews with other users. 
-            <br><br><br>
-            We may share personal data regarding you if we are obligated to do so by law. 
-            <br><br><br>
+             </p>
+             <div class="full-content-6">
+               <p class="text-black-400 font-18">
+              <br><br>
+              may share personal data regarding you if we are obligated to do so by law. 
+            <br><br>
             Please manage your cookie/consent choices by switching the consent toggles on or off under the Purposes listed here(link to consent preferences). These cookies will be stored based on your consent choice, but may also use the personal data they collect when we or our third party partner has a legitimate interest. 
             <br><br><br>
             <u>Data preferences</u>
             <br><br><br>
-          </p>
+            </p>
+          </div>
+          <button class="see-more-btn toggle-content" data-target="full-content-6">See More...</button>
+          <br>
         </div>
         
         <div class="flex flex-col">
@@ -330,14 +377,16 @@
           <br><br>
           <ul class="pl-20">
             <li class="text-black-400 font-18"><span class="text-white">Access personal data regarding you.</span> You can always access your account to review the personal data we have collected about you. You may delete and amend the data collected. You also have the right to obtain a copy of the personal data free of charge. However, we may charge a fee corresponding to administrative costs if further copies of the information are requested, or if the request is unfounded or excessive.</li>
-            <li class="text-black-400 font-18"><span class="text-white">Ask for rectification</span> of incorrect or inaccurate data concerning you, or to have incomplete personal data completed. You can use your access to your account to update your personal data.</li>
-            <li class="text-black-400 font-18"><span class="text-white">Ask for erasure of personal data regarding you</span> (under certain circumstances).</li>
-            <li class="text-black-400 font-18"><span class="text-white">Ask for the restriction of the processing of your data </span>(under certain circumstances).</li>
-            <li class="text-black-400 font-18"><span class="text-white">Object to the processing of your data</span> for marketing purposes by withdrawing your personal consent.</li>
-            <li class="text-white font-18">You can at any time withdraw your consent by deleting your profile or delete your account in the in-app settings. </li>
           </ul>
-        </div>
-        <br> <br>
+            <div class="full-content-7">
+          <ul class="pl-20">
+              <li class="text-black-400 font-18"><span class="text-white">Ask for rectification</span> of incorrect or inaccurate data concerning you, or to have incomplete personal data completed. You can use your access to your account to update your personal data.</li>
+              <li class="text-black-400 font-18"><span class="text-white">Ask for erasure of personal data regarding you</span> (under certain circumstances).</li>
+              <li class="text-black-400 font-18"><span class="text-white">Ask for the restriction of the processing of your data </span>(under certain circumstances).</li>
+              <li class="text-black-400 font-18"><span class="text-white">Object to the processing of your data</span> for marketing purposes by withdrawing your personal consent.</li>
+              <li class="text-white font-18">You can at any time withdraw your consent by deleting your profile or delete your account in the in-app settings.</li>
+          </ul>
+        <br><br>
            <p class="text-black-400 font-18">
             When we receive a request to access, rectify, erase or port data, we may ask you for additional information in order to confirm your identity and ensure data security. You can send a request at <a class="text-black-400" href="https://help.vivino.com/s/ . ">https://help.vivino.com/s/ . </a>
             <br><br>
@@ -354,21 +403,30 @@
             </li>
             <br><br>
           </ul>
+          </div>
+          <button class="see-more-btn toggle-content" data-target="full-content-7">See More...</button>
+        </div>
         <div class="flex flex-col">
           <h5 class="font-semi-bold font-34 text-white">Data Retention and Account Deletion</h5>
           <br><br>
           <p class="text-black-400 font-18">
-            We store your personal data for as long as your account is active. 
+            We store your personal data for as long as your account is active.
             <br><br>
-            We may also store some of your personal data to comply with our legal obligations. 
+            We may also store some of your personal data to comply with our legal obligations.
             <br><br>
-            You may add or update certain information to your account. When you update information, however, we often maintain a copy of the unrevised information in systems back-ups for a period of time until our backup is updated with the latest version. 
+            You may add or update certain information to your account. When you update information, however, we often maintain a copy of the unrevised information in systems back-ups for a period of time until our backup is updated with the latest version.</p>
+
+            <div class="full-content-8">
             <br><br>
-            You may request deactivation of your account by following the instructions at the Platform. If you deactivate your account, we do not delete your information but holds it for you until such time as you either activates your account again or delete it. 
+            <p class="text-black-400 font-18">
+            You may request deactivation of your account by following the instructions at the Platform. If you deactivate your account, we do not delete your information but holds it for you until such time as you either activates your account again or delete it.
             <br><br>
-            When you delete your account, we delete the data attached to your account including your username. The username will be deleted from all reviews, and the reviews will be anonymized for future viewing. 
+            When you delete your account, we delete the data attached to your account including your username. The username will be deleted from all reviews, and the reviews will be anonymized for future viewing.
             <br><br>
             Please note that some information may remain in our records after your account has been deleted, and that we may only be able to delete this information later when updating our backups.
+            </p>
+            </div>
+            <button class="see-more-btn toggle-content" data-target="full-content-8">See More...</button>
             <br><br><br>
           </p>
         </div>
@@ -377,12 +435,17 @@
           <h5 class="font-semi-bold font-34 text-white">Security</h5>
           <br>
           <p class="text-black-400 font-18">
-            User accounts including personal data are protected by a password for your privacy and security. You should ensure no unauthorized access to your account and personal data by choosing and protecting your password appropriately, and by signing off when finishing accessing your account. When signing in via third-party application provider your password is solely managed by such third-party. 
-            <br><br><br>
-            We do our best to ensure that user accounts are kept private. However, various instances such as unauthorized entry/use, hardware or software failure, and other factors, may compromise the security of the personal data. 
+            User accounts including personal data are protected by a password for your privacy and security. You should ensure no unauthorized access to your account and personal data by choosing and protecting your password appropriately, and by signing off when finishing accessing your account. When signing in via third-party application provider your password is solely managed by such third-party.</p>
+            <div class="full-content-9">
+            <p class="text-black-400 font-18">
+              <br><br>
+            We do our best to ensure that user accounts are kept private. However, various instances such as unauthorized entry/use, hardware or software failure, and other factors, may compromise the security of the personal data.
             <br><br><br>
             This Privacy Policy only governs information collected on the Platform and through our cookies.
+            </p>
             <br><br>
+            </div>
+            <button class="see-more-btn toggle-content" data-target="full-content-9">See More...</button>
           </p>
         </div>
         
@@ -406,23 +469,33 @@
         </div>
       </section>
     </main>
-    <footer></footer>
-    <script>
-      document.getElementById("toggle-content").addEventListener("click", function() {
-        var fullContent = document.querySelector(".full-content");
-        var shortContent = document.querySelector(".short-content");
-        var button = document.getElementById("toggle-content");
-        
-        if (fullContent.style.display === "none") {
-          fullContent.style.display = "block";
-          shortContent.style.display = "none";
-          button.textContent = "See Less...";
-        } else {
-          fullContent.style.display = "none";
-          shortContent.style.display = "block";
-          button.textContent = "See More...";
-        }
-      });
-    </script>    
+    <footer></footer> 
+  <script>
+    
+// See More Script
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all toggle buttons
+  const toggleButtons = document.querySelectorAll(".toggle-content");
+
+  toggleButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      // Get the target content using data attribute
+      const targetClass = button.getAttribute("data-target");
+      const fullContent = document.querySelector(`.${targetClass}`);
+
+      // Toggle content visibility
+      if (fullContent.style.display === "none" || fullContent.style.display === "") {
+        fullContent.style.display = "block";  
+        button.textContent = "See Less..."; 
+      } else {
+        fullContent.style.display = "none";
+        button.textContent = "See More...";
+      }
+    });
+  });
+});
+
+  </script>
   </body>
+
 </html>
