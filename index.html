@@ -21,7 +21,8 @@
   <body>
     <header class="container-fluid"></header>
     <main>
-      <section class="container-fluid hero bg-black">
+      <!-- Hero Section -->
+      <section class="container-fluid hero pb-50 bg-black">
         <!-- Swiper Hero Section -->
         <section class="container hero__swiper">
           <div class="swiper mySwiper">
@@ -95,12 +96,14 @@
           </div>
         </section>
       </section>
-      <!-- Featured Brands -->
-      <section
+      <!-- Featured Brands Section -->
+      <!-- <section
         class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white"
       >
-        <div class="brand-logos__title">
+        <div class="brand-logos__title section-title-black container">
+          <div class="line"></div>
           <h2 class="font-34 font-semi-bold text-center">Featured Brands</h2>
+          <div class="line"></div>
         </div>
         <div
           class="brand-logos__wrappper grid-cols-4 rgap-20 cgap-100 container"
@@ -162,62 +165,227 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Product Carousels -->
-      <section class="product-carousels container-fluid bg-black">
+      <section class="product-carousels pt-50 container-fluid bg-black">
+        <!-- Carousel 1 -->
         <section
-          class="container product-carousel__carousel-1 py-50-80 flex flex-col items-center rgap-40"
+          class="container product-carousel__carousel-1 py-50-80 flex flex-col items-center rgap-50"
         >
-          <h2 class="font-22 font-bold text-center text-white">
-            Critically Aclaimed
-          </h2>
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Critically Aclaimed
+            </h2>
+            <div class="line"></div>
+          </div>
           <div class="swiper productSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="product bg-black-800 rgap-10 flex-col flex ">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
                   <img src="assets/images/product-img.png" alt="" />
-                  <h2 class="font-26 font-semi-bold text-white">Clos de papes 2012</h2>
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
                   <span class="text-black-400 font-18 font-semi-bold"
                     >Red Wine</span
                   >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="product">
-                  <img src="assets/images/product2.png" alt="Product 2" />
-                  <h3>Product 2</h3>
-                  <p>$34.99</p>
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="product">
-                  <img src="assets/images/product3.png" alt="Product 3" />
-                  <h3>Product 3</h3>
-                  <p>$19.99</p>
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="product">
-                  <img src="assets/images/product4.png" alt="Product 4" />
-                  <h3>Product 4</h3>
-                  <p>$39.99</p>
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="product">
-                  <img src="assets/images/product4.png" alt="Product 4" />
-                  <h3>Product 4</h3>
-                  <p>$39.99</p>
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product">
-                  <img src="assets/images/product4.png" alt="Product 4" />
-                  <h3>Product 4</h3>
-                  <p>$39.99</p>
-                </div>
-              </div>
-              <!-- Add more products as needed -->
             </div>
             <div class="swiper-button-next swiper-btn">
               <img src="assets/images/nav-next.png" alt="Next" />
@@ -225,6 +393,620 @@
             <div class="swiper-button-prev swiper-btn">
               <img src="assets/images/nav-prev.png" alt="Previous" />
             </div>
+          </div>
+        </section>
+        <!-- Caerousel 2 -->
+        <section
+          class="container product-carousel__carousel-2 py-50-80 flex flex-col items-center rgap-50"
+        >
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Iconic Vines
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                >
+                  <img src="assets/images/product-img.png" alt="" />
+                  <h2 class="font-26 font-semi-bold text-white">
+                    Clos de papes 2012
+                  </h2>
+                  <span class="text-black-400 font-18 font-semi-bold"
+                    >Red Wine</span
+                  >
+
+                  <hr />
+                  <div
+                    class="swiper-product__price-container flex items-center cgap-10 py-10"
+                  >
+                    <span class="price text-white font-18 font-semi-bold"
+                      >$19.99</span
+                    >
+                    <span class="sale-price text-yellow font-26 font-extra-bold"
+                      >$14.99</span
+                    >
+                  </div>
+                  <div
+                    class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                  >
+                    <div
+                      class="item-counter flex items-strech justify-between text-white bg-black-700"
+                    >
+                      <span>-</span>
+                      <span class="bg-black-800">1</span>
+                      <span>+</span>
+                    </div>
+                    <button
+                      class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                    >
+                      <img src="assets/images/Cart.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-btn">
+              <img src="assets/images/nav-next.png" alt="Next" />
+            </div>
+            <div class="swiper-button-prev swiper-btn">
+              <img src="assets/images/nav-prev.png" alt="Previous" />
+            </div>
+          </div>
+        </section>
+        <!-- Carousel 3 -->
+        <section class="container-fluid bg-black-700">
+          <section
+            class="container product-carousel__carousel-1 py-50-80 flex flex-col items-center rgap-50"
+          >
+            <div class="section-title-white">
+              <div class="line"></div>
+              <h2 class="font-22 font-bold text-center text-white">
+                Special Offers
+              </h2>
+              <div class="line"></div>
+            </div>
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                  >
+                    <img src="assets/images/product-img.png" alt="" />
+                    <h2 class="font-26 font-semi-bold text-white">
+                      Clos de papes 2012
+                    </h2>
+                    <span class="text-black-400 font-18 font-semi-bold"
+                      >Red Wine</span
+                    >
+
+                    <hr />
+                    <div
+                      class="swiper-product__price-container flex items-center cgap-10 py-10"
+                    >
+                      <span class="price text-white font-18 font-semi-bold"
+                        >$19.99</span
+                      >
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
+                        >$14.99</span
+                      >
+                    </div>
+                    <div
+                      class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                    >
+                      <div
+                        class="item-counter flex items-strech justify-between text-white bg-black-700"
+                      >
+                        <span>-</span>
+                        <span class="bg-black-800">1</span>
+                        <span>+</span>
+                      </div>
+                      <button
+                        class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                      >
+                        <img src="assets/images/Cart.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                  >
+                    <img src="assets/images/product-img.png" alt="" />
+                    <h2 class="font-26 font-semi-bold text-white">
+                      Clos de papes 2012
+                    </h2>
+                    <span class="text-black-400 font-18 font-semi-bold"
+                      >Red Wine</span
+                    >
+
+                    <hr />
+                    <div
+                      class="swiper-product__price-container flex items-center cgap-10 py-10"
+                    >
+                      <span class="price text-white font-18 font-semi-bold"
+                        >$19.99</span
+                      >
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
+                        >$14.99</span
+                      >
+                    </div>
+                    <div
+                      class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                    >
+                      <div
+                        class="item-counter flex items-strech justify-between text-white bg-black-700"
+                      >
+                        <span>-</span>
+                        <span class="bg-black-800">1</span>
+                        <span>+</span>
+                      </div>
+                      <button
+                        class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                      >
+                        <img src="assets/images/Cart.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                  >
+                    <img src="assets/images/product-img.png" alt="" />
+                    <h2 class="font-26 font-semi-bold text-white">
+                      Clos de papes 2012
+                    </h2>
+                    <span class="text-black-400 font-18 font-semi-bold"
+                      >Red Wine</span
+                    >
+
+                    <hr />
+                    <div
+                      class="swiper-product__price-container flex items-center cgap-10 py-10"
+                    >
+                      <span class="price text-white font-18 font-semi-bold"
+                        >$19.99</span
+                      >
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
+                        >$14.99</span
+                      >
+                    </div>
+                    <div
+                      class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                    >
+                      <div
+                        class="item-counter flex items-strech justify-between text-white bg-black-700"
+                      >
+                        <span>-</span>
+                        <span class="bg-black-800">1</span>
+                        <span>+</span>
+                      </div>
+                      <button
+                        class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                      >
+                        <img src="assets/images/Cart.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                  >
+                    <img src="assets/images/product-img.png" alt="" />
+                    <h2 class="font-26 font-semi-bold text-white">
+                      Clos de papes 2012
+                    </h2>
+                    <span class="text-black-400 font-18 font-semi-bold"
+                      >Red Wine</span
+                    >
+
+                    <hr />
+                    <div
+                      class="swiper-product__price-container flex items-center cgap-10 py-10"
+                    >
+                      <span class="price text-white font-18 font-semi-bold"
+                        >$19.99</span
+                      >
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
+                        >$14.99</span
+                      >
+                    </div>
+                    <div
+                      class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                    >
+                      <div
+                        class="item-counter flex items-strech justify-between text-white bg-black-700"
+                      >
+                        <span>-</span>
+                        <span class="bg-black-800">1</span>
+                        <span>+</span>
+                      </div>
+                      <button
+                        class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                      >
+                        <img src="assets/images/Cart.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="product swiper-product bg-black-800 flex-col flex rgap-5"
+                  >
+                    <img src="assets/images/product-img.png" alt="" />
+                    <h2 class="font-26 font-semi-bold text-white">
+                      Clos de papes 2012
+                    </h2>
+                    <span class="text-black-400 font-18 font-semi-bold"
+                      >Red Wine</span
+                    >
+
+                    <hr />
+                    <div
+                      class="swiper-product__price-container flex items-center cgap-10 py-10"
+                    >
+                      <span class="price text-white font-18 font-semi-bold"
+                        >$19.99</span
+                      >
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
+                        >$14.99</span
+                      >
+                    </div>
+                    <div
+                      class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+                    >
+                      <div
+                        class="item-counter flex items-strech justify-between text-white bg-black-700"
+                      >
+                        <span>-</span>
+                        <span class="bg-black-800">1</span>
+                        <span>+</span>
+                      </div>
+                      <button
+                        class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                      >
+                        <img src="assets/images/Cart.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-btn">
+                <img src="assets/images/nav-next.png" alt="Next" />
+              </div>
+              <div class="swiper-button-prev swiper-btn">
+                <img src="assets/images/nav-prev.png" alt="Previous" />
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!-- Our Story Section -->
+      <section class="our-stories container-fluid bg-black">
+        <section
+          class="our-stories__wrapper container py-80 flex-col flex items-center rgap-50"
+        >
+          <div class="section-title-white">
+            <div class="line"></div>
+            <h2 class="font-22 font-bold text-center text-white">
+              Our Stories
+            </h2>
+            <div class="line"></div>
+          </div>
+          <div class="our-stories__cards grid-cols-4 cgap-20 rgap-40">
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-1.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white"
+                >12/January/2024</span
+              >
+              <h4 class="font-22 font-semi-bold text-white">
+                The Process behind our award winning wines
+              </h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-2.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white"
+                >12/January/2024</span
+              >
+              <h4 class="font-22 font-semi-bold text-white">
+                The Process behind our award winning wines
+              </h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-3.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white"
+                >12/January/2024</span
+              >
+              <h4 class="font-22 font-semi-bold text-white">
+                The Process behind our award winning wines
+              </h4>
+            </div>
+            <div class="card flex flex-col rgap-10">
+              <img src="assets/images/ourStories-4.png" alt="" />
+              <span class="date font-16 font-semi-bold text-white"
+                >12/January/2024</span
+              >
+              <h4 class="font-22 font-semi-bold text-white">
+                The Process behind our award winning wines
+              </h4>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--  -->
+      <!-- Paragraphs Section -->
+      <section class="container-fluid pargraphs bg-black">
+        <div class="pargraph__wrapper container grid-cols-3 cgap-20 rgap-20">
+          <div class="paragraph1">
+            <h3 class="font-34 font-semi-bold text-white">
+              KLASSIC PREMIUM - Your online wine shop
+            </h3>
+            <p class="font-14 font-normal text-white">
+              We're specialists in online sales, tried and trusted with over 16
+              years' experience in selling the best
+              <a href="https://www.vinissimus.co.uk/en/region/spain/"
+                >Spanish wines</a
+              >,
+              <a href="https://www.vinissimus.co.uk/en/region/italy/"
+                >Italian wines</a
+              >,
+              <a href="https://www.vinissimus.co.uk/en/region/france/"
+                >French wines</a
+              >
+              and
+              <a href="https://www.vinissimus.co.uk/en/region/argentina/"
+                >Argentinean wines</a
+              >
+              in our catalogue. There's our fast and guaranteed delivery
+              service, and many thousands of satisfied customers all over
+              Europe, a very extensive community sharing a passion for good
+              wine. <br />
+              <br />
+              Buying wine on the internet can be easier than searching along the
+              shelves of your local shop. Whether you're wanting to stock up on
+              your favourites, or to add a special bottle to your collection, or
+              just looking for something new, one of the advantages of buying
+              wine online is the tools and guides available, set up to help you.
+            </p>
+          </div>
+          <div class="paragraph2">
+            <h5 class="font-20 font-semi-bold text-white">
+              A wide range with excellent service to suit the needs of every
+              wine lover
+            </h5>
+            <p class="font-14 font-normal text-white">
+              In our catalogue you'll come across not only the world's most
+              famous wineries but also individual landscapes bottled up into
+              wines with soul, fruits of the earth and elements, expressions of
+              their terroir, providing an honest reflection of each vintage's
+              profile. <br /><br />
+              Classic, modern and traditional wines; made from international
+              grapes and indigenous varieties, some very old and others
+              recovered; limited productions from exceptional vineyards
+              alongside great little easy-drinking wines, labelled with
+              creative, eye-catching designs; wines with the best quality-price
+              ratio beside the most expensive wines in the world; sweet, rosé,
+              fortified and orange wines; organic, natural and biodynamic wines;
+              those with their own identity, created by meticulous vine growers,
+              the most highly respected oenologists and the country's finest
+              wineries.
+            </p>
+          </div>
+          <div class="paragraph3">
+            <h5 class="font-20 font-semi-bold text-white">
+              The best selection of Spanish, Italian and international wines
+            </h5>
+            <p class="font-14 font-normal text-white">
+              In our catalogue you’ll discover the most select Spanish wines,
+              together with an extensive offering of international wines from
+              the best and most well-known wineries. <br /><br />Our virtual
+              sommelier is at your disposal in just a few clicks, and the best
+              tool for finding perfect pairings.<br /><br />There's the quality
+              guarantee offered by ratings from Robert Parker, Jancis Robinson,
+              the Peñín Guide, James Suckling, the Italian Sommelier
+              Association's 4 Viti awards and the Gambero Rosso's 3 Bicchieri,
+              quality hallmarks. A final pointer: to help you make up your mind,
+              have a read through our customer reviews and feedback.
+              <br /><br />
+              A wine exists for every palate, pocket and occasion, and you'll
+              find them all at Vinissimus. If you can't, then ask us, and we'll
+              be happy to help you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter -->
+      <section class="newsletter container-fluid bg-white">
+        <section
+          class="container newsletter__wrapper flex flex-col justify-center items-center rgap-10"
+        >
+          <h2 class="text-center font-40 font-semi-bold">
+            Subscribe for Newsletter
+          </h2>
+          <span class="text-center font-14 font-normal"
+            >Get Updates by subscribe our weekly newsletter to receive the
+            latest news, events & Promotions</span
+          >
+          <div class="input-container flex items-strech">
+            <img src="assets/images/email.svg" alt="" />
+            <input required="" placeholder="Your email" type="email" />
+            <button type="button">Subscribe</button>
           </div>
         </section>
       </section>
