@@ -46,6 +46,38 @@ var productSwiper = new Swiper(".productSwiper", {
     },
   },
 });
+//   For Product Section
+var iconSwiper = new Swiper(".iconSwiper", {
+  slidesPerView: 4, // Display 4 products at a time
+  spaceBetween: 30, // Space between the products
+  loop: true, // Infinite loop
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    950:{
+        slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    420: {  // Match 786px as the breakpoint
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    0: {  // At 0px or below
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+});
 
 // See More Script
 document.addEventListener("DOMContentLoaded", function() {
