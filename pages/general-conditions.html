@@ -3,24 +3,887 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Inter Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>General Policies</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- Swiper JS -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>General Consitions</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <body>
-    <header></header>
-    <main><section class="container-fluid"></section></main>
-    <footer></footer>
+  <body class="bg-black">
+    <header>
+      <!-- Header for Desktop -->
+      <section class="header-desktop container-fluid">
+        <!-- Header Top Line -->
+        <section class="top-header container-fluid bg-yellow">
+          <p class="font-14 text-black font-semi-bold text-center">
+            Free delivery on your first order of $100 or more* with the promo
+            code : KILLASIK1ST
+          </p>
+        </section>
+        <!-- Social Icons -->
+        <section class="container-fluid bg-black">
+          <section class="container header-icons">
+            <div class="header-social flex cgap-20">
+              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+              <div class="header-social__icons">
+                <img src="../assets/images/Twitter.png" alt="" />
+                <img src="../assets/images/facebook.png" alt="" />
+                <img src="../assets/images/Pinterest.png" alt="" />
+                <img src="../assets/images/Youtube.png" alt="" />
+                <img src="../assets/images/Instagram.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Mid Header -->
+        <section class="mid-header container-fluid bg-black">
+          <section
+            class="container mid-header__wrapper flex items-center justify-between"
+          >
+            <!-- Logo -->
+            <div class="mid-header__logo">
+              <img
+                src="../assets/images/Header Logo.png"
+                alt=""
+                class="header-logo w-80"
+              />
+            </div>
+
+            <!-- Search bar -->
+            <div class="mid-header__search-bar flex items-center cgap-20">
+              <input type="text" placeholder="Search Wines" />
+              <img src="../assets/images/search.svg" alt="" />
+            </div>
+            <!-- Right Container -->
+            <div
+              class="mid-header__right flex items-center justify-between cgap-40"
+            >
+              <!-- Selectors -->
+              <div class="selectors flex items-center justify-between cgap-20">
+                <div class="selectors__currency flex-col flex selector">
+                  <label class="font-12 text-black-400">Currency</label>
+                  <select name="Currency Selector" id="currencySelector">
+                    <option value="USD">$ USD</option>
+                    <option value="PKR">Rs.PKR</option>
+                    <option value="USD">€ EUR</option>
+                  </select>
+                </div>
+                <div class="selectors__language flex-col flex selector">
+                  <label class="font-12 text-black-400">Language</label>
+                  <select name="Language Selector" id="currencySelector">
+                    <option value="English">
+                      <img src="../assets/images/English Flag.svg" alt="" />
+                      English
+                    </option>
+                    <option value="Spanish">
+                      <img src="../assets/images/English Flag.svg" alt="" />
+                      English 2
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <!-- Icon Boxes -->
+              <div
+                class="icon-boxes flex cgap-20 items-center justify-center rgap-5"
+              >
+                <div class="account_box flex flex-col items-center rgap-5">
+                  <img src="../assets/images/user.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white"
+                    >My Account</span
+                  >
+                </div>
+                <div
+                  class="cart_box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img src="../assets/images/bag.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white">Cart</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Lower Header -->
+        <section class="lower-header container-fluid bg-black">
+          <section
+            class="contaier lower-header__wrapper flex items-center justify-center"
+          >
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">All Wines</span>
+
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">Champagne</span>
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">Spirits</span>
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white"
+                  >Price List</span
+                >
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- Header for Mobile -->
+      <section class="header-mobile container-fluid">
+        <!-- Header Top Line -->
+        <section class="top-header container-fluid bg-yellow">
+          <section class="container">
+            <p class="font-14 text-black font-semi-bold text-center">
+              Free delivery on your first order of $100 or more* with the promo
+              code : KILLASIK1ST
+            </p>
+          </section>
+        </section>
+
+        <!-- Social Icons -->
+        <section class="container-fluid bg-black">
+          <section class="container header-icons">
+            <div class="header-social flex cgap-20">
+              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+              <div class="header-social__icons">
+                <img src="../assets/images/Twitter.png" alt="" />
+                <img src="../assets/images/facebook.png" alt="" />
+                <img src="../assets/images/Pinterest.png" alt="" />
+                <img src="../assets/images/Youtube.png" alt="" />
+                <img src="../assets/images/Instagram.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Header Main -->
+        <section class="container-fluid bg-black">
+          <section
+            class="container flex items-center justify-between main-header-mobile"
+          >
+            <img
+              src="../assets/images/Header Logo.png"
+              alt=""
+              class="header-logo"
+            />
+            <div class="menu-toggle">
+              <i class="fa-solid fa-bars text-white font-20"></i>
+            </div>
+          </section>
+        </section>
+      </section>
+    </header>
+    <main>
+      <section class="container">
+        <div
+          class="flex justify-center items-center flex-col py-50"
+          style="border-bottom: 1px solid #a7a7a7"
+        >
+          <h3 class="font-semi-bold font-54 text-white text-center">
+            General Conditions of Use and Sale
+          </h3>
+          <br />
+          <p class="w-50 text-center text-black-400 font-18">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis voluptatum deleniti.
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white pt-25">General Terms</h5>
+          <br />
+          <p class="text-black-400 font-18">
+            By submitting an order to purchase products through Vivino, via the
+            Vivino App (“the App”) or the Vivino Website (“the Site”), you agree
+            to be bound by the following Vivino ("Vivino", "we", "us" or the
+            "Company") Terms of Sale. By using the Vivino App or Site, you also
+            agree to be bound by all policies set out on the Vivino Website,
+            www.vivino.com, including the following:
+            <br /><br /><br />
+            Terms of Use:https://www.vivino.com/termsPrivacy
+            <br />Policy:https://www.vivino.com/privacy
+          </p>
+          <div class="full-content-10">
+            <br /><br />
+            <p class="text-black-400">
+              Vivino may, in its sole discretion, revise the Terms of Sale from
+              time to time, and it is your responsibility to review the Terms of
+              Sale each time you submit an order through Vivino. Vivino may, in
+              its sole discretion, revise the additional policies listed above,
+              and it is your responsibility to review those policies each time
+              you use Vivino. Your continued use of the Vivino App or Site, or
+              your submission of an order through Vivino, constitutes your
+              agreement to any such modifications.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-10"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            How Vivino App Order Requests Work
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            Orders submitted through Vivino may be fulfilled by Vivino or by
+            third-party merchants who are licensed, if required by law, to sell
+            alcohol through Vivino.
+            <br /><br /><br />
+            ORDERS FULFILLED BY VIVINO - In some jurisdictions, Vivino may
+            directly fulfill the Order from Vivino-owned inventory. In those
+            cases, Vivino will be identified as the party responsible for the
+            sale and fulfillment of such Orders and will be responsible for
+            compliance with all applicable laws and regulations.
+          </p>
+          <div class="full-content-11">
+            <br /><br />
+            <ul class="pl-20">
+              <li class="text-black-400">
+                Vivino-owned inventory sold within Austria, Belgium, Czech
+                Republic, Denmark, Finland, France, Germany, Italy, The
+                Netherlands, Spain, Switzerland and Sweden is shipped from the
+                Vivino Fulfillment Center in Germany, and sold by Vivino ApS
+                (registration number: 32081193, DE VAT number: DE 360200903)
+              </li>
+            </ul>
+            <p class="text-black-400">
+              <br /><br />
+              ORDERS FULFILLED BY THIRD-PARTY MERCHANTS - If your purchase is to
+              be fulfilled by a third-party merchant (“Seller”), the applicable
+              Seller(s) fulfilling any Order will be identified during the
+              checkout process. The Seller(s) identified is solely responsible
+              for the sale and fulfillment of alcoholic beverages purchased by
+              you via Vivino. Each Seller is responsible for compliance with all
+              applicable laws and regulations. These Terms of Sale govern your
+              relationship with Vivino, but you must consult the Seller’s
+              website for additional terms, conditions, or policies that may
+              apply to your relationship with and your purchase from the Seller.
+              Submitting an order through Vivino constitutes your agreement to
+              any and all applicable seller policies including but not limited
+              to purchases made for resale which are not allowed on the Vivino
+              platform.
+              <br /><br /><br />
+              After you submit your order through Vivino, we will send your
+              order to the Seller, or to our Vivino-owned fulfillment center.
+              The Seller or Vivino Fulfillment Center will review your order,
+              and may accept or reject your order. If accepted, your payment
+              will be processed and the Seller or Vivino Fulfillment Center will
+              ship your order per these Terms of Sale. The Seller or Vivino
+              Fulfillment Center may reject the order request for any reason,
+              including, but not limited to: inadequate inventory, errors in
+              pricing, compliance with any applicable laws and regulations, or
+              any reason stated in Seller’s policies. Consult the Seller’s
+              policies for further information.
+              <br /><br />
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-11"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            Product Descriptions
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            Descriptions, images, references, features, content, specifications,
+            price, and availability of any wines, varietals, vintages, and other
+            products are subject to change without notice, and the current
+            prices can be found on the Vivino Site or App.
+          </p>
+          <div class="full-content-12">
+            <p class="text-black-400">
+              We make reasonable efforts to accurately display the attributes of
+              the products listed/featured on the Vivino Site or App; however,
+              wines, palates, taste, smell, aromas, and written descriptions of
+              the foregoing can be very subjective. The inclusion of any
+              products on any Vivino Site or App at a particular time does not
+              imply or warrant that these products will be available at any
+              other time. We reserve the right, with or without prior notice, to
+              limit the available quantity of, or discontinue, any product; to
+              honor, or impose conditions on the honoring of, any coupon, coupon
+              code, promotional code, or other similar promotions; to bar any
+              user from making any or all purchase(s); and/or to refuse to
+              provide any user with any product or service.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-12"
+          >
+            See More...
+          </button>
+        </div>
+        <br />
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            Representation of Legal Drinking Age
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            ALCOHOLIC BEVERAGES MAY BE SOLD VIA VIVINO AND DELIVERED ONLY TO
+            PERSONS WHO ARE AT LEAST 18 YEARS OLD OR OF LEGAL DRINKING AGE IN
+            YOUR COUNTRY OR JURISDICTION. BY PLACING YOUR ORDER, YOU REPRESENT
+            AND WARRANT
+          </p>
+          <div class="full-content-13">
+            <p class="text-black-400">
+              THAT YOU ARE AT LEAST 18 YEARS OLD, OR OF LEGAL DRINKING AGE, AND
+              THAT THE PERSON TO WHOM DELIVERY WILL BE MADE IS AT LEAST 18 YEARS
+              OLD, OR OF LEGAL DRINKING AGE, AND CAN ACCEPT DELIVERY OF
+              ALCOHOLIC BEVERAGES. DELIVERIES OF ALCOHOLIC BEVERAGES MAY REQUIRE
+              THE SIGNATURE OF A PERSON AT LEAST 18 YEARS OLD, OR OF LEGAL
+              DRINKING AGE. THE PERSON RECEIVING DELIVERY MAY BE REQUIRED TO
+              SHOW IDENTIFICATION PROVING THAT HE OR SHE IS AT LEAST 18 YEARS
+              OLD, OR OF LEGAL DRINKING AGE.
+            </p>
+            <p class="text-black-400">
+              <br /><br />
+              It is your responsibility, as a Buyer, to ascertain and obey all
+              applicable local laws (including minimum age requirements)
+              regarding the possession, use, and sale of any product purchased
+              through the Vivino Properties. By placing an Order, you represent
+              that the products ordered will be used only in a lawful manner.
+              <br /><br />
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-13"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">Shipping</h5>
+          <br />
+          <p class="text-black-400 font-18">
+            If your order is accepted by the Seller, the Seller will ship your
+            order to the shipping address you provide. We recommend providing a
+            business or commercial address for the shipping address if you or
+            the recipient will not be home to accept a delivery. Please ensure
+            all shipping information is correct. Once the Seller has accepted
+            your order, changes to the shipping information may not be possible,
+            and if possible, additional
+          </p>
+          <div class="full-content-14">
+            <p class="text-black-400">
+              fees or penalties may apply. Additionally, if the package cannot
+              be delivered to the shipping address provided, additional fees or
+              penalties may apply. Consult the Seller’s policies for further
+              information.
+            </p>
+            <p class="text-black-400">
+              <br /><br />
+              Shipping fees may vary by country and will be shown to you during
+              the checkout process, before placing your order.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-14"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            Weather Impacts on Shipping
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            The Seller or Vivino Fulfillment Center may delay the shipment of
+            your order for extreme weather conditions (i.e. hot or cold
+            temperatures that could damage your order). If the Seller or Vivino
+            Fulfillment Center holds your order due to weather conditions,
+            you'll be notified of the hold via email. If you do not want
+          </p>
+          <div class="full-content-15">
+            <p class="text-black-400">
+              to wait for the shipment and would like to cancel it,please
+              contact Vivino Support as soon as possible.
+            </p>
+            <p class="text-black-400">
+              <br /><br />
+              Use the weather in your area as a guide when making a purchase,
+              and try to purchase at good times for shipment. If the weather is
+              very hot or cold in your area and you would like to delay your
+              shipment date, please contact Vivino Support . Keep in mind that
+              most of our Sellers do not accept responsibility for wine damaged
+              by weather. Consult each Seller’s policies for specific details.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-15"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">Payment</h5>
+          <br />
+          <p class="text-black-400 font-18">
+            If your order is accepted by the Seller, payment will be processed
+            utilizing the payment information you provided during checkout. Your
+            credit card or account billing statement will state the name of the
+            Seller responsible for the sale and fulfillment of alcoholic
+            beverages to you, as identified by Vivino during
+          </p>
+          <div class="full-content-16">
+            <p class="text-black-400">the order submission process.</p>
+            <p class="text-black-400">
+              <br /><br />
+              By entering payment information, you represent and warrant that
+              you have the legal right to use any credit card(s) or payment
+              method(s) utilized in connection with any transaction initiated
+              through Vivino. Vivino reserves the right to take legal action
+              against persons attempting to fraudulently utilize payment
+              information.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-16"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            Cancellations, Refunds & Returns
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            Vivino is committed to ensuring our customers' satisfaction with all
+            products purchased using the Vivino Marketplace
+            <br /><br />
+            You are able to cancel your order via the Vivino Site or App within
+            25 minutes of placing your order. After 25 minutes, if you still
+            wish to cancel your order, you must notify Vivino Support within
+            twenty-four (24) hours of submitting
+          </p>
+          <div class="full-content-17">
+            <p class="text-black-400">
+              your order by contacting Vivino Support. Cancellation requests
+              received by Vivino on Saturday and Sunday may not be processed
+              until the following business day.
+              <br /><br />
+              Requests for cancellation outside of this twenty-four (24) hour
+              period may be considered by the Seller at their sole discretion.
+              Orders that have already shipped cannot be cancelled, even if you
+              notify Vivino Support within twenty-four (24) hours of submitting
+              your order. Accordingly, contact Vivino Support as soon as
+              possible if you wish to cancel. Please note that the Seller may
+              impose a restocking fee to any cancellations outside of the
+              twenty-four (24) hour period.
+              <br /><br />
+              Following EU directive, you have the right to cancel your order
+              within 14 days within the European Union. You must contact Vivino
+              Support to ask for a cancellation. A refund or return will be
+              organized. Costs for the return may apply.
+              <br /><br />
+              You are eligible for a refund or replacement if your shipment
+              arrives damaged or ruined, excluding damage caused by extreme
+              temperatures. If an error was made by sending you an incorrect
+              wine, or if you received a damaged wine, please contact Vivino
+              Support immediately, providing your order number and explain the
+              reasons for your dissatisfaction. We will review the specific
+              circumstances on an individual basis and make a determination in a
+              timely manner of whether the return request meets acceptable
+              criteria. Vivino may, on behalf of the Seller, require you to
+              provide pictures or other evidence of the damaged or incorrect
+              products and may require you to return the damaged or incorrect
+              products in their original packaging. Requests for a credit,
+              refund, or replacement may be rejected if it cannot be verified
+              that the product is damaged or incorrect. Should the Seller accept
+              responsibility for the error or flaw, they may either exchange the
+              bottle(s) or issue a refund for the applicable amount.
+              <br /><br />
+              If you desire to request a return, refund, or replacement for any
+              reason other than the above, please contact Vivino Support. Please
+              note that most Sellers will not accept return, refund, or
+              replacement requests for damage caused by extreme temperatures. To
+              the extent allowed by applicable law, you may be required to
+              return the Products and may be subject to a return shipping
+              charge. For customers in the United Kingdom and the European
+              Union, return requests will be approved up to fourteen (14)
+              calendar days from the confirmed date of delivery.
+            </p>
+          </div>
+          <button
+            class="see-more-btn toggle-content"
+            data-target="full-content-17"
+          >
+            See More...
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="font-semi-bold font-34 text-white">
+            Alternative dispute resolution
+          </h5>
+          <br />
+          <p class="text-black-400 font-18">
+            The European Commission provides an online platform to help resolve
+            disputes. This platform is accessible to European Customers or
+            Customers from Norway, Iceland, or Liechtenstein who have entered
+            into online contracts. Customers can access the platform through the
+            following
+            <span class="truncate-link">
+              <a
+                class="text-black-400"
+                href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
+                target="_blank"
+              >
+                https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage
+              </a>
+            </span>
+
+            <br /><br /><br />
+            Germany
+            <br />
+            Vivino does not support alternative dispute resolution procedures
+            for Customers under the German Verbraucherstreitbeilegungsgesetz
+            <br /><br /><br />
+            France
+            <br />
+            Within one year of providing a written complaint to Vivino
+            concerning any disputes arising from these Terms, Customers hold the
+            right to commence a mediation process through any mediation body
+            approved by the French Government. The relevant list can be found at
+            the following
+            <span class="truncate-link">
+              <a
+                class="text-black-400"
+                href="https://www.economie.gouv.fr/mediation-conso/mediateurs-references"
+                target="_blank"
+              >
+                https://www.economie.gouv.fr/mediation-conso/mediateurs-references
+              </a>
+            </span>
+          </p>
+        </div>
+      </section>
+       <section class="container-fluid">
+            <section class="container">
+               <!-- Hero Icons Section for Desktop -->
+        <section
+        class="hero__icons py-50 container flex justify-center flex-wrap rgap-40"
+      >
+        <div
+          class="hero__icon__box flex flex-col items-center justify-center rgap-5"
+        >
+          <img src="../assets/images/hero-icon-1.png" alt="Free Shipping Icon" />
+          <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
+          <span class="font-14 font-normal text-center"
+            >Orders above $200</span
+          >
+        </div>
+        <div
+          class="hero__icon__box flex flex-col items-center justify-center rgap-5"
+        >
+          <img
+            src="../assets/images/hero-icon-2.png"
+            alt="Secure Payments Icon"
+          />
+          <h3 class="font-18 font-semi-bold text-center">Secure Payments</h3>
+          <span class="font-14 font-normal text-center"
+            >Trusted Payments</span
+          >
+        </div>
+        <div
+          class="hero__icon__box flex flex-col items-center justify-center rgap-5"
+        >
+          <img
+            src="../assets/images/hero-icon-3.png"
+            alt="Customer Support Icon"
+          />
+          <h3 class="font-18 font-semi-bold text-center">24/7 Support</h3>
+          <span class="font-14 font-normal text-center"
+            >We are here to help</span
+          >
+        </div>
+        <div
+          class="hero__icon__box flex flex-col items-center justify-center rgap-5"
+        >
+          <img src="../assets/images/hero-icon-4.png" alt="Fast Delivery Icon" />
+          <h3 class="font-18 font-semi-bold text-center">Fast Delivery</h3>
+          <span class="font-14 font-normal text-center">Quick & Secure</span>
+        </div>
+      </section>
+      <!-- Hero Icons Section for Mobile -->
+      <section
+        class="hero__icons-mobile py-50 container flex justify-center flex-wrap rgap-40"
+      >
+        <div class="swiper iconSwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+            >
+              <div
+                class="inner-box flex flex-col items-center justify-center rgap-5"
+              >
+                <img
+                  src="../assets/images/hero-icon-1.png"
+                  alt="Free Shipping Icon"
+                />
+                <h3 class="font-18 font-semi-bold text-center">
+                  Free Shipping
+                </h3>
+                <span class="font-14 font-normal text-center"
+                  >Orders above $200</span
+                >
+              </div>
+            </div>
+            <div
+              class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+            >
+              <div
+                class="inner-box flex flex-col items-center justify-center rgap-5"
+              >
+                <img
+                  src="../assets/images/hero-icon-2.png"
+                  alt="Secure Payments Icon"
+                />
+                <h3 class="font-18 font-semi-bold text-center">
+                  Secure Payments
+                </h3>
+                <span class="font-14 font-normal text-center"
+                  >Trusted Payments</span
+                >
+              </div>
+            </div>
+            <div
+              class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+            >
+              <div
+                class="inner-box flex flex-col items-center justify-center rgap-5"
+              >
+                <img
+                  src="../assets/images/hero-icon-3.png"
+                  alt="Customer Support Icon"
+                />
+                <h3 class="font-18 font-semi-bold text-center">
+                  24/7 Support
+                </h3>
+                <span class="font-14 font-normal text-center"
+                  >We are here to help</span
+                >
+              </div>
+            </div>
+            <div
+              class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+            >
+              <div
+                class="inner-box flex flex-col items-center justify-center rgap-5"
+              >
+                <img
+                  src="../assets/images/hero-icon-4.png"
+                  alt="Fast Delivery Icon"
+                />
+                <h3 class="font-18 font-semi-bold text-center">
+                  Fast Delivery
+                </h3>
+                <span class="font-14 font-normal text-center"
+                  >Quick & Secure</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-btn">
+            <img src="../assets/images/nav-next.png" alt="Next" />
+          </div>
+          <div class="swiper-button-prev swiper-btn">
+            <img src="../assets/images/nav-prev.png" alt="Previous" />
+          </div>
+        </div>
+      </section>
+            </section>
+         </section>
+    </main>
+    <footer>
+      <section class="container-fluid bg-black py-50">
+        <!-- Footer Links -->
+        <section class="container footer-links grid-cols-5 rgap-40">
+          <!-- Information -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Information</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >About us</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Contact Us</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Conditions of Purchase</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Terms of Use</a
+            >
+          </div>
+          <!-- Categories -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Categories</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Red Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Rose Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >White Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Champagne</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Spirits</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Delicatessen</a
+            >
+          </div>
+          <!-- My Account -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">My Account</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >My Orders</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >My Murchandise Return</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >My Credits Slip</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >My Personal Info</a
+            >
+          </div>
+          <!-- Most Popular -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Most Popular</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Red Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Rose Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >White Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Champagne</a
+            >
+          </div>
+          <!-- Top Search -->
+          <div class="footer-links__wrapper flex flex-col rgap-10">
+            <h5 class="font-14 font-normal text-white">Top Search</h5>
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Critical Aclaimed</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Special Offers</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Iconic Wines</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Champagne</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Spirits</a
+            >
+            <a href="#" class="link-item font-14 font-normal text-black-300"
+              >Delicatessen</a
+            >
+          </div>
+        </section>
+        
+        <!-- Lower Footer -->
+        <section
+          class="lower-footer container grid-cols-5 rgap-50 cgap-10 bg-black"
+        >
+          <img src="../assets/images/Footer Logo.png" class="footer-logo" alt="" />
+          <div class="footer-social">
+            <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+            <div class="footer-social__icons">
+              <img src="../assets/images/Twitter.png" alt="" />
+              <img src="../assets/images/facebook.png" alt="" />
+              <img src="../assets/images/Pinterest.png" alt="" />
+              <img src="../assets/images/Youtube.png" alt="" />
+              <img src="../assets/images/Instagram.png" alt="" />
+            </div>
+          </div>
+          <div class="contact">
+            <span class="font-12 font-normal text-white"
+              >Monday-Friday: 09:00-19:00</span
+            >
+            <h5 class="font-14 font-normal text-white">
+              +34 932 684 286 / +34 608 845 245
+            </h5>
+          </div>
+          <div class="location">
+            <span class="font-12 font-normal text-white">Our Location:</span>
+            <h5 class="font-14 font-normal text-white">
+              Avenida Cornella 144, 7.4<br />08950 Esplugues De Llobregat<br />Barcelona,
+              Spain
+            </h5>
+          </div>
+
+          <img
+            src="../assets/images/payment methods.png"
+            class="footer-payment"
+            alt=""
+          />
+        </section>
+      </section>
+      
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

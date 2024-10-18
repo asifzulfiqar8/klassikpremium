@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
@@ -19,7 +25,186 @@
     <title>Klassik Premium</title>
   </head>
   <body>
-    <header class="container-fluid"></header>
+    <header>
+      <!-- Header for Desktop -->
+      <section class="header-desktop container-fluid">
+        <!-- Header Top Line -->
+        <section class="top-header container-fluid bg-yellow">
+          <p class="font-14 text-black font-semi-bold text-center">
+            Free delivery on your first order of $100 or more* with the promo
+            code : KILLASIK1ST
+          </p>
+        </section>
+        <!-- Social Icons -->
+        <section class="container-fluid bg-black">
+          <section class="container header-icons">
+            <div class="header-social flex cgap-20">
+              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+              <div class="header-social__icons">
+                <img src="assets/images/Twitter.png" alt="" />
+                <img src="assets/images/facebook.png" alt="" />
+                <img src="assets/images/Pinterest.png" alt="" />
+                <img src="assets/images/Youtube.png" alt="" />
+                <img src="assets/images/Instagram.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Mid Header -->
+        <section class="mid-header container-fluid bg-black">
+          <section
+            class="container mid-header__wrapper flex items-center justify-between"
+          >
+            <!-- Logo -->
+            <div class="mid-header__logo">
+              <img
+                src="assets/images/Header Logo.png"
+                alt=""
+                class="header-logo w-80"
+              />
+            </div>
+
+            <!-- Search bar -->
+            <div class="mid-header__search-bar flex items-center cgap-20">
+              <input type="text" placeholder="Search Wines" />
+              <img src="assets/images/search.svg" alt="" />
+            </div>
+            <!-- Right Container -->
+            <div
+              class="mid-header__right flex items-center justify-between cgap-40"
+            >
+              <!-- Selectors -->
+              <div class="selectors flex items-center justify-between cgap-20">
+                <div class="selectors__currency flex-col flex selector">
+                  <label class="font-12 text-black-400">Currency</label>
+                  <select name="Currency Selector" id="currencySelector">
+                    <option value="USD">$ USD</option>
+                    <option value="PKR">Rs.PKR</option>
+                    <option value="USD">€ EUR</option>
+                  </select>
+                </div>
+                <div class="selectors__language flex-col flex selector">
+                  <label class="font-12 text-black-400">Language</label>
+                  <select name="Language Selector" id="currencySelector">
+                    <option value="English">
+                      <img src="assets/images/English Flag.svg" alt="" />
+                      English
+                    </option>
+                    <option value="Spanish">
+                      <img src="assets/images/English Flag.svg" alt="" />
+                      English 2
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <!-- Icon Boxes -->
+              <div
+                class="icon-boxes flex cgap-20 items-center justify-center rgap-5"
+              >
+                <div class="account_box flex flex-col items-center rgap-5">
+                  <img src="assets/images/user.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white"
+                    >My Account</span
+                  >
+                </div>
+                <div
+                  class="cart_box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img src="assets/images/bag.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white">Cart</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Lower Header -->
+        <section class="lower-header container-fluid bg-black">
+          <section
+            class="contaier lower-header__wrapper flex items-center justify-center"
+          >
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">All Wines</span>
+
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">Champagne</span>
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white">Spirits</span>
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div
+                class="item-wrapper flex items-center justify-center cgap-10"
+              >
+                <span class="font-14 font-semi-bold text-white"
+                  >Price List</span
+                >
+                <i class="fa-solid fa-chevron-down font-14 text-white"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- Header for Mobile -->
+      <section class="header-mobile container-fluid">
+        <!-- Header Top Line -->
+        <section class="top-header container-fluid bg-yellow">
+          <section class="container">
+            <p class="font-14 text-black font-semi-bold text-center">
+              Free delivery on your first order of $100 or more* with the promo
+              code : KILLASIK1ST
+            </p>
+          </section>
+        </section>
+
+        <!-- Social Icons -->
+        <section class="container-fluid bg-black">
+          <section class="container header-icons">
+            <div class="header-social flex cgap-20">
+              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+              <div class="header-social__icons">
+                <img src="assets/images/Twitter.png" alt="" />
+                <img src="assets/images/facebook.png" alt="" />
+                <img src="assets/images/Pinterest.png" alt="" />
+                <img src="assets/images/Youtube.png" alt="" />
+                <img src="assets/images/Instagram.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Header Main -->
+        <section class="container-fluid bg-black">
+          <section
+            class="container flex items-center justify-between main-header-mobile"
+          >
+            <img
+              src="assets/images/Header Logo.png"
+              alt=""
+              class="header-logo"
+            />
+            <div class="menu-toggle">
+              <i class="fa-solid fa-bars text-white font-20"></i>
+            </div>
+          </section>
+        </section>
+      </section>
+    </header>
     <main>
       <!-- Hero Section -->
       <section class="container-fluid hero pb-50 bg-black">
@@ -141,7 +326,7 @@
                 class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
               >
                 <div
-                  class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
                 >
                   <img
                     src="assets/images/hero-icon-3.png"
@@ -159,7 +344,7 @@
                 class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
               >
                 <div
-                  class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
                 >
                   <img
                     src="assets/images/hero-icon-4.png"
@@ -1146,12 +1331,23 @@
               Europe, a very extensive community sharing a passion for good
               wine. <br />
               <br />
-              Buying wine on the internet can be easier than searching along the
-              shelves of your local shop. Whether you're wanting to stock up on
-              your favourites, or to add a special bottle to your collection, or
-              just looking for something new, one of the advantages of buying
-              wine online is the tools and guides available, set up to help you.
             </p>
+            <div class="full-content-19">
+              <p class="font-14 font-normal text-white">
+                Buying wine on the internet can be easier than searching along
+                the shelves of your local shop. Whether you're wanting to stock
+                up on your favourites, or to add a special bottle to your
+                collection, or just looking for something new, one of the
+                advantages of buying wine online is the tools and guides
+                available, set up to help you.
+              </p>
+            </div>
+            <button
+              class="see-more-btn toggle-content"
+              data-target="full-content-19"
+            >
+              See More...
+            </button>
           </div>
           <div class="paragraph2">
             <h5 class="font-20 font-semi-bold text-white">
@@ -1164,17 +1360,27 @@
               wines with soul, fruits of the earth and elements, expressions of
               their terroir, providing an honest reflection of each vintage's
               profile. <br /><br />
-              Classic, modern and traditional wines; made from international
-              grapes and indigenous varieties, some very old and others
-              recovered; limited productions from exceptional vineyards
-              alongside great little easy-drinking wines, labelled with
-              creative, eye-catching designs; wines with the best quality-price
-              ratio beside the most expensive wines in the world; sweet, rosé,
-              fortified and orange wines; organic, natural and biodynamic wines;
-              those with their own identity, created by meticulous vine growers,
-              the most highly respected oenologists and the country's finest
-              wineries.
             </p>
+            <div class="full-content-20">
+              <p>
+                Classic, modern and traditional wines; made from international
+                grapes and indigenous varieties, some very old and others
+                recovered; limited productions from exceptional vineyards
+                alongside great little easy-drinking wines, labelled with
+                creative, eye-catching designs; wines with the best
+                quality-price ratio beside the most expensive wines in the
+                world; sweet, rosé, fortified and orange wines; organic, natural
+                and biodynamic wines; those with their own identity, created by
+                meticulous vine growers, the most highly respected oenologists
+                and the country's finest wineries.
+              </p>
+            </div>
+            <button
+              class="see-more-btn toggle-content"
+              data-target="full-content-20"
+            >
+              See More...
+            </button>
           </div>
           <div class="paragraph3">
             <h5 class="font-20 font-semi-bold text-white">
@@ -1183,19 +1389,28 @@
             <p class="font-14 font-normal text-white">
               In our catalogue you’ll discover the most select Spanish wines,
               together with an extensive offering of international wines from
-              the best and most well-known wineries. <br /><br />Our virtual
-              sommelier is at your disposal in just a few clicks, and the best
-              tool for finding perfect pairings.<br /><br />There's the quality
-              guarantee offered by ratings from Robert Parker, Jancis Robinson,
-              the Peñín Guide, James Suckling, the Italian Sommelier
-              Association's 4 Viti awards and the Gambero Rosso's 3 Bicchieri,
-              quality hallmarks. A final pointer: to help you make up your mind,
-              have a read through our customer reviews and feedback.
-              <br /><br />
-              A wine exists for every palate, pocket and occasion, and you'll
-              find them all at Vinissimus. If you can't, then ask us, and we'll
-              be happy to help you.
+              the best and most well-known wineries. <br /><br />
             </p>
+            <div class="full-content-21">
+              <p class="font-14 font-normal text-white">
+                Classic, modern and traditional wines; made from international
+                grapes and indigenous varieties, some very old and others
+                recovered; limited productions from exceptional vineyards
+                alongside great little easy-drinking wines, labelled with
+                creative, eye-catching designs; wines with the best
+                quality-price ratio beside the most expensive wines in the
+                world; sweet, rosé, fantasies and orange wines; organic, natural
+                and biodynamic wines; those with their own identity, created by
+                carefully vine brewers, the most highly respected oenologists
+                and the country's finest wineries.
+              </p>
+            </div>
+            <button
+              class="see-more-btn toggle-content"
+              data-target="full-content-21"
+            >
+              See More...
+            </button>
           </div>
         </div>
       </section>
@@ -1316,45 +1531,48 @@
             >
           </div>
         </section>
-      </section>
-      <!-- Lower Footer -->
-      <section class="lower-footer container grid-cols-5 rgap-50 cgap-10 bg-black">
-        <img src="assets/images/Footer Logo.png" class="footer-logo" alt="" />
-        <div class="footer-social">
-          <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
-          <div class="footer-social__icons">
-            <img src="assets/images/Twitter.png" alt="" />
-            <img src="assets/images/facebook.png" alt="" />
-            <img src="assets/images/Pinterest.png" alt="" />
-            <img src="assets/images/Youtube.png" alt="" />
-            <img src="assets/images/Instagram.png" alt="" />
+        <!-- Lower Footer -->
+        <section
+          class="lower-footer container grid-cols-5 rgap-50 cgap-10 bg-black"
+        >
+          <img src="assets/images/Footer Logo.png" class="footer-logo" alt="" />
+          <div class="footer-social">
+            <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
+            <div class="footer-social__icons">
+              <img src="assets/images/Twitter.png" alt="" />
+              <img src="assets/images/facebook.png" alt="" />
+              <img src="assets/images/Pinterest.png" alt="" />
+              <img src="assets/images/Youtube.png" alt="" />
+              <img src="assets/images/Instagram.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="contact">
-          <span class="font-12 font-normal text-white"
-            >Monday-Friday: 09:00-19:00</span
-          >
-          <h5 class="font-14 font-normal text-white">
-            +34 932 684 286 / +34 608 845 245
-          </h5>
-        </div>
-        <div class="location">
-          <span class="font-12 font-normal text-white">Our Location:</span>
-          <h5 class="font-14 font-normal text-white">
-            Avenida Cornella 144, 7.4<br />08950 Esplugues De Llobregat<br />Barcelona,
-            Spain
-          </h5>
-        </div>
+          <div class="contact">
+            <span class="font-12 font-normal text-white"
+              >Monday-Friday: 09:00-19:00</span
+            >
+            <h5 class="font-14 font-normal text-white">
+              +34 932 684 286 / +34 608 845 245
+            </h5>
+          </div>
+          <div class="location">
+            <span class="font-12 font-normal text-white">Our Location:</span>
+            <h5 class="font-14 font-normal text-white">
+              Avenida Cornella 144, 7.4<br />08950 Esplugues De Llobregat<br />Barcelona,
+              Spain
+            </h5>
+          </div>
 
-        <img
-          src="assets/images/payment methods.png"
-          class="footer-payment"
-          alt=""
-        />
+          <img
+            src="assets/images/payment methods.png"
+            class="footer-payment"
+            alt=""
+          />
+        </section>
       </section>
     </footer>
-    <!-- Swiper Scripts -->
+    <!-- Swiper Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
   </body>
 </html>
