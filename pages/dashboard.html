@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,16 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/product-detail-style.css" />
-    <title>Product Detail</title>
   </head>
+
   <body>
     <header>
       <!-- Header for Desktop -->
@@ -205,154 +208,165 @@
         </section>
       </section>
     </header>
+
     <main>
-      <!-- Product Info -->
-      <section class="container-fluid product-info">
-        <section
-          class="container product-info__wrapper flex justify-between py-50"
-        >
-          <div class="product-info__left flex items-center">
-            <div class="product-img-gal">
-              <img src="../assets/images/product-image.png" alt="" />
-              <img src="../assets/images/product-image.png" alt="" />
-              <img src="../assets/images/product-image.png" alt="" />
+      <section class="container-fluid bg-black">
+        <div class="container">
+          <div class="py-50 bg-black">
+            <div class="w-100">
+              <div class="sign-in-breadcrumb pb-50">
+                <div class="flex justify-start pb-30">
+                  <a href="#" class="font-24"
+                    >Home &nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                  >
+                  <p class="font-24 text-white">Your Account</p>
+                </div>
+                <h2 class="text-white font-34">Your Account</h2>
+              </div>
             </div>
-            <div class="product-thumbnail">
-              <img src="../assets/images/product-image.png" alt="" />
+            <div class="container-fluid">
+              <div class="grid-cols-3">
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5562 11.8333C11.5562 9.14977 13.7316 6.97433 16.4152 6.97433C19.0987 6.97433 21.2741 9.14977 21.2741 11.8333C21.2741 14.5168 19.0987 16.6923 16.4152 16.6923C13.7316 16.6923 11.5562 14.5168 11.5562 11.8333ZM16.4152 5.35895C12.8395 5.35895 9.94081 8.25762 9.94081 11.8333C9.94081 15.409 12.8395 18.3077 16.4152 18.3077C19.9909 18.3077 22.8895 15.409 22.8895 11.8333C22.8895 8.25762 19.9909 5.35895 16.4152 5.35895ZM10.144 23.8336C11.0552 22.9223 12.2911 22.4104 13.5798 22.4104H19.2465C20.5352 22.4104 21.7711 22.9223 22.6823 23.8336C23.5935 24.7448 24.1055 25.9807 24.1055 27.2694V30.1027C24.1055 30.5488 24.4671 30.9104 24.9132 30.9104C25.3592 30.9104 25.7209 30.5488 25.7209 30.1027V27.2694C25.7209 25.5523 25.0387 23.9055 23.8246 22.6913C22.6104 21.4771 20.9636 20.795 19.2465 20.795H13.5798C11.8627 20.795 10.2159 21.4771 9.00176 22.6913C7.78759 23.9055 7.10547 25.5523 7.10547 27.2694V30.1027C7.10547 30.5488 7.46708 30.9104 7.91316 30.9104C8.35924 30.9104 8.72085 30.5488 8.72085 30.1027V27.2694C8.72085 25.9807 9.23278 24.7448 10.144 23.8336Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p class="text-white font-28">Information</p>
+                  </div>
+                </div>
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3605_103221)">
+                        <path
+                          d="M17.0013 31.6667C13.1999 28.4319 10.3609 25.4277 8.4843 22.6538C6.60769 19.88 5.66891 17.3121 5.66797 14.95C5.66797 11.4083 6.80744 8.58681 9.08639 6.48542C11.3653 4.38403 14.0036 3.33333 17.0013 3.33333H17.7096C17.9457 3.33333 18.1819 3.35694 18.418 3.40417V6.27292C18.1819 6.22569 17.9514 6.19594 17.7266 6.18367C17.5019 6.17139 17.2601 6.16572 17.0013 6.16667C14.6166 6.16667 12.604 6.98739 10.9635 8.62883C9.32297 10.2703 8.50225 12.3773 8.5013 14.95C8.5013 16.6264 9.19783 18.545 10.5909 20.7059C11.9839 22.8668 14.1207 25.269 17.0013 27.9125C19.8819 25.2681 22.0187 22.8659 23.4117 20.7059C24.8048 18.546 25.5013 16.6273 25.5013 14.95V14.6667H28.3346V14.95C28.3346 17.3111 27.3963 19.8791 25.5197 22.6538C23.6431 25.4286 20.8036 28.4329 17.0013 31.6667ZM17.0013 17.5C17.7805 17.5 18.4477 17.2228 19.0031 16.6684C19.5584 16.114 19.8356 15.4468 19.8346 14.6667C19.8337 13.8866 19.5565 13.2198 19.0031 12.6663C18.4496 12.1129 17.7824 11.8352 17.0013 11.8333C16.2202 11.8314 15.5535 12.1091 15.001 12.6663C14.4485 13.2236 14.1708 13.8903 14.168 14.6667C14.1651 15.443 14.4428 16.1102 15.001 16.6684C15.5591 17.2266 16.2259 17.5038 17.0013 17.5ZM25.5013 11.8333H28.3346V7.58333H32.5846V4.75H28.3346V0.5H25.5013V4.75H21.2513V7.58333H25.5013V11.8333Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3605_103221">
+                          <rect
+                            width="34"
+                            height="34"
+                            fill="white"
+                            transform="translate(0 0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p class="text-white font-28">Add First Address</p>
+                  </div>
+                </div>
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.8062 4.75001C22.8062 4.30394 22.4446 3.94232 21.9985 3.94232C21.5524 3.94232 21.1908 4.30394 21.1908 4.75001V6.77565H11.4733V4.75001C11.4733 4.30394 11.1116 3.94232 10.6656 3.94232C10.2195 3.94232 9.85787 4.30394 9.85787 4.75001V6.77565H7.83243C5.82155 6.77565 4.19141 8.4058 4.19141 10.4167V16.0833V27.4167C4.19141 29.4276 5.82155 31.0577 7.83243 31.0577H24.8324C26.8433 31.0577 28.4735 29.4276 28.4735 27.4167V16.0833V10.4167C28.4735 8.4058 26.8433 6.77565 24.8324 6.77565H22.8062V4.75001ZM26.8581 15.2756V10.4167C26.8581 9.29795 25.9512 8.39104 24.8324 8.39104H22.8062V10.4167C22.8062 10.8628 22.4446 11.2244 21.9985 11.2244C21.5524 11.2244 21.1908 10.8628 21.1908 10.4167V8.39104H11.4733V10.4167C11.4733 10.8628 11.1116 11.2244 10.6656 11.2244C10.2195 11.2244 9.85787 10.8628 9.85787 10.4167V8.39104H7.83243C6.7137 8.39104 5.80679 9.29795 5.80679 10.4167V15.2756H26.8581ZM5.80679 16.891H26.8581V27.4167C26.8581 28.5354 25.9512 29.4423 24.8324 29.4423H7.83243C6.7137 29.4423 5.80679 28.5354 5.80679 27.4167V16.891Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <p class="text-white font-28">Order History</p>
+                  </div>
+                </div>
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5562 11.8333C11.5562 9.14977 13.7316 6.97433 16.4152 6.97433C19.0987 6.97433 21.2741 9.14977 21.2741 11.8333C21.2741 14.5168 19.0987 16.6923 16.4152 16.6923C13.7316 16.6923 11.5562 14.5168 11.5562 11.8333ZM16.4152 5.35895C12.8395 5.35895 9.94081 8.25762 9.94081 11.8333C9.94081 15.409 12.8395 18.3077 16.4152 18.3077C19.9909 18.3077 22.8895 15.409 22.8895 11.8333C22.8895 8.25762 19.9909 5.35895 16.4152 5.35895ZM10.144 23.8336C11.0552 22.9223 12.2911 22.4104 13.5798 22.4104H19.2465C20.5352 22.4104 21.7711 22.9223 22.6823 23.8336C23.5935 24.7448 24.1055 25.9807 24.1055 27.2694V30.1027C24.1055 30.5488 24.4671 30.9104 24.9132 30.9104C25.3592 30.9104 25.7209 30.5488 25.7209 30.1027V27.2694C25.7209 25.5523 25.0387 23.9055 23.8246 22.6913C22.6104 21.4771 20.9636 20.795 19.2465 20.795H13.5798C11.8627 20.795 10.2159 21.4771 9.00176 22.6913C7.78759 23.9055 7.10547 25.5523 7.10547 27.2694V30.1027C7.10547 30.5488 7.46708 30.9104 7.91316 30.9104C8.35924 30.9104 8.72085 30.5488 8.72085 30.1027V27.2694C8.72085 25.9807 9.23278 24.7448 10.144 23.8336Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <p class="text-white font-28">Credit Slips</p>
+                  </div>
+                </div>
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="25"
+                      height="29"
+                      viewBox="0 0 25 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.8062 1.74995C18.8062 1.30388 18.4446 0.942261 17.9985 0.942261C17.5524 0.942261 17.1908 1.30388 17.1908 1.74995V3.77563H7.47326V1.74995C7.47326 1.30388 7.11164 0.942261 6.66557 0.942261C6.21949 0.942261 5.85787 1.30388 5.85787 1.74995V3.77563H3.83243C1.82155 3.77563 0.191406 5.40577 0.191406 7.41665V13.0833V24.4167C0.191406 26.4275 1.82155 28.0577 3.83243 28.0577H20.8324C22.8433 28.0577 24.4735 26.4275 24.4735 24.4167V13.0833V7.41665C24.4735 5.40577 22.8433 3.77563 20.8324 3.77563H18.8062V1.74995ZM22.8581 12.2756V7.41665C22.8581 6.29792 21.9512 5.39101 20.8324 5.39101H18.8062V7.41662C18.8062 7.8627 18.4446 8.22431 17.9985 8.22431C17.5524 8.22431 17.1908 7.8627 17.1908 7.41662V5.39101H7.47326V7.41662C7.47326 7.8627 7.11164 8.22431 6.66557 8.22431C6.21949 8.22431 5.85787 7.8627 5.85787 7.41662V5.39101H3.83243C2.7137 5.39101 1.80679 6.29792 1.80679 7.41665V12.2756H22.8581ZM1.80679 13.891H22.8581V24.4167C22.8581 25.5354 21.9512 26.4423 20.8324 26.4423H3.83243C2.7137 26.4423 1.80679 25.5354 1.80679 24.4167V13.891Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <p class="text-white font-28">GDPR - Personal Data</p>
+                  </div>
+                </div>
+                <div class="dashboard-container">
+                  <div class="p-30">
+                    <svg
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.91707 8.39108C9.00411 8.39108 8.12855 8.75375 7.48299 9.39931C6.83743 10.0449 6.47476 10.9204 6.47476 11.8334V20.3334C6.47476 21.2463 6.83743 22.1219 7.48299 22.7675C8.12855 23.413 9.00411 23.7757 9.91707 23.7757H12.7504C12.9646 23.7757 13.1701 23.8608 13.3215 24.0123L17.0004 27.6911L20.6793 24.0123C20.8307 23.8608 21.0362 23.7757 21.2504 23.7757H24.0837C24.9967 23.7757 25.8723 23.413 26.5178 22.7675C27.1634 22.1219 27.526 21.2463 27.526 20.3334V11.8334C27.526 10.9204 27.1634 10.0449 26.5178 9.39931C25.8723 8.75375 24.9967 8.39108 24.0837 8.39108H9.91707ZM6.34074 8.25706C7.28924 7.30856 8.57568 6.7757 9.91707 6.7757H24.0837C25.4251 6.7757 26.7116 7.30856 27.6601 8.25706C28.6086 9.20556 29.1414 10.492 29.1414 11.8334V20.3334C29.1414 21.6748 28.6086 22.9612 27.6601 23.9097C26.7116 24.8582 25.4251 25.3911 24.0837 25.3911H21.585L17.5715 29.4045C17.2561 29.7199 16.7447 29.7199 16.4293 29.4045L12.4158 25.3911H9.91707C8.57568 25.3911 7.28924 24.8582 6.34074 23.9097C5.39224 22.9612 4.85938 21.6748 4.85938 20.3334V11.8334C4.85938 10.492 5.39224 9.20556 6.34074 8.25706ZM10.5258 13.2501C10.5258 12.804 10.8875 12.4424 11.3335 12.4424H22.6669C23.1129 12.4424 23.4746 12.804 23.4746 13.2501C23.4746 13.6961 23.1129 14.0577 22.6669 14.0577H11.3335C10.8875 14.0577 10.5258 13.6961 10.5258 13.2501ZM11.3335 18.109C10.8875 18.109 10.5258 18.4706 10.5258 18.9167C10.5258 19.3628 10.8875 19.7244 11.3335 19.7244H19.8335C20.2796 19.7244 20.6412 19.3628 20.6412 18.9167C20.6412 18.4706 20.2796 18.109 19.8335 18.109H11.3335Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <p class="text-white font-28">My Alerts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 pt-50">
+                  <div class="flex justify-center">
+                    <a class="font-22 text-yellow">Sign Out</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="product-info__right flex flex-col rgap-80">
-            <div class="product-info__product-details flex rgap-10 flex-col">
-              <!-- BreadCrumb -->
-              <div class="breadcrumb-text font-12 text-black-400 flex cgap-10">
-                <span>Spain ></span>
-                <span>Red Wines ></span>
-                <span>Clos de papes ></span>
-              </div>
-              <!-- Product Title -->
-              <h1 class="font-34 font-semi-bold">Clos de Papes 2012</h1>
-              <!-- Price section -->
-              <div class="price-section flex items-center cgap-20">
-                <h3 class="text-yellow font-54 font-extra-bold">$14.99</h3>
-                <span class="font-22 text-black-400 font-semi-bold"
-                  >$19.99</span
-                >
-              </div>
-              <!-- Cart Section -->
-              <div class="cart-section flex cgap-20">
-                <div class="counter bg-black-700 flex">
-                  <span id="minus-item">-</span>
-                  <input type="number" value="1" id="item-count" min="0" />
-                  <span id="plus-item">+</span>
-                </div>
-                <button
-                  class="add-to-cart bg-yellow font-18 font-extra-bold text-black"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <!-- Icon Section -->
-            <div class="product-info__icons-section flex cgap-80">
-              <div class="left flex flex-col rgap-20">
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/flag.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Country</span>
-                    <h5 class="font-18 font-bold">Spain</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/leaf.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Style</span>
-                    <h5 class="font-18 font-bold">Aromatic & Fragnant</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/funnel.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Type</span>
-                    <h5 class="font-18 font-bold">Red Wine</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/drop.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Alcohol</span>
-                    <h5 class="font-18 font-bold">Aromatic & Fragnant</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/ruler.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Size</span>
-                    <h5 class="font-18 font-bold">75CI</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="right flex flex-col rgap-20">
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/flag.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Country</span>
-                    <h5 class="font-18 font-bold">Spain</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/leaf.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Style</span>
-                    <h5 class="font-18 font-bold">Aromatic & Fragnant</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/funnel.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Type</span>
-                    <h5 class="font-18 font-bold">Red Wine</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/drop.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Alcohol</span>
-                    <h5 class="font-18 font-bold">Aromatic & Fragnant</h5>
-                  </div>
-                </div>
-                <div class="icon-box flex cgap-20 items-center">
-                  <img src="../assets/images/ruler.png" alt="" />
-                  <div class="icon-box__text flex flex-col">
-                    <span class="text-yellow font-16">Size</span>
-                    <h5 class="font-18 font-bold">75CI</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <!-- Product Tabs -->
-      <section class="container-fluid py-50">
-        <section class="container">
-          <div class="product-tabs">
-            <div class="product-tabs__wrapper">
-              <div class="product-tabs__item active">
-                <h5 class="font-20 font-semi-bold text-black-400">
-                  Description
-                </h5>
-              </div>
-              <div class="product-tabs__item">
-                <h5 class="font-20 font-semi-bold text-black-400">
-                  Additional Info
-                </h5>
-              </div>
-              <div class="product-tabs__item">
-                <h5 class="font-20 font-semi-bold text-black-400">Reviews</h5>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </section>
     </main>
     <footer>
@@ -496,6 +510,5 @@
         </section>
       </section>
     </footer>
-    <script src="../assets/js/main.js"></script>
   </body>
 </html>

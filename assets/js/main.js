@@ -59,3 +59,18 @@ document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       });
   });
 });
+// Item Counter
+
+let minus = document.getElementById("minus-item");
+let plus = document.getElementById("plus-item");
+let itemCount = document.getElementById("item-count");
+
+plus.addEventListener("click", () => {
+  itemCount.value = parseInt(itemCount.value) + 1;
+});
+minus.addEventListener("click", () => {
+  let currentValue = parseInt(itemCount.value);
+  if (currentValue > 0) {
+    itemCount.value = currentValue - 1;
+  }
+});

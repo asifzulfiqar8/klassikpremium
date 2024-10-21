@@ -1,0 +1,88 @@
+/* Hide the spinner arrows in Chrome, Safari, and Edge */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+.product-info {
+  & {
+    .product-info__left {
+      width: 45%;
+      column-gap: 80px;
+
+      & {
+        .product-img-gal {
+          width: 10%;
+        }
+        .product-thumbnail {
+          width: 60%;
+          img {
+            width: 100%;
+          }
+        }
+        img {
+          width: 100%;
+          border: solid 0.9px black;
+        }
+      }
+    }
+    .product-info__right {
+      width: 53%;
+      & {
+        .product-info__product-details{
+            width: 75%;
+            border-bottom: solid 1px #eaeaea;
+            padding-bottom: 20px;
+        }
+        .cart-section {
+            user-select: none;
+          & {
+            .counter {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0;
+              flex-direction: row;
+              justify-content: space-between;
+              border-radius: 6px;
+              width: 20%;
+              & {
+                span {
+                  width: 33%;
+                  text-align: center;
+                  padding:  10px;
+                  font-size: 20px;
+                  font-family: 500;
+                  cursor: pointer;
+                  color: white;
+                }
+                input {
+                  width: 33%;
+                  font-size: 18px;
+                  text-align: center;
+                  margin: 1px 0;
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+            }
+            .add-to-cart{
+                border: solid 1px black;
+                width: 60%;
+                padding: 10px 26px;
+                cursor: pointer;
+            }
+          }
+        }
+       .product-info__icons-section{
+        padding: 30px 0;
+       } 
+      }
+    }
+  }
+}
