@@ -593,6 +593,16 @@ body {
   outline: none;
   border-color: #ffa500;
 }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* global end */
 
 /* Swiper Start */
@@ -1472,6 +1482,10 @@ body {
         }
       }
     }
+  }
+  .lower-footer > a {
+    display: flex;
+    justify-content: center;
   }
   /* About us */
   .our-founder__team {
