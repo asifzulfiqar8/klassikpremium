@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const itemCountInputs = document.querySelectorAll(".item-count");
+  itemCountInputs.forEach((input) => {
+    input.addEventListener("input", function () {
+      let currentValue = parseInt(input.value, 10);
+      if (currentValue > 999) input.value = input.value.slice(0, 3);
+    });
+    input.addEventListener("blur", function () {
+      if (parseInt(input.value, 10) > 999)
+        input.value = input.value.slice(0, 3);
+    });
+  });
+});
+
 // See More Script
 // Select all toggle buttons
 const toggleButtons = document.querySelectorAll(".toggle-content");
@@ -61,19 +75,40 @@ document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
 });
 // Item Counter
 
-let minus = document.getElementById("minus-item");
-let plus = document.getElementById("plus-item");
-let itemCount = document.getElementById("item-count");
+let minuses = document.querySelectorAll(".minus-item");
+let pluses = document.querySelectorAll(".plus-item");
 
-plus.addEventListener("click", () => {
-  itemCount.value = parseInt(itemCount.value) + 1;
+// decrese count on click minuses
+minuses.forEach((minus) => {
+  minus.addEventListener("click", () => {
+    let clossestParrent = minus.closest(".item-counter");
+    let currentValue = clossestParrent.querySelector(".item-count").value || 1;
+    if (currentValue > 0)
+      clossestParrent.querySelector(".item-count").value =
+        parseInt(currentValue) - 1;
+  });
 });
-minus.addEventListener("click", () => {
-  let currentValue = parseInt(itemCount.value);
-  if (currentValue > 0) {
-    itemCount.value = currentValue - 1;
-  }
+
+pluses.forEach((plus) => {
+  plus.addEventListener("click", () => {
+    let clossestParrent = plus.closest(".item-counter");
+    let currentValue = clossestParrent.querySelector(".item-count").value || 0;
+    if (currentValue < 999) {
+      clossestParrent.querySelector(".item-count").value =
+        parseInt(currentValue) + 1;
+    }
+  });
 });
+
+// plus.addEventListener("click", () => {
+//   itemCount.value = parseInt(itemCount.value) + 1;
+// });
+// minus.addEventListener("click", () => {
+//   let currentValue = parseInt(itemCount.value);
+//   if (currentValue > 0) {
+//     itemCount.value = currentValue - 1;
+//   }
+// });
 
 // Product Page Tabs
 let Tabs = document.querySelectorAll(".product-tabs__item");

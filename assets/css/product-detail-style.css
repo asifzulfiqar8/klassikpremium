@@ -31,7 +31,7 @@
         .cart-section {
           user-select: none;
           & {
-            .counter {
+            .item-counter {
               display: flex;
               flex-wrap: wrap;
               gap: 0;
@@ -113,10 +113,10 @@
   .product-info__product-details {
     width: 100% !important;
   }
-  .counter{
+  .counter {
     width: 30% !important;
   }
-  .product-tabs{
+  .product-tabs {
     border: none;
   }
 }
