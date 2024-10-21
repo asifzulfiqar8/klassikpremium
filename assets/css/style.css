@@ -1146,11 +1146,10 @@ body {
     .contact-form__inner-wrapper {
       padding: 50px;
       margin-top: -100px;
+      max-width: 1200px;
+      width: 100%;
     }
   }
-}
-.contact-form__inner-wrapper {
-  width: 80%;
 }
 .contact-accordion {
   padding: 64px 20px;
@@ -1176,6 +1175,9 @@ body {
   cursor: pointer;
   position: relative;
   transition: 0.4s all;
+}
+.accordion__header.active{
+  padding-bottom:20px ;
 }
 
 .accordion__item .accordion__content {
