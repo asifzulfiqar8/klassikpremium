@@ -855,6 +855,19 @@ input[type="number"]::-webkit-outer-spin-button {
           width: 48%;
           border-radius: 8px;
           & {
+            input{
+              width: 33%;
+              font-size: 18px;
+              text-align: center;
+              background-color: var(--black800);
+              margin: 1px 0;
+              color: var(--white);
+              border: none;
+              &:focus{
+                outline: none;
+
+              }
+            }
             span {
               width: 30%;
               text-align: center;
@@ -863,10 +876,7 @@ input[type="number"]::-webkit-outer-spin-button {
               font-family: 500;
               cursor: pointer;
             }
-            span:nth-child(2) {
-              margin: 2px 0;
-              cursor: auto;
-            }
+            
           }
         }
         button {
