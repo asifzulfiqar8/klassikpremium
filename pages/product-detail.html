@@ -332,24 +332,60 @@
           </div>
         </section>
       </section>
-      <!-- Product Tabs -->
+
       <section class="container-fluid py-50">
         <section class="container">
+          <!-- Product Tabs -->
           <div class="product-tabs">
-            <div class="product-tabs__wrapper">
-              <div class="product-tabs__item active">
-                <h5 class="font-20 font-semi-bold text-black-400">
+            <div class="product-tabs__wrapper flex justify-center">
+              <div class="product-tabs__item active" data-tab="description">
+                <h5
+                  class="font-20 font-semi-bold text-black-400 cursor-pointer"
+                >
                   Description
                 </h5>
               </div>
-              <div class="product-tabs__item">
-                <h5 class="font-20 font-semi-bold text-black-400">
+              <div class="product-tabs__item" data-tab="additional-info">
+                <h5
+                  class="font-20 font-semi-bold text-black-400 cursor-pointer"
+                >
                   Additional Info
                 </h5>
               </div>
-              <div class="product-tabs__item">
-                <h5 class="font-20 font-semi-bold text-black-400">Reviews</h5>
+              <div class="product-tabs__item" data-tab="reviews">
+                <h5
+                  class="font-20 font-semi-bold text-black-400 cursor-pointer"
+                >
+                  Reviews
+                </h5>
               </div>
+            </div>
+          </div>
+
+          <!-- Tab Content Sections -->
+          <div class="product-content">
+            <div class="product-content__section active" id="description">
+              <p>
+                The Muga Crianza, despite its name, is a wine with an ageing
+                period that puts it into the category of a Reserva. We can
+                recognise here the house's style, known to all, with each bottle
+                holding no surprises but plenty of pleasure.<br /><br />
+                The grapes used in its production are primarily Tempranillo and
+                Garnacha, originating from calcareous-clay terraces; they
+                ferment with native yeasts and separately, in the winery's
+                iconic large oak vats, afterwards maturing in barrels made in
+                Muga's own cooperage for 24 months; one year in new oak and the
+                second in used barrels. Just as tradition requires, the wine is
+                clarified using egg white before being transferred to bottles
+                where it continues to round off for a year before its release
+                onto the market.
+              </p>
+            </div>
+            <div class="product-content__section" id="additional-info">
+              <p>Additional information about the product goes here.</p>
+            </div>
+            <div class="product-content__section" id="reviews">
+              <p>Product reviews go here.</p>
             </div>
           </div>
         </section>

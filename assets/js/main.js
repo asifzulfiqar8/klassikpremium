@@ -74,3 +74,19 @@ minus.addEventListener("click", () => {
     itemCount.value = currentValue - 1;
   }
 });
+
+// Product Page Tabs
+let Tabs = document.querySelectorAll(".product-tabs__item");
+let Sections = document.querySelectorAll(".product-content__section");
+Tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    Tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    Sections.forEach((section) => {
+      section.classList.remove("active");
+    });
+    tab.classList.add("active");
+    document.querySelector(`#${tab.dataset.tab}`).classList.add("active");
+  });
+});
