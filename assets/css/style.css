@@ -17,6 +17,107 @@ body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
+/* radio button styling for box shape */
+.custom-radio2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  padding-left: 35px;
+}
+.custom-radio2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.radio-mark2 {
+  position: absolute;
+  top: 8;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #222;
+  border-radius: 30%;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+}
+
+.custom-radio2 input:checked ~ .radio-mark2 {
+  background-color: #f8f8f8;
+}
+
+.radio-mark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio2 input:checked ~ .radio-mark2:after {
+  display: block;
+}
+
+.custom-radio2 .radio-mark:after {
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000;
+  transform: translate(-50%, -50%);
+}
+/* radio button stylish for circle shape  */
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  padding-left: 35px;
+}
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.radio-mark {
+  position: absolute;
+  top: 8;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #222;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+}
+
+.custom-radio input:checked ~ .radio-mark {
+  background-color: #f8f8f8;
+}
+
+.radio-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked ~ .radio-mark:after {
+  display: block;
+}
+
+.custom-radio .radio-mark:after {
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000;
+  transform: translate(-50%, -50%);
+}
+
 .text-blue {
   color: var(--text-blue);
 }
@@ -72,9 +173,30 @@ body {
 body {
   font-family: "Inter", sans-serif;
 }
+.save-btn-register {
+  width: 219px;
+  height: 72px;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f9bd38;
+  cursor: pointer;
+}
 .container-fluid {
   width: 100%;
 }
+.pl-10 {
+  padding-left: 15px;
+}
+.pl-100 {
+  padding-left: 100px;
+}
+.pl-150 {
+  padding-left: 150px;
+}
+
 .pl-20 {
   padding-left: 20px;
 }
@@ -149,6 +271,9 @@ body {
 .font-22 {
   font-size: 22px;
 }
+.font-24 {
+  font-size: 24px;
+}
 .font-26 {
   font-size: 26px;
 }
@@ -203,6 +328,9 @@ body {
 .justify-between {
   justify-content: space-between;
 }
+.justify-end {
+  justify-content: end;
+}
 .items-center {
   align-items: center;
 }
@@ -224,11 +352,18 @@ body {
 .w-50 {
   width: 50%;
 }
+.w-48 {
+  width: 48%;
+}
 .w-25 {
   width: 25%;
 }
 .w-33 {
   width: 33%;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 .rgap-5 {
   row-gap: 5px;
@@ -291,16 +426,82 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
-.col-sign-in-4 {
-  flex: 0 0 33.33333%;
+/* Flexbox-based columns */
+.col-1 {
+  flex: 0 0 8.33333%; /* 1/12 */
+  max-width: 8.33333%;
+}
+
+.col-2 {
+  flex: 0 0 16.66667%; /* 2/12 */
+  max-width: 16.66667%;
+}
+
+.col-3 {
+  flex: 0 0 25%; /* 3/12 */
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%; /* 4/12 */
   max-width: 33.33333%;
 }
 
-.col-sign-in-8 {
-  flex: 0 0 66.66667%;
+.col-5 {
+  flex: 0 0 41.66667%; /* 5/12 */
+  max-width: 41.66667%;
+}
+
+.col-6 {
+  flex: 0 0 50%; /* 6/12 */
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.33333%; /* 7/12 */
+  max-width: 58.33333%;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%; /* 8/12 */
   max-width: 66.66667%;
+}
+
+.col-9 {
+  flex: 0 0 75%; /* 9/12 */
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.33333%; /* 10/12 */
+  max-width: 83.33333%;
+}
+
+.col-11 {
+  flex: 0 0 91.66667%; /* 11/12 */
+  max-width: 91.66667%;
+}
+
+.col-12 {
+  flex: 0 0 100%; /* 12/12 */
+  max-width: 100%;
+}
+
+/* Flex container to hold the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 25px;
 }
 
 /* ScrollBar */
@@ -338,20 +539,41 @@ body {
   }
 }
 
-input[type="email"],
-input[type="password"] {
+.dark-mail,
+.dark-pass,
+.dark-form {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #444;
-  background-color: #333;
+  border: 1px solid var(--black300);
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 16px;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
+.dark-mail:focus,
+.dark-pass:focus,
+.dark-form:focus {
+  outline: none;
+  border-color: #ffa500;
+}
+.light-mail,
+.light-pass,
+.light-form {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--black300);
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.light-mail:focus,
+.light-pass:focus,
+.light-form:focus {
   outline: none;
   border-color: #ffa500;
 }
@@ -827,6 +1049,23 @@ input[type="password"]:focus {
 .sign-in-breadcrumb a:hover {
   color: #ffa500;
 }
+/* Sign up */
+.sign-up-breadcrumb {
+  top: 10px;
+  left: 30px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.sign-up-breadcrumb a {
+  color: #999;
+  text-decoration: none;
+}
+
+.sign-up-breadcrumb a:hover {
+  color: #ffa500;
+}
+
 /* 404 */
 .box-wrapper-404 {
   display: flex;
@@ -889,6 +1128,63 @@ input[type="password"]:focus {
     }
   }
 }
+
+/* Contact us */
+.contact-map {
+  & {
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: -5px;
+    }
+  }
+}
+.contact-form {
+  z-index: 2;
+  & {
+    .contact-form__inner-wrapper {
+      padding: 50px;
+      margin-top: -100px;
+    }
+  }
+}
+.contact-form__inner-wrapper {
+  width: 80%;
+}
+.contact-accordion {
+  padding: 64px 20px;
+}
+
+/* Accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--white);
+}
+
+.accordion__item {
+  border-top: 1px solid #e5f3fa;
+  border-bottom: 1px solid #e5f3fa;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.accordion__header {
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s all;
+}
+
+.accordion__item .accordion__content {
+  padding: 0;
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
 /* See More Button */
 .see-more-btn {
   font-size: 14px;
@@ -1095,17 +1391,22 @@ input[type="password"]:focus {
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .hide-bread-crumb {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .grid-cols-4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .col-sign-in-4 {
-    flex: 100%;
-    max-width: 100%;
+  .col-4 {
+    flex: 100% !important;
+    max-width: 100% !important;
   }
-  .col-sign-in-8 {
-    flex: 100%;
-    max-width: 100%;
+  .col-8 {
+    flex: 100% !important;
+    max-width: 100% !important;
   }
 
   .pargraph__wrapper .paragraph3 {
@@ -1144,6 +1445,44 @@ input[type="password"]:focus {
   font-weight: 500;
   font-size: 18px;
   text-align: center;
+  /* Sign Up */
+  .sign-up-button {
+    width: 100% !important;
+    height: 52px !important;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .forgot-password {
+    text-align: center;
+  }
+
+  .radio-mark2 {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+
+  .save-btn-register {
+    height: 52px !important;
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+  .pl-150 {
+    padding-left: 0px !important;
+  }
+  .social-title {
+    display: flex;
+    flex-flow: nowrap;
+    gap: 30px;
+  }
+  .custom-radio {
+    padding-top: 10px;
+  }
+  /* Contact Us */
+  .contact-form__inner-wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 676px) {
@@ -1207,6 +1546,35 @@ input[type="password"]:focus {
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
     padding-bottom: 20px;
+  }
+  /* Sign-up */
+  .sign-up-breadcrumb {
+    top: 10px;
+    left: 30px;
+    font-size: 0.9em;
+    color: #999;
+  }
+
+  .sign-up-breadcrumb a {
+    color: #999;
+    text-decoration: none;
+  }
+
+  .sign-up-breadcrumb a:hover {
+    color: #ffa500;
+  }
+
+  .sign-up-container {
+    width: 808px;
+    height: auto;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid !important;
+    border-color: white !important  ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 375px) {

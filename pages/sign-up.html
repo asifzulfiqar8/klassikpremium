@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,20 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
 
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Sign-up</title>
+  </head>
   <body>
     <header>
       <!-- Header for Desktop -->
@@ -209,66 +205,153 @@
       </section>
     </header>
     <main>
-      <section class="container-fluid bg-black">
-        <div class="container py-50 bg-black">
-          <div class="w-100 pl-20">
-            <div class="sign-in-breadcrumb pb-50">
-              <div class="flex justify-start pb-30">
-                <a href="#" class="font-24"
-                  >Home &nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                >
-                <p class="font-24 text-white">Log in to your account</p>
+      <section class="bg-black">
+        <div class="container">
+          <div class="hide-bread-crumb">
+            <div class="w-100">
+              <div class="sign-up-breadcrumb pt-50 pl-20">
+                <div class="flex justify-start pb-30">
+                  <a href="#" class="font-24"
+                    >Home &nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                  >
+                  <p class="font-24 text-white">Log in to your account</p>
+                </div>
+                <h2 class="text-white font-34">Log in to your account</h2>
               </div>
-              <h2 class="text-white font-34">Log in to your account</h2>
             </div>
           </div>
+        </div>
 
+        <div class="py-50">
           <div class="w-100">
             <div class="flex justify-center">
-              <div class="sign-container">
+              <div class="sign-up-container">
                 <form>
+                  <div class="w-100">
+                    <div class="flex justify-center pb-30">
+                      <h3 class="font-28 text-white">
+                        Already have an account?<span
+                          class="text-yellow font-28"
+                          >Log in instead!</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+
                   <div class="row">
                     <div class="col-12">
-                      <div class="row">
+                      <div class="row social-title">
+                        <div class="pl-10 pt-10">
+                          <p class="font-20 text-white">Social Title</p>
+                        </div>
+                        <div
+                          class="flex justify-center pl-150 gap-30 radio-group"
+                        >
+                          <label class="custom-radio">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option"
+                              value="option1"
+                            />
+                            <span class="radio-mark"></span> Mr
+                          </label>
+                          <label class="custom-radio">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option"
+                              value="option2"
+                            />
+                            <span class="radio-mark"></span> Mrs
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row pt-20">
+                        <div class="col-4 pt-10">
+                          <p class="font-20 text-white">First Name</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="text"
+                            class="form-control"
+                            placeholder="name"
+                            required
+                          />
+                          <p class="text-black-400">
+                            Only letters and the dot (.) character, followed by
+                            a space, are allowed.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row pt-20">
+                        <div class="col-4 pt-10">
+                          <p class="font-20 text-white">Last Name</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="text"
+                            class="form-control"
+                            placeholder="last name"
+                            required
+                          />
+                          <p class="text-black-400">
+                            Only letters and the dot (.) character, followed by
+                            a space, are allowed.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row pt-20">
                         <div class="col-4 pt-10">
                           <p class="font-20 text-white">Email</p>
                         </div>
+
                         <div class="col-8">
                           <input
+                            class="dark-form"
                             type="email"
-                            class="form-control dark-form"
-                            placeholder="Email"
+                            class="form-control"
+                            placeholder="email"
                             required
                           />
                         </div>
                       </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="row">
+                      <div class="row pt-20">
                         <div class="col-4 pt-10">
                           <p class="font-20 text-white">Password</p>
                         </div>
                         <div class="col-8">
                           <div style="position: relative">
                             <input
+                              class="dark-form"
                               type="password"
-                              class="form-control dark-form"
+                              class="form-control"
                               placeholder="Password"
                               required
                             />
-                            <div
-                              style="position: absolute; right: 12px; top: 27px"
-                            >
+                            <div class="eye-icon">
                               <svg
-                                width="22"
-                                height="16"
-                                viewBox="0 0 22 16"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M21 8C18.333 12.667 15 15 11 15C7 15 3.667 12.667 1 8C3.667 3.333 7 1 11 1C15 1 18.333 3.333 21 8Z"
+                                  d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                                  stroke="#A7A7A7"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
                                   stroke="#A7A7A7"
                                   stroke-width="1.5"
                                   stroke-linecap="round"
@@ -276,25 +359,129 @@
                                 />
                               </svg>
                             </div>
+                            <p class="text-black-400">(Optional)</p>
                           </div>
-                          <div
-                            class="font-20 pt-20 pb-20 text-white forgot-password"
-                          >
-                            Forgot your Password?
+                        </div>
+                      </div>
+                      <div class="row pt-20">
+                        <div class="col-4 pt-10">
+                          <p class="font-20 text-white">Birthday</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="date"
+                            class="form-control"
+                            placeholder="date"
+                            required
+                          />
+                          <p class="text-black-400">
+                            (E.g.: 05/31/1970)(Optional)
+                          </p>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-50" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Receive offers from our partners
+                            </p>
                           </div>
-                          <button class="sign-in-button" type="submit">
-                            Sign In
-                          </button>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option2"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Receive offers from our partners
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option3"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               I agree to the terms and conditions and the
+                              privacy policy
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option4"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Sign up for our newsletter You may unsubscribe at
+                              any moment. For that purpose, please find our
+                              contact info in the legal notice.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option5"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                              Customer data privacyThe personal data you provide
+                              is used to answer queries, process orders or allow
+                              access to specific information. You have the right
+                              to modify and delete all the personal information
+                              found in the "My Account" page..
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="line"></div> -->
-                  <br />
-                  <hr />
-                  <br />
-                  <div class="flex justify-center font-20 text-white">
-                    No Account? Create One here
+                  <div class="flex justify-end font-20 text-white pt-50">
+                    <button class="save-btn-register">Save</button>
                   </div>
                 </form>
               </div>
