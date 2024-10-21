@@ -39,3 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// For Radio Buttons
+document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+  radio.addEventListener("click", function () {
+    if (this.checked) {
+      if (this.getAttribute("data-checked") === "true") {
+        this.checked = false;
+        this.setAttribute("data-checked", "false");
+      } else {
+        this.setAttribute("data-checked", "true");
+      }
+    }
+    document
+      .querySelectorAll('input[type="radio"]')
+      .forEach(function (otherRadio) {
+        if (otherRadio !== radio) {
+          otherRadio.setAttribute("data-checked", "false");
+        }
+      });
+  });
+});

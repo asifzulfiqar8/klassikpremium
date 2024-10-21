@@ -1,35 +1,43 @@
 .contact-map {
-    & {
-      z-index: 1;
-      .mapswrapper{
+  & {
+    z-index: 1;
+    .mapswrapper {
+      & {
+        a {
+          display: none;
+        }
 
-        &{
-            a{
-                display: none;
-            }
-
-            iframe{
-                width: 100%;
-                margin-bottom: -5px;
-            }
+        iframe {
+          width: 100%;
+          margin-bottom: -5px;
         }
       }
     }
   }
-  .contact-form {
-    z-index: 2;
-    & {
-      .contact-form__inner-wrapper {
-        padding: 50px;
-        margin-top: -100px;
-        max-width: 1200px;
-        width: 100%;
-      }
+}
+.contact-form {
+  z-index: 2;
+  & {
+    .contact-form__inner-wrapper {
+      padding: 50px;
+      margin-top: -100px;
+      max-width: 1200px;
+      width: 100%;
     }
   }
-  .contact-accordion {
-    padding: 64px 20px;
+}
+.contact-accordion {
+  padding: 64px 20px;
+}
+.msg-input {
+  font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .w-48 {
+    width: 100%;
   }
-
-  /* Media Quries */
-  
+  .name-section {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
