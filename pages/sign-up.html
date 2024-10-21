@@ -222,9 +222,7 @@
           </div>
         </div>
 
-        <div class="container py-50">
-          <div class="w-100">
-            <div class="flex justify-center">
+            <div class="flex justify-center container py-50">
               <div class="sign-up-container">
                 <form>
                   <div class="w-100">
@@ -241,35 +239,39 @@
                   <div class="row">
                     <div class="col-12">
                       <div class="row social-title">
-                        <div class="pl-10 pt-10">
-                          <p class="font-20 text-white">Social Title</p>
-                        </div>
-                        <div
-                          class="flex justify-center pl-150 gap-30 radio-group"
-                        >
-                          <label class="custom-radio">
-                            <input
-                              class="dark-form"
-                              type="radio"
-                              name="option"
-                              value="option1"
-                            />
-                            <span class="radio-mark"></span> Mr
-                          </label>
-                          <label class="custom-radio">
-                            <input
-                              class="dark-form"
-                              type="radio"
-                              name="option"
-                              value="option2"
-                            />
-                            <span class="radio-mark"></span> Mrs
-                          </label>
-                        </div>
+                           <div class="col-4">
+                            <div class="pb-20">
+                              <p class="font-20 text-white">Social Title</p>
+                            </div>
+                           </div>
+                           <div class="col-8">
+                            <div
+                            class="flex justify-start radio-group gap-30"
+                          >
+                            <label class="custom-radio">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option1"
+                              />
+                              <span class="radio-mark"></span> Mr
+                            </label>
+                            <label class="custom-radio">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option2"
+                              />
+                              <span class="radio-mark"></span> Mrs
+                            </label>
+                          </div>
+                           </div>
                       </div>
 
                       <div class="row pt-20">
-                        <div class="col-4 pt-10">
+                        <div class="col-4  flex items-center">
                           <p class="font-20 text-white">First Name</p>
                         </div>
 
@@ -480,14 +482,12 @@
                       </div>
                     </div>
                   </div>
-                  <div class="flex justify-end font-20 text-white pt-50">
-                    <button class="save-btn-register">Save</button>
+                  <div class="font-20 text-white pt-50 save-btn-register">
+                    <button>Save</button>
                   </div>
                 </form>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </main>
     <footer>
@@ -631,5 +631,28 @@
         </section>
       </section>
     </footer>
+    <script>
+      document
+        .querySelectorAll('input[type="radio"]')
+        .forEach(function (radio) {
+          radio.addEventListener("click", function () {
+            if (this.checked) {
+              if (this.getAttribute("data-checked") === "true") {
+                this.checked = false; 
+                this.setAttribute("data-checked", "false");
+              } else {
+                this.setAttribute("data-checked", "true");
+              }
+            }
+            document
+              .querySelectorAll('input[type="radio"]')
+              .forEach(function (otherRadio) {
+                if (otherRadio !== radio) {
+                  otherRadio.setAttribute("data-checked", "false");
+                }
+              });
+          });
+        });
+    </script>
   </body>
 </html>
