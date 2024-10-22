@@ -233,6 +233,10 @@ body {
   padding-top: 50px;
   padding-bottom: 80px;
 }
+.py-80-50 {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
 .py-80 {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -787,7 +791,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: var(--primary-color);
   color: var(--white);
   font-size: 14px;
-  &::placeholder{
+  &::placeholder {
     color: var(--white);
   }
 }

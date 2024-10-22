@@ -10,7 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
         input.value = input.value.slice(0, 3);
     });
   });
-  c;
+
+  // For toggling Filter Boxes
+  let isOpen = true;
+  const filterToggles = document.querySelectorAll(".filter-box-collaspe");
+  filterToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      let filterBox = toggle.closest(".filter-box");
+      let viewAll = filterBox.querySelector(".view-more");
+      let optionBox = filterBox.querySelector(".filter-box__options");
+      if (isOpen) {
+        optionBox.style.height = "0";
+        viewAll.style.display = "none";
+        toggle.style.transform = "rotate(180deg)";
+        isOpen = false;
+      } else {
+        optionBox.style.height = "auto";
+        isOpen = true;
+        toggle.style.transform = "rotate(0deg)";
+        viewAll.style.display = "block";
+      }
+    });
+  });
 });
 
 // See More Script

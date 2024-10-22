@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Product Listing</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -405,7 +405,1232 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- Banner -->
+      <section class="container-fluid bg-black page-banner">
+        <section class="container page-banner__image py-80-50">
+          <img
+            src="../assets/images/product-listing-banner.png"
+            class="w-100"
+            alt=""
+          />
+        </section>
+        <section class="container page-banner__text flex flex-col rgap-20">
+          <h2 class="text-white font-40 font-semi-bold">Red Wines</h2>
+          <hr />
+          <p class="font-18 text-white font-semi-bold">
+            Red wines, which obtain their colour from pigments found in the
+            skins of red grapes, are mostly considered to be dry wines. They are
+            a wonderful accompaniment to dishes of varying degrees of intensity,
+            depending on the style adopted in their fabrication and the ageing
+            process they undergo. Internationally well-renowned grape varieties
+            such as Cabernet Sauvignon, Syrah and Pinot Noir give rise to some
+            of the world’s best red wines in such disparate places as France,
+            Spain, the United States and Australia.
+          </p>
+        </section>
+      </section>
+      <!-- Filter Bar -->
+      <section class="container-fluid bg-black">
+        <section
+          class="container filter-bar font-16 font-semi-bold text-white flex cgap-30 items-center justify-end"
+        >
+          <div class="filter-bar__filter flex cgap-5 items-center">
+            <span>Filter</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.91666 6.45884C9.91666 5.6074 10.6069 4.91718 11.4583 4.91718C12.3098 4.91718 13 5.6074 13 6.45884C13 7.31028 12.3098 8.00051 11.4583 8.00051C10.6069 8.00051 9.91666 7.31028 9.91666 6.45884ZM8.50983 7.20884C8.84385 8.52601 10.0373 9.50051 11.4583 9.50051C12.8794 9.50051 14.0728 8.52601 14.4068 7.20884H17.5C17.9142 7.20884 18.25 6.87305 18.25 6.45884C18.25 6.04463 17.9142 5.70884 17.5 5.70884H14.4068C14.0728 4.39167 12.8794 3.41718 11.4583 3.41718C10.0373 3.41718 8.84385 4.39167 8.50983 5.70884H2.5C2.08579 5.70884 1.75 6.04463 1.75 6.45884C1.75 6.87305 2.08579 7.20884 2.5 7.20884H8.50983ZM4.91667 13.1255C4.91667 12.2741 5.60689 11.5838 6.45833 11.5838C7.30977 11.5838 8 12.2741 8 13.1255C8 13.9769 7.30977 14.6672 6.45833 14.6672C5.60689 14.6672 4.91667 13.9769 4.91667 13.1255ZM6.45833 16.1672C5.03729 16.1672 3.84385 15.1927 3.50983 13.8755H2.5C2.08579 13.8755 1.75 13.5397 1.75 13.1255C1.75 12.7113 2.08579 12.3755 2.5 12.3755H3.50983C3.84385 11.0583 5.03729 10.0838 6.45833 10.0838C7.87937 10.0838 9.07281 11.0583 9.40683 12.3755H17.5C17.9142 12.3755 18.25 12.7113 18.25 13.1255C18.25 13.5397 17.9142 13.8755 17.5 13.8755H9.40683C9.07281 15.1927 7.87937 16.1672 6.45833 16.1672Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="filter-bar__sort flex cgap-5 items-center">
+            <span>Sort by</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.22656 7.50049L10.2266 12.5005L15.2266 7.50049"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="filter-bar__orientation flex items-center">
+            <div class="vertical bg-black-800">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.75 3.00049C8.16421 3.00049 8.5 3.33627 8.5 3.75049V19.7505C8.5 20.1647 8.16421 20.5005 7.75 20.5005C7.33579 20.5005 7 20.1647 7 19.7505V3.75049C7 3.33627 7.33579 3.00049 7.75 3.00049ZM11.75 3.00049C12.1642 3.00049 12.5 3.33627 12.5 3.75049V19.7505C12.5 20.1647 12.1642 20.5005 11.75 20.5005C11.3358 20.5005 11 20.1647 11 19.7505V3.75049C11 3.33627 11.3358 3.00049 11.75 3.00049ZM16.5 3.75049C16.5 3.33627 16.1642 3.00049 15.75 3.00049C15.3358 3.00049 15 3.33627 15 3.75049V19.7505C15 20.1647 15.3358 20.5005 15.75 20.5005C16.1642 20.5005 16.5 20.1647 16.5 19.7505V3.75049Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="horizontal">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 20.2505C3 19.8363 3.33579 19.5005 3.75 19.5005L19.75 19.5005C20.1642 19.5005 20.5 19.8363 20.5 20.2505C20.5 20.6647 20.1642 21.0005 19.75 21.0005L3.75 21.0005C3.33579 21.0005 3 20.6647 3 20.2505ZM3 16.2505C3 15.8363 3.33579 15.5005 3.75 15.5005L19.75 15.5005C20.1642 15.5005 20.5 15.8363 20.5 16.2505C20.5 16.6647 20.1642 17.0005 19.75 17.0005L3.75 17.0005C3.33579 17.0005 3 16.6647 3 16.2505ZM3.75 11.5005C3.33579 11.5005 3 11.8363 3 12.2505C3 12.6647 3.33579 13.0005 3.75 13.0005L19.75 13.0005C20.1642 13.0005 20.5 12.6647 20.5 12.2505C20.5 11.8363 20.1642 11.5005 19.75 11.5005L3.75 11.5005ZM3 8.25049C3 7.83628 3.33579 7.50049 3.75 7.50049L19.75 7.50049C20.1642 7.50049 20.5 7.83627 20.5 8.25049C20.5 8.6647 20.1642 9.00049 19.75 9.00049L3.75 9.00049C3.33579 9.00049 3 8.6647 3 8.25049ZM3.75 3.50049C3.33579 3.50049 3 3.83628 3 4.25049C3 4.6647 3.33579 5.00049 3.75 5.00049L19.75 5.00049C20.1642 5.00049 20.5 4.6647 20.5 4.25049C20.5 3.83627 20.1642 3.50049 19.75 3.50049L3.75 3.50049Z"
+                  fill="#A7A7A7"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Product Listing -->
+      <section class="container-fluid bg-black">
+        <section class="container product-listing flex justify-between py-50">
+          <!-- Filter Sidebar -->
+          <div class="filter-sidebar bg-black-800 flex flex-col rgap-10">
+            <h5 class="font-22 font-bold text-white">Search Filters</h5>
+            <div class="filter-tools flex items-center cgap-10 text-white">
+              <div class="filter-sidebar__sort flex cgap-5 items-center">
+                <span>Sort by</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22656 7.50049L10.2266 12.5005L15.2266 7.50049"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="filter-sidebar__filter flex cgap-5 items-center">
+                <span>Filter</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.91666 6.45884C9.91666 5.6074 10.6069 4.91718 11.4583 4.91718C12.3098 4.91718 13 5.6074 13 6.45884C13 7.31028 12.3098 8.00051 11.4583 8.00051C10.6069 8.00051 9.91666 7.31028 9.91666 6.45884ZM8.50983 7.20884C8.84385 8.52601 10.0373 9.50051 11.4583 9.50051C12.8794 9.50051 14.0728 8.52601 14.4068 7.20884H17.5C17.9142 7.20884 18.25 6.87305 18.25 6.45884C18.25 6.04463 17.9142 5.70884 17.5 5.70884H14.4068C14.0728 4.39167 12.8794 3.41718 11.4583 3.41718C10.0373 3.41718 8.84385 4.39167 8.50983 5.70884H2.5C2.08579 5.70884 1.75 6.04463 1.75 6.45884C1.75 6.87305 2.08579 7.20884 2.5 7.20884H8.50983ZM4.91667 13.1255C4.91667 12.2741 5.60689 11.5838 6.45833 11.5838C7.30977 11.5838 8 12.2741 8 13.1255C8 13.9769 7.30977 14.6672 6.45833 14.6672C5.60689 14.6672 4.91667 13.9769 4.91667 13.1255ZM6.45833 16.1672C5.03729 16.1672 3.84385 15.1927 3.50983 13.8755H2.5C2.08579 13.8755 1.75 13.5397 1.75 13.1255C1.75 12.7113 2.08579 12.3755 2.5 12.3755H3.50983C3.84385 11.0583 5.03729 10.0838 6.45833 10.0838C7.87937 10.0838 9.07281 11.0583 9.40683 12.3755H17.5C17.9142 12.3755 18.25 12.7113 18.25 13.1255C18.25 13.5397 17.9142 13.8755 17.5 13.8755H9.40683C9.07281 15.1927 7.87937 16.1672 6.45833 16.1672Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-black-400 font-16 font-normal">134 Products</span>
+            <div class="filter-buttons flex flex-col rgap-10">
+              <button class="bg-yellow font-12 font-bold text-black">
+                Spain
+              </button>
+              <button class="bg-yellow font-12 font-bold text-black">
+                Red Wine
+              </button>
+              <button class="bg-yellow font-12 font-bold text-black">
+                90-92
+              </button>
+            </div>
+            <div class="filter-boxes">
+              <!-- Region Filter -->
+              <div class="filter-box region-filter">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">Region</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options">
+                  <ul class="checkbox-group flex flex-col rgap-10">
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="italy" name="country" />
+                        <label
+                          for="italy"
+                          class="font-14 font-bold text-black-200"
+                          >Italy</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(14)</span
+                      >
+                    </li>
 
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input
+                          type="checkbox"
+                          id="spain"
+                          name="country"
+                          checked
+                        />
+                        <label
+                          for="spain"
+                          class="font-14 font-bold text-black-200"
+                          >Spain</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(3)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="france" name="country" />
+                        <label
+                          for="france"
+                          class="font-14 font-bold text-black-200"
+                          >France</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(74)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="argentina" name="country" />
+                        <label
+                          for="argentina"
+                          class="font-14 font-bold text-black-200"
+                          >Argentina</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(15)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="australia" name="country" />
+                        <label
+                          for="australia"
+                          class="font-14 font-bold text-black-200"
+                          >Australia</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(15)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="chile" name="country" />
+                        <label
+                          for="chile"
+                          class="font-14 font-bold text-black-200"
+                          >Chile</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(23)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="france2" name="country" />
+                        <label
+                          for="france2"
+                          class="font-14 font-bold text-black-200"
+                          >France</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(4)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="view-more flex items-center font-14 font-semi-bold text-white"
+                >
+                  View More
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.64062 5.00049L12.6406 10.0005L7.64062 15.0005"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Category Filter -->
+              <div class="filter-box category-filter">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">Category</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options">
+                  <ul class="checkbox-group flex flex-col rgap-10">
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="rose-wine" name="wine" />
+                        <label
+                          for="rose-wine"
+                          class="font-14 font-bold text-black-200"
+                          >Rose Wine</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(14)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input
+                          type="checkbox"
+                          id="red-wine"
+                          name="wine"
+                          checked
+                        />
+                        <label
+                          for="red-wine"
+                          class="font-14 font-bold text-black-200"
+                          >Red Wine</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(3)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="sweet-wine" name="wine" />
+                        <label
+                          for="sweet-wine"
+                          class="font-14 font-bold text-black-200"
+                          >Sweet Wine</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(15)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="white-wine" name="wine" />
+                        <label
+                          for="white-wine"
+                          class="font-14 font-bold text-black-200"
+                          >White Wine</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(11)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="view-more flex items-center font-14 font-semi-bold text-white"
+                >
+                  View More
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.64062 5.00049L12.6406 10.0005L7.64062 15.0005"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Parker Rating -->
+              <div class="filter-box parker-rating">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">Parker Rating</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options">
+                  <ul class="checkbox-group flex flex-col rgap-10">
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="range-90-92" name="range" />
+                        <label
+                          for="range-90-92"
+                          class="font-14 font-bold text-black-200"
+                          >90-92</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(3)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="range-92-94" name="range" />
+                        <label
+                          for="range-92-94"
+                          class="font-14 font-bold text-black-200"
+                          >92-94</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(14)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="range-94-96" name="range" />
+                        <label
+                          for="range-94-96"
+                          class="font-14 font-bold text-black-200"
+                          >94-96</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(25)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input
+                          type="checkbox"
+                          id="range-96-plus"
+                          name="range"
+                        />
+                        <label
+                          for="range-96-plus"
+                          class="font-14 font-bold text-black-200"
+                          >96+</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(11)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="view-more none"></a>
+              </div>
+              <!-- Price Range -->
+              <div class="filter-box price-filter">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">PRICE</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options slider-options">
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input
+                      type="range"
+                      class="range-min"
+                      min="0"
+                      max="10000"
+                      value="2500"
+                      step="100"
+                    />
+                    <input
+                      type="range"
+                      class="range-max"
+                      min="0"
+                      max="10000"
+                      value="7500"
+                      step="100"
+                    />
+                  </div>
+                  <div class="price-input text-white">
+                    $
+                    <div class="field">
+                      <input type="number" class="input-min" value="2500" />
+                    </div>
+                    <div class="sep font-16 text-white">-</div>
+                    $
+                    <div class="field">
+                      <input type="number" class="input-max" value="7500" />
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="view-more none"></a>
+              </div>
+              <!-- Bottle Size -->
+              <div class="filter-box bottle-size-filter">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">Bottle Size</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options">
+                  <ul class="checkbox-group flex flex-col rgap-10">
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-0.75l" name="size" />
+                        <label
+                          for="size-0.75l"
+                          class="font-14 font-bold text-black-200"
+                          >0.75L</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(14)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-1l" name="size" />
+                        <label
+                          for="size-1l"
+                          class="font-14 font-bold text-black-200"
+                          >1L</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(3)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-1.5l" name="size" />
+                        <label
+                          for="size-1.5l"
+                          class="font-14 font-bold text-black-200"
+                          >1.5L</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(74)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-2l" name="size" />
+                        <label
+                          for="size-2l"
+                          class="font-14 font-bold text-black-200"
+                          >2.0L</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(15)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-2.5l" name="size" />
+                        <label
+                          for="size-2.5l"
+                          class="font-14 font-bold text-black-200"
+                          >2.5L</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(11)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="view-more flex items-center font-14 font-semi-bold text-white"
+                >
+                  View More
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.64062 5.00049L12.6406 10.0005L7.64062 15.0005"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Vintage -->
+              <div class="filter-box vintage-filter">
+                <div
+                  class="filter-box__title flex items-center justify-between"
+                >
+                  <h6 class="font-14 font-bold text-white">Vintage</h6>
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09766 12.5005L10.0977 7.50049L15.0977 12.5005"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-box__options">
+                  <ul class="checkbox-group flex flex-col rgap-10">
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-0.75l" name="size" />
+                        <label
+                          for="size-0.75l"
+                          class="font-14 font-bold text-black-200"
+                          >0.75L (2020)</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(14)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-1.5l" name="size" />
+                        <label
+                          for="size-1.5l"
+                          class="font-14 font-bold text-black-200"
+                          >1.5L (2019)</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(74)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-1l" name="size" />
+                        <label
+                          for="size-1l"
+                          class="font-14 font-bold text-black-200"
+                          >1L (2018)</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(3)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-2l" name="size" />
+                        <label
+                          for="size-2l"
+                          class="font-14 font-bold text-black-200"
+                          >2.0L (2017)</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(15)</span
+                      >
+                    </li>
+
+                    <li class="checkbox-item flex justify-between items-center">
+                      <div class="text flex items-center cgap-10">
+                        <input type="checkbox" id="size-2.5l" name="size" />
+                        <label
+                          for="size-2.5l"
+                          class="font-14 font-bold text-black-200"
+                          >2.5L (2016)</label
+                        >
+                      </div>
+                      <span class="count font-14 font-bold text-black-200"
+                        >(11)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="view-more flex items-center font-14 font-semi-bold text-white"
+                >
+                  View More
+                  <svg
+                    width="20"
+                    class="filter-box-collaspe cursor-pointer"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.64062 5.00049L12.6406 10.0005L7.64062 15.0005"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Product Catalouge -->
+          <div class="product-catalouge productSwiper ">
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="product swiper-product bg-black-800 flex-col flex rgap-5"
+            >
+              <img src="../assets/images/product-img.png" alt="" />
+              <h2 class="font-26 font-semi-bold text-white">
+                Clos de papes 2012
+              </h2>
+              <span class="text-black-400 font-18 font-semi-bold"
+                >Red Wine</span
+              >
+
+              <hr />
+              <div
+                class="swiper-product__price-container flex items-center cgap-10 py-10"
+              >
+                <span class="price text-white font-18 font-semi-bold"
+                  >$19.99</span
+                >
+                <span class="sale-price text-yellow font-26 font-extra-bold"
+                  >$14.99</span
+                >
+              </div>
+              <div
+                class="swiper-product__cart-container flex cgap-10 items-strech justify-between"
+              >
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <button
+                  class="add-to-cart-btn bg-yellow flex items-center justify-center"
+                >
+                  <img src="../assets/images/Cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
     <footer>
       <section class="container-fluid bg-black py-50">
         <!-- Footer Links -->
@@ -549,5 +1774,6 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/range.js"></script>
   </body>
 </html>

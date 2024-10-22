@@ -1,0 +1,213 @@
+
+
+.filter-bar {
+  padding: 24px 20px;
+}
+.filter-bar__orientation {
+  & {
+    div {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 5px 11px;
+      border: solid 1px #2b2b2b;
+    }
+  }
+}
+.product-listing {
+  & {
+    .filter-sidebar {
+      width: 25%;
+      padding: 24px 24px 180px 24px;
+    }
+  }
+}
+
+.filter-buttons {
+  & {
+    button {
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      &:before {
+        content: "X";
+        position: absolute;
+        left: 20px;
+      }
+    }
+  }
+}
+/* Filter Box Options */
+.filter-box {
+  padding: 20px 0;
+  border-bottom: solid 1px #605f5f;
+}
+.filter-box__title {
+  margin-bottom: 10px;
+}
+.filter-box__options {
+  padding-left: 3px;
+  overflow: hidden;
+}
+.view-more {
+  padding-top: 10px;
+  text-decoration: none;
+}
+.checkbox-group {
+  list-style: none;
+  padding: 0;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s all;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #eaeaea;
+  border-color: #eaeaea;
+}
+
+label {
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+.parker-rating {
+  .checkbox-item input[type="checkbox"]:checked + label {
+    color: #eaeaea;
+    text-decoration: underline;
+  }
+}
+
+/* Price Range */
+.slider {
+  height: 2px;
+  position: relative;
+  background: black;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: grey;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.price-input {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  & {
+    div {
+      width: 20%;
+      & {
+        input {
+          width: 100%;
+          background: transparent;
+          border: none;
+          color: white;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      &:nth-child(2) {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        &span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.slider-options {
+  padding-top: 20px;
+}
+.product-catalouge{
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    &{
+        .product{
+            width: 32%;
+        }
+    }
+}
+/* Media Quries */
+@media screen and (max-width: 1100px) {
+.filter-sidebar{
+    display: none;
+}
+.product-catalouge{
+    width: 100%;
+}
+}
+@media screen and (max-width: 676px) {
+    .product{
+        width: 47% !important;
+    }
+}
+@media screen and (max-width: 390px){
+    .product{
+        width: 100% !important;
+    }
+}
