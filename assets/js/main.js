@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // For Item Counter
   const itemCountInputs = document.querySelectorAll(".item-count");
   itemCountInputs.forEach((input) => {
     input.addEventListener("input", function () {
@@ -30,6 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
         toggle.style.transform = "rotate(0deg)";
         viewAll.style.display = "block";
       }
+    });
+  });
+  // For Pagination
+  const paginations = document.querySelectorAll(".pagination-item");
+
+  paginations.forEach((pagination) => {
+    pagination.addEventListener("click", () => {
+      paginations.forEach((pagination) => {
+        pagination.classList.remove("active");
+      });
+      pagination.classList.add("active");
     });
   });
 });
