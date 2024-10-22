@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (parseInt(input.value, 10) > 999)
         input.value = input.value.slice(0, 3);
     });
-  });c
+  });
+  c;
 });
 
 // See More Script
@@ -125,3 +126,11 @@ Tabs.forEach((tab) => {
     document.querySelector(`#${tab.dataset.tab}`).classList.add("active");
   });
 });
+// Off Canvas Toggle
+function openOffcanvas() {
+  document.getElementById("offcanvas").classList.add("open");
+}
+
+function closeOffcanvas() {
+  document.getElementById("offcanvas").classList.remove("open");
+}
