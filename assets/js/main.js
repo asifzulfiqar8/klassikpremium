@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (parseInt(input.value, 10) > 999)
         input.value = input.value.slice(0, 3);
     });
-  });
+  });c
 });
 
 // See More Script
