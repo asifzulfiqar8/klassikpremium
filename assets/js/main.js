@@ -167,3 +167,73 @@ function openOffcanvas() {
 function closeOffcanvas() {
   document.getElementById("offcanvas").classList.remove("open");
 }
+
+ // Table pagination
+ let currentPage = 1;
+ const rowsPerPage = 10;
+ const totalRows = document.querySelectorAll("tbody tr").length;
+ const totalPages = Math.ceil(totalRows / rowsPerPage);
+
+ document
+   .querySelector(".page-button:nth-child(1)")
+   .addEventListener("click", () => {
+     if (currentPage > 1) {
+       currentPage--;
+       updateTable();
+     }
+   });
+
+ document
+   .querySelector(".page-button:nth-child(3)")
+   .addEventListener("click", () => {
+     if (currentPage < totalPages) {
+       currentPage++;
+       updateTable();
+     }
+   });
+
+ function updateTable() {
+   const rows = document.querySelectorAll("tbody tr");
+   rows.forEach((row, index) => {
+     row.style.display =
+       index >= (currentPage - 1) * rowsPerPage &&
+       index < currentPage * rowsPerPage
+         ? ""
+         : "none";
+   });
+   document.querySelector(
+     ".page-info"
+   ).innerText = `Page ${currentPage} of ${totalPages}`;
+ }
+ updateTable();
+
+ //  price range filter
+ function filterTable() {
+   var select = document.getElementById("priceRange");
+   var range = select.value;
+
+   var table = document.getElementById("orderTable");
+   var rows = table
+     .getElementsByTagName("tbody")[0]
+     .getElementsByTagName("tr");
+
+   if (range === "") {
+     for (var i = 0; i < rows.length; i++) {
+       rows[i].style.display = "";
+     }
+     return;
+   }
+
+   var rangeValues = range.split("-");
+   var min = parseFloat(rangeValues[0]);
+   var max = parseFloat(rangeValues[1]);
+   for (var i = 0; i < rows.length; i++) {
+     var priceText = rows[i].getElementsByTagName("td")[2].innerText;
+     var price = parseFloat(priceText.replace("$", ""));
+     if (price >= min && price <= max) {
+       rows[i].style.display = "";
+     } else {
+       rows[i].style.display = "none";
+     }
+   }
+ }
