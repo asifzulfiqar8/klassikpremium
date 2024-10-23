@@ -355,6 +355,9 @@ body {
 }
 /* Gaps */
 
+.gap-20 {
+  gap: 20px;
+}
 .gap-30 {
   gap: 30px;
 }
