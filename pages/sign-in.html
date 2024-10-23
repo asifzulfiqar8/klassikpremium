@@ -562,34 +562,42 @@
                         <div class="col-8">
                           <div class="position-relative">
                             <input
+                              id="password"
                               type="password"
                               class="form-control dark-form"
                               placeholder="Password"
                               required
                             />
-                            <div class="password-eye-icon">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
-                                  stroke="#A7A7A7"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
-                                  stroke="#A7A7A7"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
+                            <div
+                              class="password-eye-icon"
+                              id="toggle-password"
+                              title="Show password"
+                              aria-label="Show password"
+                            >
+                              <span id="eye-kholo">
+                                <svg
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                                    stroke="#A7A7A7"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
+                                    stroke="#A7A7A7"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </span>
                             </div>
                           </div>
                           <div
@@ -759,5 +767,51 @@
         </section>
       </section>
     </footer>
+
+    <script>
+      // Function to toggle password visibility
+      function togglePasswordVisibility(inputId, toggleId) {
+        const passwordInput = document.getElementById(inputId);
+        const icon = document.querySelector(`#${toggleId}`);
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          icon.setAttribute("data-feather", "eye");
+        } else {
+          passwordInput.type = "password";
+          icon.setAttribute("data-feather", "eye-off");
+        }
+        feather.replace();
+      }
+
+      document
+        .getElementById("toggle-password")
+        .addEventListener("click", function () {
+          togglePasswordVisibility("password", "eye-kholo");
+        });
+
+      document
+        .getElementById("toggle-password-confirm")
+        .addEventListener("click", function () {
+          togglePasswordVisibility("password-confirm", "eye-kholo-confirm");
+        });
+
+      document
+        .getElementById("registration-form")
+        .addEventListener("submit", function (e) {
+          const password = document.getElementById("password").value;
+          const passwordConfirm =
+            document.getElementById("password-confirm").value;
+          const errorMessageDiv = document.getElementById("error-message");
+
+          if (password !== passwordConfirm) {
+            e.preventDefault(); // Prevent form submission
+            errorMessageDiv.textContent = "Passwords do not match";
+            errorMessageDiv.style.display = "block";
+          } else {
+            errorMessageDiv.style.display = "none"; // Hide error message if passwords match
+          }
+        });
+    </script>
   </body>
 </html>
