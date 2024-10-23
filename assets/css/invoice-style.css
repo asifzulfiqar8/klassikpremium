@@ -1,0 +1,338 @@
+.order-detail {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.mute-color {
+  color: #605f5f;
+}
+.order-detail h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.order-detail nav {
+  margin-bottom: 1rem;
+}
+.order-detail nav a {
+  text-decoration: none;
+}
+.order-detail h2 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.order-reference {
+  color: white;
+}
+.order-status {
+  font-size: 36px;
+  color: #fabd38;
+}
+
+.invoice,
+.order-date {
+  font-weight: 500;
+}
+
+.order-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  text-align: center;
+}
+.order-table td {
+  padding: 1.5rem;
+}
+.bottom-line {
+  border-bottom: 1px solid white;
+  border-color: #605f5f;
+}
+.order-table {
+  border-bottom: 1px solid white;
+  border-color: #605f5f;
+  padding: 0.5rem;
+}
+.order-table th {
+  padding: 1rem;
+}
+.total-row {
+  font-weight: 500;
+}
+.summary {
+  margin-top: 1rem;
+}
+.summary p {
+  font-weight: 500;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.back-link:hover {
+  color: white;
+  opacity: 0.8;
+}
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.order-info p {
+  margin: 0;
+}
+
+.outline {
+  border: 1px solid white;
+  padding: 4% 4% 0 4%;
+}
+.right-align-table {
+  float: right;
+  width: 42%;
+  display: inline-table;
+}
+
+.order-history-table-container {
+  width: 972px !important;
+  height: auto !important;
+  padding: 50px 90px;
+  border-radius: 8px;
+  border: 1px solid !important;
+  border-color: white !important  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.invoice-description-table-container {
+  padding: 0;
+}
+
+.invoice-table-container {
+  padding: 0px 0px 28px 0px;
+}
+
+.invoice-table-container table thead tr th {
+  border-bottom: 1px solid white;
+}
+
+.invoice-description-table-container table tbody tr {
+  border-bottom: 1px solid white;
+}
+.invoice-description-table-container table thead tr th:first-child {
+  text-align: left;
+}
+
+.invoice-description-table-container table tbody tr td:first-child {
+  text-align: left;
+}
+
+.invoice-table-container table thead tr th:first-child {
+  text-align: left;
+}
+
+.invoice-table-container table tbody tr td:first-child {
+  text-align: left;
+}
+.invoice-table-container table thead tr th {
+  text-align: center;
+}
+.invoice-table-container table tbody tr td {
+  text-align: center;
+}
+.invoice-table-container table thead tr th:last-child {
+  text-align: end;
+}
+
+.invoice-description-table-container table thead tr th {
+  text-align: center;
+}
+.invoice-description-table-container table tbody tr td {
+  text-align: center;
+}
+
+.invoice-table-container table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.total-price-invoice-table-container
+  table
+  tbody
+  tr:last-child
+  td:nth-last-child(2),
+.total-price-invoice-table-container table tbody tr:last-child td:last-child {
+  border-top: 1px solid white;
+  font-weight: 600;
+  padding-bottom: 70px;
+}
+
+.total-price-invoice-table-container table tbody tr td {
+  border-top: none;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 30px 0;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-paid-invoice {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.status-paid-invoice p {
+  background: #031613;
+  color: #107569;
+  padding: 10px 15px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.status-cancelled-invoice {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.status-cancelled-invoice p {
+  background: #261c08;
+  color: #b54708;
+  padding: 10px 15px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.status-pending-voice {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.status-pending-voice p {
+  background: #1e1101;
+  color: #febe37;
+  padding: 10px 15px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.select-dropdown-style {
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+.invoice-description-table-container table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.text-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 676px) {
+  .order-history-table-container {
+    padding: 30px;
+    width: 100% !important;
+
+    & p {
+      font-size: 12px;
+    }
+    & span {
+      font-size: 12px;
+    }
+  }
+
+  .breadcrumb a {
+    font-size: 18px !important;
+  }
+
+  .grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding-left: 15px !important;
+  }
+
+  .grid-cols-2 div:last-child {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .order-status {
+    margin-top: 10px;
+  }
+
+  .order-address {
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .invoice-table-container th:last-child,
+  .invoice-table-container td:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .invoice-table-container th:nth-child(3),
+  .invoice-table-container th:nth-child(4),
+  .invoice-table-container th:nth-child(5),
+  .invoice-table-container td:nth-child(3),
+  .invoice-table-container td:nth-child(4),
+  .invoice-table-container td:nth-child(5) {
+    display: none;
+  }
+
+  /* Hide all columns by default */
+  .invoice-description-table-container th,
+  .invoice-description-table-container td {
+    display: none;
+  }
+
+  /* Show only the Description and Quantity columns */
+  .invoice-description-table-container th.show-on-small,
+  .invoice-description-table-container td.show-on-small {
+    display: table-cell;
+    padding-left: 20px;
+  }
+
+  /* Hide the first cell in the last row */
+  .invoice-description-table-container tbody tr:last-child td:first-child {
+    display: none;
+  }
+
+  .total-price-invoice-table-container table tbody tr td:first-child {
+    display: none;
+  }
+  .total-price-invoice-table-container table tbody tr td:last-child {
+    text-align: left;
+  }
+
+  .hide-back-link {
+    display: none;
+  }
+}
