@@ -13,12 +13,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <title>About Us</title>
+    <title>Filled Cart</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/cart-style.css" />
   </head>
   <body>
     <header>
@@ -400,327 +401,374 @@
       <!-- Banenr -->
       <section class="container-fluid banner bg-black">
         <section class="container banner-wrapper py-50 flex flex-col rgap-20">
-          <h1 class="font-54 font-semi-bold text-white text-center">
-            About Us
-          </h1>
-          <p class="font-18 font-normal text-center text-black-200">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis voluptatum deleniti.
-          </p>
+          <h1 class="font-54 font-semi-bold text-white text-center">My Cart</h1>
         </section>
       </section>
-
-      <!-- Our Company & Range-->
-      <section class="container-fluid bg-white about-intro">
-        <!-- Our Company -->
-        <section class="container our-company py-50 flex cgap-40 items-center">
-          <div class="left flex flex-col rgap-20">
-            <h3 class="font-34 font-semi-bold">Our Company</h3>
-            <p class="font-18 font-normal text-blue">
-              KLASSIK PREMIUM® was founded in 2010 in Barcelona, where it
-              quickly grew into one of the top reatailers of fine wines and
-              spirits in Europe. The online store opened its cellars to the Web
-              in 2015.
-            </p>
-            <p class="font-18 font-normal text-blue">
-              KLASSIK PREMIUM®’s astounding growth is a result of international
-              expertise and a careful selection of products that stand out for
-              their quality, following season, availability, and tasting
-              opportunities. Its focused catalog represents a range of French,
-              Spanish and Portuguese wines, Champagnes, Whiskeys, Cognacs,
-              Liqueurs. We are always looking for breakout products, making them
-              available in advance to our customers thanks to the thorough
-              connections we have formed over the years with our providers.
-            </p>
+      <!-- Main Cart -->
+      <section class="section-container-fluid bg-black">
+        <section class="container main-cart flex justify-between">
+          <!-- Cart Items -->
+          <!-- For Desktop -->
+          <div class="cart-items-desktop bg-black-800">
+            <div class="cart-item flex justify-between items-center">
+              <div class="product-info flex items-center cgap-20">
+                <img src="../assets/images/cart-product-image.png" alt="" />
+                <div class="product-info__text flex flex-col rgap-10">
+                  <h3 class="font-14 font-bold text-white">
+                    Clos de papes 2012
+                  </h3>
+                  <span class="font-12 font-normal text-black-300"
+                    >Red Wine</span
+                  >
+                  <span class="sale-tag font-12 font-semi-bold">50%Off</span>
+                </div>
+              </div>
+              <div
+                class="item-counter flex items-strech justify-between text-white bg-black-700"
+              >
+                <span class="minus-item">-</span>
+                <input
+                  type="number"
+                  value="1"
+                  class="item-count bg-black-800 text-white"
+                  maxlength="3"
+                  min="0"
+                  max="999"
+                />
+                <span class="plus-item">+</span>
+              </div>
+              <div class="product-price">
+                <h5 class="font-18 text-white font-bold">$29.89</h5>
+                <span class="font-14 text-black-400 font-bold">$14.99</span>
+              </div>
+              <svg
+                class="cursor-pointer"
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.71094 11.292H31.3776"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9609 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.125 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.25 11.292L9.79167 29.792C9.79167 30.6097 10.1165 31.394 10.6948 31.9722C11.273 32.5505 12.0572 32.8753 12.875 32.8753H25.2083C26.0261 32.8753 26.8103 32.5505 27.3886 31.9722C27.9668 31.394 28.2917 30.6097 28.2917 29.792L29.8333 11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.418 11.292V6.66697C14.418 6.2581 14.5804 5.86597 14.8695 5.57685C15.1586 5.28773 15.5508 5.12531 15.9596 5.12531H22.1263C22.5352 5.12531 22.9273 5.28773 23.2164 5.57685C23.5055 5.86597 23.668 6.2581 23.668 6.66697V11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="cart-item flex justify-between items-center">
+              <div class="product-info flex items-center cgap-20">
+                <img src="../assets/images/cart-product-image.png" alt="" />
+                <div class="product-info__text flex flex-col rgap-10">
+                  <h3 class="font-14 font-bold text-white">
+                    Clos de papes 2012
+                  </h3>
+                  <span class="font-12 font-normal text-black-300"
+                    >Red Wine</span
+                  >
+                  <span class="sale-tag font-12 font-semi-bold">50%Off</span>
+                </div>
+              </div>
+              <div
+                class="item-counter flex items-strech justify-between text-white bg-black-700"
+              >
+                <span class="minus-item">-</span>
+                <input
+                  type="number"
+                  value="1"
+                  class="item-count bg-black-800 text-white"
+                  maxlength="3"
+                  min="0"
+                  max="999"
+                />
+                <span class="plus-item">+</span>
+              </div>
+              <div class="product-price">
+                <h5 class="font-18 text-white font-bold">$29.89</h5>
+                <span class="font-14 text-black-400 font-bold">$14.99</span>
+              </div>
+              <svg
+                class="cursor-pointer"
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.71094 11.292H31.3776"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9609 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.125 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.25 11.292L9.79167 29.792C9.79167 30.6097 10.1165 31.394 10.6948 31.9722C11.273 32.5505 12.0572 32.8753 12.875 32.8753H25.2083C26.0261 32.8753 26.8103 32.5505 27.3886 31.9722C27.9668 31.394 28.2917 30.6097 28.2917 29.792L29.8333 11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.418 11.292V6.66697C14.418 6.2581 14.5804 5.86597 14.8695 5.57685C15.1586 5.28773 15.5508 5.12531 15.9596 5.12531H22.1263C22.5352 5.12531 22.9273 5.28773 23.2164 5.57685C23.5055 5.86597 23.668 6.2581 23.668 6.66697V11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="cart-item flex justify-between items-center">
+              <div class="product-info flex items-center cgap-20">
+                <img src="../assets/images/cart-product-image.png" alt="" />
+                <div class="product-info__text flex flex-col rgap-10">
+                  <h3 class="font-14 font-bold text-white">
+                    Clos de papes 2012
+                  </h3>
+                  <span class="font-12 font-normal text-black-300"
+                    >Red Wine</span
+                  >
+                  <span class="sale-tag font-12 font-semi-bold">50%Off</span>
+                </div>
+              </div>
+              <div
+                class="item-counter flex items-strech justify-between text-white bg-black-700"
+              >
+                <span class="minus-item">-</span>
+                <input
+                  type="number"
+                  value="1"
+                  class="item-count bg-black-800 text-white"
+                  maxlength="3"
+                  min="0"
+                  max="999"
+                />
+                <span class="plus-item">+</span>
+              </div>
+              <div class="product-price">
+                <h5 class="font-18 text-white font-bold">$29.89</h5>
+                <span class="font-14 text-black-400 font-bold">$14.99</span>
+              </div>
+              <svg
+                class="cursor-pointer"
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.71094 11.292H31.3776"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9609 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.125 17.4586V26.7086"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.25 11.292L9.79167 29.792C9.79167 30.6097 10.1165 31.394 10.6948 31.9722C11.273 32.5505 12.0572 32.8753 12.875 32.8753H25.2083C26.0261 32.8753 26.8103 32.5505 27.3886 31.9722C27.9668 31.394 28.2917 30.6097 28.2917 29.792L29.8333 11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.418 11.292V6.66697C14.418 6.2581 14.5804 5.86597 14.8695 5.57685C15.1586 5.28773 15.5508 5.12531 15.9596 5.12531H22.1263C22.5352 5.12531 22.9273 5.28773 23.2164 5.57685C23.5055 5.86597 23.668 6.2581 23.668 6.66697V11.292"
+                  stroke="#CBCBCB"
+                  stroke-width="2.3125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="right">
-            <img src="../assets/images/our comapny range.jpeg" alt="" />
+          <!-- For Mobile -->
+          <div class="cart-items-mobile bg-black-800">
+            <div class="cart-item flex flex-col rgap-20">
+              <div class="product-info flex cgap-20">
+                <img src="../assets/images/cart-product-image.png" alt="" />
+                <div class="prod-text flex flex-col rgap-10">
+                  <h3 class="font-18 font-bold text-white">
+                    Clos de papes 2012
+                  </h3>
+                  <span class="font-12 font-normal text-black-300"
+                    >Red Wine</span
+                  >
+                  <div class="product-price flex cgap-10">
+                    <h5 class="font-18 text-white font-bold">$29.89</h5>
+                    <span class="font-14 text-black-400 font-bold">$14.99</span>
+                  </div>
+                  <span class="sale-tag font-12 font-semi-bold">50%Off</span>
+                </div>
+              </div>
+              <div class="counter-row flex justify-between">
+                <div
+                  class="item-counter flex items-strech justify-between text-white bg-black-700"
+                >
+                  <span class="minus-item">-</span>
+                  <input
+                    type="number"
+                    value="1"
+                    class="item-count bg-black-800 text-white"
+                    maxlength="3"
+                    min="0"
+                    max="999"
+                  />
+                  <span class="plus-item">+</span>
+                </div>
+                <svg
+                  class="cursor-pointer"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.71094 11.292H31.3776"
+                    stroke="#CBCBCB"
+                    stroke-width="2.3125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9609 17.4586V26.7086"
+                    stroke="#CBCBCB"
+                    stroke-width="2.3125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.125 17.4586V26.7086"
+                    stroke="#CBCBCB"
+                    stroke-width="2.3125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.25 11.292L9.79167 29.792C9.79167 30.6097 10.1165 31.394 10.6948 31.9722C11.273 32.5505 12.0572 32.8753 12.875 32.8753H25.2083C26.0261 32.8753 26.8103 32.5505 27.3886 31.9722C27.9668 31.394 28.2917 30.6097 28.2917 29.792L29.8333 11.292"
+                    stroke="#CBCBCB"
+                    stroke-width="2.3125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.418 11.292V6.66697C14.418 6.2581 14.5804 5.86597 14.8695 5.57685C15.1586 5.28773 15.5508 5.12531 15.9596 5.12531H22.1263C22.5352 5.12531 22.9273 5.28773 23.2164 5.57685C23.5055 5.86597 23.668 6.2581 23.668 6.66697V11.292"
+                    stroke="#CBCBCB"
+                    stroke-width="2.3125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Cart Sidebar -->
+          <div class="cart-sidebar flex flex-col rgap-20">
+            <!-- Cart Summary Box -->
+            <div class="cart-summary bg-black-800">
+              <h4 class="font-22 font-semi-bold text-white">Cart Summary</h4>
+              <div class="bill-section flex flex-col rgap-10">
+                <div class="sub-total flex justify-between items-center">
+                  <span class="font-16 font-normal text-white">Subtotal</span>
+                  <h6 class="font-16 font-semi-bold text-white">$29.89</h6>
+                </div>
+                <div class="discount flex justify-between items-center">
+                  <span class="font-16 font-normal text-white">Discount</span>
+                  <h6 class="font-16 font-semi-bold text-white">-$10.89</h6>
+                </div>
+                <div class="shipping flex justify-between items-center">
+                  <span class="font-16 font-normal text-white">Shipping</span>
+                  <h6 class="font-16 font-semi-bold text-white">Free</h6>
+                </div>
+              </div>
+              <hr />
+              <div class="bill-section flex flex-col rgap-10">
+                <div class="total flex justify-between items-center">
+                  <span class="font-18 font-semi-bold text-white"
+                    >Subtotal</span
+                  >
+                  <h6 class="font-18 font-semi-bold text-white">$19.89</h6>
+                </div>
+              </div>
+              <button
+                class="checkout-btn bg-yellow color-black font-18 font-semi-bold"
+              >
+                Checkout
+              </button>
+            </div>
+            <!-- Coupon Section -->
+            <div class="coupon-section flex flex-col rgap-10">
+              <h3 class="text-white font-22 font-semi-bold">Have a coupon?</h3>
+              <p class="font-16 text-black-200">
+                Add your code for an instant card discount
+              </p>
+              <div class="coupon-input flex justify-between">
+                <input type="text" placeholder="Input" />
+                <button class="apply-coupon font-16 font-semi-bold">
+                  Apply
+                </button>
+              </div>
+            </div>
           </div>
         </section>
-        <!-- Our Range -->
-        <section class="container our-range py-50 flex cgap-40 items-center">
-          <div class="left">
-            <img src="../assets/images/our comapny range.jpeg" alt="" />
-          </div>
-          <div class="right flex flex-col rgap-20">
-            <h3 class="font-34 font-semi-bold">Our Range</h3>
-            <p class="font-18 font-normal text-blue">
-              KLASSIK PREMIUM®’s philosophy is simple–we only offer the best
-              products in the industry. This allows us to maintain a mixture of
-              big names and underrated findings, to maintain the portfolio fresh
-              and propositive.
-            </p>
-            <p class="font-18 font-normal text-blue">
-              KLASSIK PREMIUM®’s orders are handled with the utmost care in
-              storage and shipping, supported by quick turnaround times straight
-              from our suppliers and manufacturers, to guarantee quality and
-              origin. Whether an aficionado or a collector you are guaranteed to
-              find something that suits your needs, with the assurance that if
-              you see it on the site, it’s ready to ship.
-            </p>
-          </div>
-        </section>
-      </section>
-
-      <!-- Image Banner -->
-      <section class="container-fluid image-banner bg-black py-60">
-        <section class="container image-banner__wrapper">
-          <img
-            src="../assets/images/about-banner-pic.png"
-            alt=""
-            class="w-100"
-          />
-        </section>
-      </section>
-      <!-- Our Founders -->
-      <section class="container-fluid bg-black">
-        <section class="container our-founders py-50">
-          <section
-            class="our-founders__titl flex flex-col items-center rgap-10"
-          >
-            <span class="text-white font-16 font-bold text-center"
-              >Our Founders</span
-            >
-            <h4 class="text-white text-center font-54 font-semi-bold">
-              Leadership
-            </h4>
-          </section>
-          <section class="our-founder__team grid-cols-3 cgap-30 rgap-30">
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 1.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                BERNARDO PIMENTEL
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >FOUNDER & CEO</span
-              >
-              <a
-                class="font-18 text-white font-semi-bold text-center"
-                href="mailto:bernardopimentel@klassikpremium.com"
-                >bernardopimentel@klassikpremium.com
-              </a>
-            </div>
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 2.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                FERNANDO JESUS
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >MEMBER OF THE EXECUTIVE BOARD</span
-              >
-              <a
-                class="font-18 text-white font-semi-bold text-center"
-                href="mailto:fjesus@klassikpremium.com"
-                >fjesus@klassikpremium.com
-              </a>
-            </div>
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 3.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                TIAGO ALMEIDA
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >AREA MANAGER - AFRICA</span
-              >
-              <a
-                class="font-18 text-white font-semi-bold text-center"
-                href="mailto:taigopimentel@klassikpremium.com"
-                >taigopimentel@klassikpremium.com
-              </a>
-            </div>
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 4.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                STEPHANE PIMENTEL
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >CUSTOMER CARE
-              </span>
-              <a
-                class="font-18 text-white font-semi-bold text-center"
-                href="mailto:customercare@klassikpremium.com"
-                >customercare@klassikpremium.com
-              </a>
-            </div>
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 5.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                DAT GROUP
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >SUPPORT</span
-              >
-              <a
-                class="font-18 text-white font-semi-bold text-center"
-                href="mailto:support@klassikpremium.com"
-                >support@klassikpremium.com
-              </a>
-            </div>
-            <div class="memeber flex flex-col rgap-10">
-              <img src="../assets/images/Member 6.png" alt="" / class="w-100">
-              <h3 class="text-white text-center font-28 font-semi-bold">
-                BACCHUS
-              </h3>
-              <span class="text-white font-20 text-center font-semi"
-                >RESIDENT GUARDIAN / TRUFFLE HUNTER
-              </span>
-            </div>
-          </section>
-        </section>
-      </section>
-      <!-- Featured Brands Section -->
-      <section
-        class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white"
-      >
-        <div class="brand-logos__title section-title-black container">
-          <div class="line"></div>
-          <h2 class="font-34 font-semi-bold text-center">Featured Brands</h2>
-          <div class="line"></div>
-        </div>
-        <!-- For Desktop -->
-        <div
-          class="brand-logos__wrappper grid-cols-4 rgap-20 cgap-100 container"
-        >
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-1.png"
-              alt="Brand 1"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-2.png"
-              alt="Brand 2"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-3.png"
-              alt="Brand 3"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-4.png"
-              alt="Brand 4"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-5.png"
-              alt="Brand 5"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-6.png"
-              alt="Brand 6"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-7.png"
-              alt="Brand 7"
-              class="w-100"
-            />
-          </div>
-          <div class="brand-logo">
-            <img
-              src="../assets/images/brand-logo-8.png"
-              alt="Brand 8"
-              class="w-100"
-            />
-          </div>
-        </div>
-        <!-- For Mobile -->
-        <div class="swiper iconSwiper mobile-brand-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-1.png"
-                  alt="Brand 1"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-2.png"
-                  alt="Brand 2"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-3.png"
-                  alt="Brand 3"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-4.png"
-                  alt="Brand 4"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-5.png"
-                  alt="Brand 5"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-6.png"
-                  alt="Brand 6"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-7.png"
-                  alt="Brand 7"
-                  class="w-100"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-logo">
-                <img
-                  src="../assets/images/brand-logo-8.png"
-                  alt="Brand 8"
-                  class="w-100"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next swiper-btn">
-            <img src="../assets/images/nav-next.png" alt="Next" />
-          </div>
-          <div class="swiper-button-prev swiper-btn">
-            <img src="../assets/images/nav-prev.png" alt="Previous" />
-          </div>
-        </div>
       </section>
       <!-- Icons Section -->
       <section class="container-fluid bg-black">
@@ -731,10 +779,7 @@
           <div
             class="hero__icon__box flex flex-col items-center justify-center rgap-5"
           >
-            <img
-              src="../assets/images/hero-icon-1.png"
-              alt="Free Shipping Icon"
-            />
+            <img src="../assets/images/hero-icon-1.png" alt="Free Shipping Icon" />
             <h3 class="font-18 font-semi-bold text-center">Free Shipping</h3>
             <span class="font-14 font-normal text-center"
               >Orders above $200</span
@@ -767,12 +812,96 @@
           <div
             class="hero__icon__box flex flex-col items-center justify-center rgap-5"
           >
-            <img
-              src="../assets/images/hero-icon-4.png"
-              alt="Fast Delivery Icon"
-            />
+            <img src="../assets/images/hero-icon-4.png" alt="Fast Delivery Icon" />
             <h3 class="font-18 font-semi-bold text-center">Fast Delivery</h3>
             <span class="font-14 font-normal text-center">Quick & Secure</span>
+          </div>
+        </section>
+        <!-- Hero Icons Section for Mobile -->
+        <section
+          class="hero__icons-mobile py-50 container flex justify-center flex-wrap rgap-40"
+        >
+          <div class="swiper iconSwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+              >
+                <div
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img
+                    src="../assets/images/hero-icon-1.png"
+                    alt="Free Shipping Icon"
+                  />
+                  <h3 class="font-18 font-semi-bold text-center">
+                    Free Shipping
+                  </h3>
+                  <span class="font-14 font-normal text-center"
+                    >Orders above $200</span
+                  >
+                </div>
+              </div>
+              <div
+                class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+              >
+                <div
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img
+                    src="../assets/images/hero-icon-2.png"
+                    alt="Secure Payments Icon"
+                  />
+                  <h3 class="font-18 font-semi-bold text-center">
+                    Secure Payments
+                  </h3>
+                  <span class="font-14 font-normal text-center"
+                    >Trusted Payments</span
+                  >
+                </div>
+              </div>
+              <div
+                class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+              >
+                <div
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img
+                    src="../assets/images/hero-icon-3.png"
+                    alt="Customer Support Icon"
+                  />
+                  <h3 class="font-18 font-semi-bold text-center">
+                    24/7 Support
+                  </h3>
+                  <span class="font-14 font-normal text-center"
+                    >We are here to help</span
+                  >
+                </div>
+              </div>
+              <div
+                class="hero__icon__box swiper-slide flex flex-col items-center justify-center rgap-5"
+              >
+                <div
+                  class="inner-box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img
+                    src="../assets/images/hero-icon-4.png"
+                    alt="Fast Delivery Icon"
+                  />
+                  <h3 class="font-18 font-semi-bold text-center">
+                    Fast Delivery
+                  </h3>
+                  <span class="font-14 font-normal text-center"
+                    >Quick & Secure</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-btn">
+              <img src="../assets/images/nav-next.png" alt="Next" />
+            </div>
+            <div class="swiper-button-prev swiper-btn">
+              <img src="../assets/images/nav-prev.png" alt="Previous" />
+            </div>
           </div>
         </section>
       </section>
@@ -878,7 +1007,12 @@
         <section
           class="lower-footer container grid-cols-5 rgap-50 cgap-10 bg-black"
         >
-        <a href="#"><img src="../assets/images/Footer Logo.png" class="footer-logo" alt="" /></a>
+          <a href="#"
+            ><img
+              src="../assets/images/Footer Logo.png"
+              class="footer-logo"
+              alt=""
+          /></a>
           <div class="footer-social">
             <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
             <div class="footer-social__icons">
