@@ -33,6 +33,7 @@
             Free delivery on your first order of $100 or more* with the promo
             code : KILLASIK1ST
           </p>
+          <span class="close-top-header text-white">X</span>
         </section>
         <!-- Social Icons -->
         <section class="container-fluid bg-black">
@@ -56,7 +57,7 @@
           >
             <!-- Logo -->
             <div class="mid-header__logo">
-              <a href="#">
+              <a href="/">
                 <img
                   src="../assets/images/Header Logo.png"
                   alt=""
@@ -67,8 +68,37 @@
 
             <!-- Search bar -->
             <div class="mid-header__search-bar flex items-center cgap-20">
-              <input type="text" placeholder="Search Wines" />
+              <input
+                type="text"
+                placeholder="Search Wines"
+                class="header-search"
+              />
               <img src="../assets/images/search.svg" alt="" />
+              <div class="search-template">
+                <h4 class="font-18 text-black font-semi-bold">Products</h4>
+                <hr />
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Right Container -->
             <div
@@ -87,14 +117,8 @@
                 <div class="selectors__language flex-col flex selector">
                   <label class="font-12 text-black-400">Language</label>
                   <select name="Language Selector" id="currencySelector">
-                    <option value="English">
-                      <img src="../assets/images/English Flag.svg" alt="" />
-                      English
-                    </option>
-                    <option value="Spanish">
-                      <img src="../assets/images/English Flag.svg" alt="" />
-                      English 2
-                    </option>
+                    <option value="English">English</option>
+                    <option value="Spanish">English 2</option>
                   </select>
                 </div>
               </div>
@@ -123,7 +147,7 @@
           <section
             class="contaier lower-header__wrapper flex items-center justify-center"
           >
-            <div class="nav-item">
+            <div class="nav-item all-wines-nav-item">
               <div
                 class="item-wrapper flex items-center justify-center cgap-10"
               >
@@ -160,17 +184,99 @@
             </div>
           </section>
         </section>
+        <!-- Nav DropDown -->
+        <section class="container-fluid nav-dropdown bg-black">
+          <div class="nav-dropdown__wrapper text-white container">
+            <div class="red-wine">
+              <h3>Red Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="white-wine">
+              <h3>White Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="france-wine">
+              <h3>France Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="rose-wine">
+              <h3>Rose Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- Header for Mobile -->
       <section class="header-mobile container-fluid">
         <!-- Header Top Line -->
         <section class="top-header container-fluid bg-yellow">
-          <section class="container">
+          <section class="container top-header-wrapper">
             <p class="font-14 text-black font-semi-bold text-center">
               Free delivery on your first order of $100 or more* with the promo
               code : KILLASIK1ST
             </p>
+            <span class="close-top-header text-white">X</span>
           </section>
         </section>
 
@@ -190,20 +296,34 @@
           </section>
         </section>
         <!-- Header Main -->
-        <!-- Header Main -->
+
         <section class="container-fluid bg-black">
           <section
             class="container flex items-center justify-between main-header-mobile"
           >
-            <a href="#">
+            <a href="/">
               <img
                 src="../assets/images/Header Logo.png"
                 alt=""
-                class="header-logo"
+                class="header-logo w-80"
               />
             </a>
             <div class="menu-toggle" onclick="openOffcanvas()">
-              <i class="fa-solid fa-bars text-white font-20"></i>
+              <svg
+                width="17"
+                height="13"
+                viewBox="0 0 17 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </section>
         </section>
@@ -386,19 +506,14 @@
             </div>
           </div>
           <div>
-            <p class="text-white font-14">
-              Currency&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;<span
-                class="text-white font-14"
-                >Euro</span
-              >
+            <p class="text-white font-14 cgap-10">
+              Currency >
+              <span class="text-white font-14">Euro</span>
             </p>
           </div>
           <div>
-            <p class="text-white font-14">
-              Language&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;<span
-                class="text-white font-14"
-                >English (US)</span
-              >
+            <p class="text-white font-14 cgap-10">
+              Language > <span class="text-white font-14">English (US)</span>
             </p>
           </div>
         </div>

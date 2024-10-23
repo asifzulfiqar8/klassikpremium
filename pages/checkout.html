@@ -31,6 +31,7 @@
             Free delivery on your first order of $100 or more* with the promo
             code : KILLASIK1ST
           </p>
+          <span class="close-top-header text-white">X</span>
         </section>
         <!-- Social Icons -->
         <section class="container-fluid bg-black">
@@ -54,7 +55,7 @@
           >
             <!-- Logo -->
             <div class="mid-header__logo">
-              <a href="#">
+              <a href="/">
                 <img
                   src="../assets/images/Header Logo.png"
                   alt=""
@@ -65,8 +66,37 @@
 
             <!-- Search bar -->
             <div class="mid-header__search-bar flex items-center cgap-20">
-              <input type="text" placeholder="Search Wines" />
+              <input
+                type="text"
+                placeholder="Search Wines"
+                class="header-search"
+              />
               <img src="../assets/images/search.svg" alt="" />
+              <div class="search-template">
+                <h4 class="font-18 text-black font-semi-bold">Products</h4>
+                <hr />
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+                <div class="prod-item flex cgap-20">
+                  <img src="../assets/images/cart-product-image.png" alt="" />
+                  <div class="item-info flex flex-col rgap-10">
+                    <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
+                    <span class="font-18 font-semi-bold">$ 15,319.80</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Right Container -->
             <div
@@ -85,14 +115,8 @@
                 <div class="selectors__language flex-col flex selector">
                   <label class="font-12 text-black-400">Language</label>
                   <select name="Language Selector" id="currencySelector">
-                    <option value="English">
-                      <img src="../assets/images/English Flag.svg" alt="" />
-                      English
-                    </option>
-                    <option value="Spanish">
-                      <img src="../assets/images/English Flag.svg" alt="" />
-                      English 2
-                    </option>
+                    <option value="English">English</option>
+                    <option value="Spanish">English 2</option>
                   </select>
                 </div>
               </div>
@@ -121,7 +145,7 @@
           <section
             class="contaier lower-header__wrapper flex items-center justify-center"
           >
-            <div class="nav-item">
+            <div class="nav-item all-wines-nav-item">
               <div
                 class="item-wrapper flex items-center justify-center cgap-10"
               >
@@ -158,17 +182,99 @@
             </div>
           </section>
         </section>
+        <!-- Nav DropDown -->
+        <section class="container-fluid nav-dropdown bg-black">
+          <div class="nav-dropdown__wrapper text-white container">
+            <div class="red-wine">
+              <h3>Red Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="white-wine">
+              <h3>White Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="france-wine">
+              <h3>France Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+            <div class="rose-wine">
+              <h3>Rose Wine</h3>
+              <ul>
+                <li>Vino tinto</li>
+                <li>Vino blanco</li>
+                <li>Vino rosado</li>
+                <li>Vino generoso</li>
+                <li>Vino dulce</li>
+                <li>Vino ecologicos</li>
+                <li>Vinos naranja</li>
+                <li>Vinos naturales</li>
+                <li>Vinos vegano</li>
+                <li>Vinos sin alchol</li>
+                <li>Vinos kosher</li>
+                <li>Sangria</li>
+                <li>Vermut</li>
+                <li>Lambrusco</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- Header for Mobile -->
       <section class="header-mobile container-fluid">
         <!-- Header Top Line -->
         <section class="top-header container-fluid bg-yellow">
-          <section class="container">
+          <section class="container top-header-wrapper">
             <p class="font-14 text-black font-semi-bold text-center">
               Free delivery on your first order of $100 or more* with the promo
               code : KILLASIK1ST
             </p>
+            <span class="close-top-header text-white">X</span>
           </section>
         </section>
 
@@ -188,20 +294,34 @@
           </section>
         </section>
         <!-- Header Main -->
-        <!-- Header Main -->
+
         <section class="container-fluid bg-black">
           <section
             class="container flex items-center justify-between main-header-mobile"
           >
-            <a href="#">
+            <a href="/">
               <img
                 src="../assets/images/Header Logo.png"
                 alt=""
-                class="header-logo"
+                class="header-logo w-80"
               />
             </a>
             <div class="menu-toggle" onclick="openOffcanvas()">
-              <i class="fa-solid fa-bars text-white font-20"></i>
+              <svg
+                width="17"
+                height="13"
+                viewBox="0 0 17 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </section>
         </section>
@@ -436,7 +556,271 @@
                 </div>
               </div>
               <div class="__content">
-                <p class="text-white">This is the content</p>
+                <form>
+                  <div class="w-100">
+                    <div class="flex justify-start pb-50">
+                      <h3 class="font-28 text-white">
+                        Order as a guest | Sign in >
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row social-title">
+                        <div class="col-4">
+                          <div class="pb-20">
+                            <p class="font-20 text-white">Social Title</p>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="flex justify-start radio-group gap-30">
+                            <label class="custom-radio">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option1"
+                              />
+                              <span class="radio-mark"></span> Mr
+                            </label>
+                            <label class="custom-radio">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option2"
+                              />
+                              <span class="radio-mark"></span> Mrs
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-20">
+                        <div class="col-4 pt-25">
+                          <p class="font-20 text-white">First Name</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="text"
+                            class="form-control"
+                            placeholder="name"
+                            required
+                          />
+                          <p class="text-black-400">
+                            Only letters and the dot (.) character, followed by
+                            a space, are allowed.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row pt-20">
+                        <div class="col-4 pt-25">
+                          <p class="font-20 text-white">Last Name</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="text"
+                            class="form-control"
+                            placeholder="last name"
+                            required
+                          />
+                          <p class="text-black-400">
+                            Only letters and the dot (.) character, followed by
+                            a space, are allowed.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row pt-20">
+                        <div class="col-4 flex items-center">
+                          <p class="font-20 text-white">Email</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="email"
+                            class="form-control"
+                            placeholder="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="row pt-20">
+                        <div class="col-7 flex items-center py-30">
+                          <h6 class="font-28 text-white">
+                            Create An Account (Optional) and save time on your
+                            next order
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="row pt-20">
+                        <div class="col-4 pt-25">
+                          <p class="font-20 text-white">Password</p>
+                        </div>
+                        <div class="col-8">
+                          <div style="position: relative">
+                            <input
+                              class="dark-form"
+                              type="password"
+                              class="form-control"
+                              placeholder="Password"
+                              required
+                            />
+                            <div class="eye-icon">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                                  stroke="#A7A7A7"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
+                                  stroke="#A7A7A7"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </div>
+                            <p class="text-black-400">(Optional)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row pt-20">
+                        <div class="col-4 pt-25">
+                          <p class="font-20 text-white">Birthday</p>
+                        </div>
+
+                        <div class="col-8">
+                          <input
+                            class="dark-form"
+                            type="text"
+                            class="form-control"
+                            placeholder="Birthday date "
+                            required
+                          />
+                          <p class="text-black-400">
+                            (E.g.: 05/31/1970)(Optional)
+                          </p>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-50" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Receive offers from our partners
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option2"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Receive offers from our partners
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option3"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               I agree to the terms and conditions and the
+                              privacy policy
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option4"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                               Sign up for our newsletter You may unsubscribe at
+                              any moment. For that purpose, please find our
+                              contact info in the legal notice.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="pl-20 flex pt-20" style="gap: 20px">
+                            <label class="custom-radio2">
+                              <input
+                                class="dark-form"
+                                type="radio"
+                                name="option5"
+                                value="option1"
+                              />
+                              <span class="radio-mark2"></span>
+                            </label>
+                            <p class="font-12 text-white">
+                              Customer data privacyThe personal data you provide
+                              is used to answer queries, process orders or allow
+                              access to specific information. You have the right
+                              to modify and delete all the personal information
+                              found in the "My Account" page..
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="font-20 text-white pt-50 save-btn-register">
+                    <button>continue</button>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="__tab-item" data-step="2">
@@ -464,7 +848,214 @@
                 </div>
               </div>
               <div class="__content">
-                <p class="text-white">This is the content</p>
+                <div class="new-address-container-checkout">
+                  <form>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-4 pt-25">
+                            <p class="font-20 text-white">Alias</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="input"
+                              required
+                            />
+                            <span class="text-black-400">(Optional)</span>
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 pt-25">
+                            <p class="font-20 text-white">First Name</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="Zeeshan"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row pt-20">
+                          <div class="col-4 pt-25">
+                            <p class="font-20 text-white">Last Name</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="Jabbar"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Company</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="email"
+                              required
+                            />
+                            <span class="text-black-400">(Optional)</span>
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Address</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="Address"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Address Compliment</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="address compliment"
+                              required
+                            />
+                            <span class="text-black-400">(Optional)</span>
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">City</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="city"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">State</p>
+                          </div>
+                          <div class="col-8">
+                            <select class="dark-dropdown form-control" required>
+                              <option value="" class="text-black-400">
+                                Please Choose
+                              </option>
+                              <option value="state1">State 1</option>
+                              <option value="state2">State 2</option>
+                              <option value="state3">State 3</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Zip Postal Code</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="text"
+                              class="form-control"
+                              placeholder="zip code "
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Country</p>
+                          </div>
+                          <div class="col-8">
+                            <select class="dark-dropdown form-control" required>
+                              <option value="" class="text-black-400">
+                                Please Choose
+                              </option>
+                              <option value="Country1">Country 1</option>
+                              <option value="Country2">Country 2</option>
+                              <option value="Country3">Country 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row pt-20">
+                          <div class="col-4 flex items-center">
+                            <p class="font-20 text-white">Phone number</p>
+                          </div>
+
+                          <div class="col-8">
+                            <input
+                              class="dark-form"
+                              type="number"
+                              class="form-control"
+                              placeholder="Phone number"
+                              required
+                            />
+                            <span class="text-black-400">(Optional)</span>
+                          </div>
+                        </div>
+                        <div class="row pt-20">
+                          <div class="col-12 flex items-center">
+                            <div class="flex justify-start radio-group gap-30">
+                              <label class="custom-radio pt-20">
+                                <input
+                                  class="dark-form"
+                                  type="radio"
+                                  name="option"
+                                  value="option1"
+                                />
+                                <span class="radio-mark"></span>Use this address
+                                for invoice too
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-100">
+                          <div
+                            class="font-20 text-white pt-20 save-btn-register"
+                          >
+                            <button>continue</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="__tab-item" data-step="3">
@@ -492,7 +1083,73 @@
                 </div>
               </div>
               <div class="__content">
-                <p class="text-white">This is the content</p>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="flex justify-between py-30">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1"
+                          y="0.686462"
+                          width="18"
+                          height="18"
+                          rx="9"
+                          stroke="white"
+                          stroke-linejoin="bevel"
+                        />
+                        <circle cx="10" cy="9.68646" r="5" fill="white" />
+                      </svg>
+                      <svg
+                        width="48"
+                        height="30"
+                        viewBox="0 0 62 63"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.2532 11.7106C4.12745 11.7106 3.21484 12.6232 3.21484 13.749C3.21484 14.8747 4.12745 15.7873 5.2532 15.7873H31.4023V16.3115V29.124V42.4606H24.9336C24.0557 39.4974 21.3125 37.3357 18.0645 37.3357C14.8164 37.3357 12.0733 39.4974 11.1953 42.4606H9.85405V34.249C9.85405 33.1232 8.94145 32.2106 7.8157 32.2106C6.68994 32.2106 5.77734 33.1232 5.77734 34.249V44.499C5.77734 45.6247 6.68994 46.5373 7.8157 46.5373H11.1953C12.0732 49.5006 14.8164 51.6624 18.0645 51.6624C21.3126 51.6624 24.0557 49.5006 24.9337 46.5373H33.4407H36.8233C37.7013 49.5006 40.4444 51.6624 43.6925 51.6624C46.9406 51.6624 49.6838 49.5006 50.5617 46.5373H53.9407C55.0664 46.5373 55.9791 45.6247 55.9791 44.499V29.1575C55.9824 28.9649 55.9585 28.7706 55.9058 28.5805C55.8532 28.3898 55.7736 28.2104 55.6713 28.0464L48.0011 15.2628C47.6327 14.6488 46.9692 14.2731 46.2532 14.2731H35.479V13.749C35.479 12.6232 34.5664 11.7106 33.4407 11.7106H5.2532ZM46.7784 44.4315C46.7777 44.4539 46.7773 44.4764 46.7773 44.499C46.7773 44.5216 46.7777 44.5441 46.7784 44.5665C46.7425 46.2401 45.3747 47.5857 43.6925 47.5857C41.9878 47.5857 40.6059 46.2037 40.6059 44.499C40.6059 42.7943 41.9878 41.4124 43.6925 41.4124C45.3746 41.4124 46.7425 42.758 46.7784 44.4315ZM50.5617 42.4606H51.9023V31.1623H35.479V42.4606H36.8234C37.7013 39.4974 40.4445 37.3357 43.6925 37.3357C46.9406 37.3357 49.6837 39.4974 50.5617 42.4606ZM14.9783 44.5541C15.0077 46.2334 16.3782 47.5857 18.0645 47.5857C19.7692 47.5857 21.1511 46.2037 21.1511 44.499C21.1511 42.7943 19.7692 41.4124 18.0645 41.4124C16.3782 41.4124 15.0078 42.7646 14.9783 44.4439C14.9788 44.4622 14.979 44.4805 14.979 44.499C14.979 44.5174 14.9788 44.5358 14.9783 44.5541ZM35.479 27.0856V18.3498H45.0991L50.3406 27.0856H35.479Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      <svg
+                        width="86"
+                        height="18"
+                        viewBox="0 0 86 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.18821 0.595553H2.58523L6.75284 10.7717H6.90625L11.0739 0.595553H13.4709V13.6865H11.5916V4.21345H11.4702L7.60938 13.6673H6.04972L2.18892 4.20706H2.06747V13.6865H0.18821V0.595553ZM16.9972 17.3683C16.7117 17.3683 16.4517 17.3448 16.2174 17.298C15.983 17.2554 15.8083 17.2085 15.6932 17.1573L16.1534 15.5913C16.5029 15.685 16.814 15.7255 17.0867 15.7127C17.3594 15.7 17.6002 15.5977 17.809 15.4059C18.0221 15.2142 18.2096 14.901 18.3715 14.4663L18.608 13.8143L15.0157 3.86828H17.0611L19.5476 11.4876H19.6499L22.1364 3.86828H24.1882L20.1421 14.9968C19.9546 15.5082 19.7159 15.9407 19.4262 16.2944C19.1364 16.6524 18.7912 16.9208 18.3907 17.0998C17.9901 17.2788 17.5256 17.3683 16.9972 17.3683ZM40.9744 4.85266H38.98C38.9033 4.42652 38.7606 4.05152 38.5518 3.72766C38.343 3.40379 38.0873 3.12893 37.7847 2.90308C37.4822 2.67723 37.1434 2.50677 36.7684 2.39172C36.3977 2.27666 36.0035 2.21913 35.5859 2.21913C34.8316 2.21913 34.1562 2.40876 33.5596 2.78802C32.9673 3.16729 32.4985 3.72339 32.1533 4.45635C31.8124 5.1893 31.642 6.08419 31.642 7.14101C31.642 8.20635 31.8124 9.1055 32.1533 9.83845C32.4985 10.5714 32.9694 11.1254 33.566 11.5004C34.1626 11.8754 34.8337 12.0629 35.5795 12.0629C35.9928 12.0629 36.3849 12.0075 36.7556 11.8967C37.1306 11.7816 37.4694 11.6133 37.7719 11.3917C38.0745 11.1701 38.3302 10.8995 38.539 10.5799C38.7521 10.2561 38.8991 9.88533 38.98 9.46771L40.9744 9.4741C40.8678 10.1176 40.6612 10.7099 40.3543 11.2511C40.0518 11.788 39.6619 12.2525 39.1846 12.6446C38.7116 13.0323 38.1704 13.3328 37.561 13.5458C36.9516 13.7589 36.2869 13.8654 35.5667 13.8654C34.4332 13.8654 33.4232 13.597 32.5369 13.06C31.6505 12.5188 30.9516 11.7454 30.4403 10.7397C29.9332 9.73405 29.6796 8.53447 29.6796 7.14101C29.6796 5.74328 29.9353 4.54371 30.4467 3.54229C30.958 2.5366 31.6569 1.7653 32.5433 1.22837C33.4296 0.687172 34.4374 0.416576 35.5667 0.416576C36.2613 0.416576 36.909 0.516718 37.5099 0.717002C38.115 0.913025 38.6583 1.2028 39.1398 1.58632C39.6214 1.96558 40.0198 2.43007 40.3352 2.97979C40.6505 3.52524 40.8636 4.14953 40.9744 4.85266ZM45.6417 13.9038C45.0195 13.9038 44.457 13.7887 43.9542 13.5586C43.4513 13.3242 43.0529 12.9855 42.7588 12.5423C42.4691 12.0991 42.3242 11.5558 42.3242 10.9123C42.3242 10.3583 42.4307 9.90237 42.6438 9.54442C42.8569 9.18646 43.1445 8.90308 43.5067 8.69427C43.8689 8.48547 44.2738 8.3278 44.7212 8.22126C45.1686 8.11473 45.6246 8.03376 46.0891 7.97837C46.6772 7.91018 47.1544 7.85479 47.5209 7.81217C47.8874 7.7653 48.1537 7.69072 48.3199 7.58845C48.4861 7.48618 48.5692 7.31998 48.5692 7.08987V7.04513C48.5692 6.48689 48.4115 6.05436 48.0962 5.74754C47.7851 5.44072 47.3206 5.28731 46.7027 5.28731C46.0593 5.28731 45.5522 5.43007 45.1814 5.71558C44.815 5.99683 44.5614 6.31004 44.4208 6.65521L42.6246 6.24612C42.8377 5.64953 43.1488 5.168 43.5578 4.80152C43.9712 4.43078 44.4463 4.16231 44.9833 3.99612C45.5202 3.82567 46.0848 3.74044 46.6772 3.74044C47.0692 3.74044 47.4847 3.78731 47.9236 3.88106C48.3668 3.97055 48.7802 4.13675 49.1637 4.37964C49.5515 4.62254 49.8689 4.96984 50.1161 5.42155C50.3632 5.86899 50.4868 6.45067 50.4868 7.16658V13.6865H48.6203V12.3441H48.5436C48.4201 12.5913 48.2347 12.8342 47.9875 13.0728C47.7404 13.3115 47.4229 13.5096 47.0351 13.6673C46.6473 13.825 46.1828 13.9038 45.6417 13.9038ZM46.0571 12.3697C46.5855 12.3697 47.0373 12.2653 47.4123 12.0565C47.7915 11.8477 48.0792 11.575 48.2752 11.2383C48.4755 10.8974 48.5756 10.5331 48.5756 10.1453V8.87964C48.5074 8.94783 48.3753 9.01175 48.1793 9.07141C47.9875 9.1268 47.7681 9.17581 47.5209 9.21842C47.2738 9.25677 47.033 9.293 46.7986 9.32709C46.5642 9.35692 46.3682 9.38248 46.2105 9.40379C45.8398 9.45067 45.501 9.5295 45.1942 9.6403C44.8917 9.75109 44.6488 9.91089 44.4655 10.1197C44.2865 10.3242 44.1971 10.597 44.1971 10.9379C44.1971 11.4109 44.3718 11.7688 44.7212 12.0117C45.0706 12.2504 45.5159 12.3697 46.0571 12.3697ZM52.6325 13.6865V3.86828H54.4798V5.42794H54.582C54.761 4.89953 55.0763 4.48405 55.5281 4.18149C55.984 3.87467 56.4996 3.72126 57.0749 3.72126C57.1942 3.72126 57.3349 3.72552 57.4968 3.73405C57.663 3.74257 57.793 3.75322 57.8867 3.76601V5.59413C57.81 5.57283 57.6737 5.54939 57.4776 5.52382C57.2816 5.49399 57.0856 5.47908 56.8896 5.47908C56.4379 5.47908 56.0352 5.57496 55.6815 5.76672C55.332 5.95422 55.055 6.21629 54.8505 6.55294C54.646 6.88533 54.5437 7.26459 54.5437 7.69072V13.6865H52.6325ZM59.1407 13.6865V3.86828H60.988V5.42794H61.0902C61.2692 4.89953 61.5846 4.48405 62.0363 4.18149C62.4922 3.87467 63.0078 3.72126 63.5831 3.72126C63.7024 3.72126 63.8431 3.72552 64.005 3.73405C64.1712 3.74257 64.3012 3.75322 64.3949 3.76601V5.59413C64.3182 5.57283 64.1819 5.54939 63.9858 5.52382C63.7898 5.49399 63.5938 5.47908 63.3978 5.47908C62.9461 5.47908 62.5434 5.57496 62.1897 5.76672C61.8402 5.95422 61.5632 6.21629 61.3587 6.55294C61.1542 6.88533 61.0519 7.26459 61.0519 7.69072V13.6865H59.1407ZM65.6489 13.6865V3.86828H67.5601V13.6865H65.6489ZM66.6141 2.35337C66.2817 2.35337 65.9962 2.24257 65.7575 2.02098C65.5232 1.79513 65.406 1.52666 65.406 1.21558C65.406 0.90024 65.5232 0.631775 65.7575 0.410183C65.9962 0.184331 66.2817 0.0714053 66.6141 0.0714053C66.9464 0.0714053 67.2298 0.184331 67.4642 0.410183C67.7028 0.631775 67.8222 0.90024 67.8222 1.21558C67.8222 1.52666 67.7028 1.79513 67.4642 2.02098C67.2298 2.24257 66.9464 2.35337 66.6141 2.35337ZM73.9628 13.8846C72.9955 13.8846 72.1624 13.6779 71.4635 13.2646C70.7689 12.847 70.232 12.261 69.8527 11.5068C69.4777 10.7483 69.2902 9.85976 69.2902 8.84129C69.2902 7.83561 69.4777 6.94925 69.8527 6.1822C70.232 5.41516 70.7604 4.81643 71.438 4.38604C72.1198 3.95564 72.9167 3.74044 73.8286 3.74044C74.3826 3.74044 74.9195 3.83206 75.4394 4.0153C75.9593 4.19854 76.4259 4.48618 76.8392 4.87822C77.2526 5.27027 77.5786 5.7795 77.8172 6.40592C78.0559 7.02808 78.1752 7.78447 78.1752 8.6751V9.35266H70.3705V7.92084H76.3023C76.3023 7.418 76.2 6.97268 75.9955 6.5849C75.7909 6.19285 75.5033 5.88391 75.1326 5.65805C74.7661 5.4322 74.3357 5.31927 73.8414 5.31927C73.3044 5.31927 72.8357 5.45138 72.4351 5.71558C72.0388 5.97552 71.732 6.31643 71.5147 6.73831C71.3016 7.15592 71.1951 7.60976 71.1951 8.09981V9.21842C71.1951 9.87467 71.3101 10.4329 71.5402 10.8931C71.7746 11.3534 72.1006 11.7049 72.5182 11.9478C72.9358 12.1865 73.4238 12.3058 73.982 12.3058C74.3442 12.3058 74.6745 12.2546 74.9728 12.1524C75.2711 12.0458 75.5289 11.8882 75.7462 11.6794C75.9635 11.4706 76.1297 11.2127 76.2448 10.9059L78.0537 11.2319C77.9088 11.7646 77.6489 12.2312 77.2739 12.6318C76.9032 13.0281 76.4365 13.337 75.874 13.5586C75.3158 13.776 74.6787 13.8846 73.9628 13.8846ZM79.8957 13.6865V3.86828H81.743V5.42794H81.8453C82.0243 4.89953 82.3396 4.48405 82.7913 4.18149C83.2473 3.87467 83.7629 3.72126 84.3382 3.72126C84.4575 3.72126 84.5982 3.72552 84.7601 3.73405C84.9263 3.74257 85.0563 3.75322 85.15 3.76601V5.59413C85.0733 5.57283 84.9369 5.54939 84.7409 5.52382C84.5449 5.49399 84.3489 5.47908 84.1528 5.47908C83.7011 5.47908 83.2984 5.57496 82.9447 5.76672C82.5953 5.95422 82.3183 6.21629 82.1138 6.55294C81.9092 6.88533 81.807 7.26459 81.807 7.69072V13.6865H79.8957Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <p class="font-18 text-white">Delivery next day!</p>
+                      <p class="font-18 text-white">$0.00</p>
+                    </div>
+                    <p class="text-white font-16">
+                      If you would like to add a comment about your order,
+                      please write it in the field below.
+                    </p>
+                    <input
+                      type="text"
+                      placeholder="input"
+                      class="form-control dark-form"
+                    />
+                    <div class="w-100">
+                      <div class="font-20 text-white pt-20 save-btn-register">
+                        <button>continue</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="__tab-item" data-step="4">
@@ -520,7 +1177,29 @@
                 </div>
               </div>
               <div class="__content">
-                <p class="text-white">This is the content</p>
+                <div class="row pt-20">
+                  <div class="col-12 flex items-center">
+                    <div class="flex justify-start radio-group gap-30">
+                      <label class="custom-radio2 pt-20">
+                        <input
+                          class="dark-form"
+                          type="radio"
+                          name="option"
+                          value="option1"
+                        />
+                        <span class="radio-mark2"></span>I agree to the terms of
+                        service and will adhere to them unconditionally.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="w-100">
+                      <div class="font-20 text-white pt-20 place-order-btn">
+                        <button>Place Order</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

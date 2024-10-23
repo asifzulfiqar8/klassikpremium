@@ -87,6 +87,32 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", () => {
     navDropDown.style.display = "none";
   });
+  // Close Top Bar
+  let closeTopHeader = document.querySelectorAll(".close-top-header");
+  let topHeaderBar = document.querySelectorAll(".top-header");
+
+  closeTopHeader.forEach((close) => {
+    close.addEventListener("click", () => {
+      topHeaderBar.forEach((header) => {
+        header.style.display = "none";
+      });
+    });
+  });
+  // For Serach template
+  let searchInput = document.querySelector(".header-search");
+  let searchTemplate = document.querySelector(".search-template");
+
+  searchInput.addEventListener("click", () => {
+    searchTemplate.classList.add("active");
+    console.log("searching");
+  });
+
+  searchInput.addEventListener("blur", () => {
+    // Small delay to allow clicks inside the dropdown before it hides
+    setTimeout(() => {
+      searchTemplate.classList.remove("active");
+    }, 200);
+  });
 });
 
 // See More Script
