@@ -44,6 +44,28 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination.classList.add("active");
     });
   });
+
+  // For Checkout Tabs
+  const chkTabs = document.querySelectorAll(".__tab-item");
+  chkTabs.forEach((chkTab, index) => {
+    chkTab.addEventListener("click", () => {
+      chkTabs.forEach((tab, i) => {
+        tab.classList.remove("active");
+        if (i < index) {
+          tab.classList.add("completed");
+          tab.querySelector(".number").innerHTML = "";
+          tab.querySelector(".number").classList.add("checked");
+          tab.querySelector('.edit').classList.add('active'); 
+        } else {
+          tab.classList.remove("completed");
+          tab.querySelector(".number").innerHTML = i + 1;
+          tab.querySelector(".number").classList.remove("checked");
+          tab.querySelector('.edit').classList.remove('active'); 
+        }
+      });
+      chkTab.classList.add("active");
+    });
+  });
 });
 
 // See More Script
@@ -168,72 +190,70 @@ function closeOffcanvas() {
   document.getElementById("offcanvas").classList.remove("open");
 }
 
- // Table pagination
- let currentPage = 1;
- const rowsPerPage = 10;
- const totalRows = document.querySelectorAll("tbody tr").length;
- const totalPages = Math.ceil(totalRows / rowsPerPage);
+// Table pagination
+let currentPage = 1;
+const rowsPerPage = 10;
+const totalRows = document.querySelectorAll("tbody tr").length;
+const totalPages = Math.ceil(totalRows / rowsPerPage);
 
- document
-   .querySelector(".page-button:nth-child(1)")
-   .addEventListener("click", () => {
-     if (currentPage > 1) {
-       currentPage--;
-       updateTable();
-     }
-   });
+document
+  .querySelector(".page-button:nth-child(1)")
+  .addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updateTable();
+    }
+  });
 
- document
-   .querySelector(".page-button:nth-child(3)")
-   .addEventListener("click", () => {
-     if (currentPage < totalPages) {
-       currentPage++;
-       updateTable();
-     }
-   });
+document
+  .querySelector(".page-button:nth-child(3)")
+  .addEventListener("click", () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updateTable();
+    }
+  });
 
- function updateTable() {
-   const rows = document.querySelectorAll("tbody tr");
-   rows.forEach((row, index) => {
-     row.style.display =
-       index >= (currentPage - 1) * rowsPerPage &&
-       index < currentPage * rowsPerPage
-         ? ""
-         : "none";
-   });
-   document.querySelector(
-     ".page-info"
-   ).innerText = `Page ${currentPage} of ${totalPages}`;
- }
- updateTable();
+function updateTable() {
+  const rows = document.querySelectorAll("tbody tr");
+  rows.forEach((row, index) => {
+    row.style.display =
+      index >= (currentPage - 1) * rowsPerPage &&
+      index < currentPage * rowsPerPage
+        ? ""
+        : "none";
+  });
+  document.querySelector(
+    ".page-info"
+  ).innerText = `Page ${currentPage} of ${totalPages}`;
+}
+updateTable();
 
- //  price range filter
- function filterTable() {
-   var select = document.getElementById("priceRange");
-   var range = select.value;
+//  price range filter
+function filterTable() {
+  var select = document.getElementById("priceRange");
+  var range = select.value;
 
-   var table = document.getElementById("orderTable");
-   var rows = table
-     .getElementsByTagName("tbody")[0]
-     .getElementsByTagName("tr");
+  var table = document.getElementById("orderTable");
+  var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
 
-   if (range === "") {
-     for (var i = 0; i < rows.length; i++) {
-       rows[i].style.display = "";
-     }
-     return;
-   }
+  if (range === "") {
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].style.display = "";
+    }
+    return;
+  }
 
-   var rangeValues = range.split("-");
-   var min = parseFloat(rangeValues[0]);
-   var max = parseFloat(rangeValues[1]);
-   for (var i = 0; i < rows.length; i++) {
-     var priceText = rows[i].getElementsByTagName("td")[2].innerText;
-     var price = parseFloat(priceText.replace("$", ""));
-     if (price >= min && price <= max) {
-       rows[i].style.display = "";
-     } else {
-       rows[i].style.display = "none";
-     }
-   }
- }
+  var rangeValues = range.split("-");
+  var min = parseFloat(rangeValues[0]);
+  var max = parseFloat(rangeValues[1]);
+  for (var i = 0; i < rows.length; i++) {
+    var priceText = rows[i].getElementsByTagName("td")[2].innerText;
+    var price = parseFloat(priceText.replace("$", ""));
+    if (price >= min && price <= max) {
+      rows[i].style.display = "";
+    } else {
+      rows[i].style.display = "none";
+    }
+  }
+}

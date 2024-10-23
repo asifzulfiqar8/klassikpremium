@@ -1,0 +1,108 @@
+.edit{
+    position: absolute;
+    right: 20px;
+    visibility: hidden;
+}
+.edit.active{
+    visibility: visible;
+}
+.checkout-tabs {
+  width: 64%;
+  & {
+    .__tab-item {
+      & {
+        .__header {
+            position: relative;
+          & {
+            border-radius: 6px;
+            padding: 16px 24px;
+            cursor: pointer;
+            background-color: #2b2b2b;
+
+            .number {
+              background-color: #454545;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+            }
+
+            .checked {
+              background: url("/assets/images/check-tick.svg") no-repeat
+                center center;
+              background-size: cover;
+            }
+          }
+        }
+        .__content {
+          display: none;
+        }
+      }
+    }
+
+    .__tab-item.active {
+      .__header {
+        & {
+          border-bottom: 1px solid white;
+          background-color: transparent;
+
+          .number {
+            background-color: #039200;
+          }
+        }
+      }
+      .__content {
+        display: block;
+      }
+    }
+
+    .__tab-item.completed .number {
+      background-color: transparent;
+    }
+
+    .__tab-item.completed .number.checked {
+      display: flex;
+    }
+  }
+}
+.checkout-sidebar{
+    width: 33%;
+    &{
+        .checkout-summary{
+            padding: 24px;
+            border-radius: 6px;
+            &{
+                .bill-section{
+                    padding: 10px 0;
+                }
+                button{
+                    width: 100%;
+                    border: none;
+                    padding: 10px 26px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+                .summary-title{
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+/* Media Queries */
+@media screen and (max-width:991px){
+    .main-checkout{
+        flex-wrap: wrap;
+        row-gap: 50px;
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+    }
+    .checkout-tabs{
+        width: 100%;
+    }
+    .checkout-sidebar{
+        width: 100%;
+    }
+}
