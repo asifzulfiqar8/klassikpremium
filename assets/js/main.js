@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
   navDropDown.addEventListener("mouseover", () => {
     navDropDown.style.display = "block";
   });
+  window.addEventListener("scroll", () => {
+    navDropDown.style.display = "none";
+  });
 });
 
 // See More Script
