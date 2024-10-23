@@ -38,6 +38,7 @@
         }
         .__content {
           display: none;
+          padding: 24px 0;
         }
       }
     }
