@@ -68,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // For Nav DropDown
   let allWineItem = document.querySelector(".all-wines-nav-item");
-  let navDropDown = document.querySelector(".nav-dropdown__wrapper");
+  let navDropDown = document.querySelector(".nav-dropdown");
   allWineItem.addEventListener("mouseover", () => {
-    navDropDown.style.display = "flex";
+    navDropDown.style.display = "block";
   });
 
   allWineItem.addEventListener("mouseleave", () => {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   navDropDown.addEventListener("mouseover", () => {
-    navDropDown.style.display = "flex";
+    navDropDown.style.display = "block";
   });
 });
 
