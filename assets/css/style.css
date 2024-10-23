@@ -33,6 +33,15 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+/* Positions */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
 /* Text Color */
 .text-blue {
   color: var(--text-blue);
@@ -416,6 +425,12 @@ body {
 
 /* Other Global */
 
+.password-eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
 /* radio button styling for box shape */
 .custom-radio2 {
   display: flex;
