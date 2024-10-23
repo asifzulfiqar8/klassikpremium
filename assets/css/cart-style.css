@@ -4,12 +4,13 @@
 .main-cart {
   padding: 20px;
 }
-.empty-main-cart{
+.empty-main-cart {
   align-items: start;
   flex-wrap: wrap;
   row-gap: 50px;
-  &{
-    .cart-items-mobile{
+  padding: 40px 20px;
+  & {
+    .cart-items-mobile {
       padding: 24px;
     }
   }
@@ -27,7 +28,7 @@
       flex-direction: row;
       justify-content: space-between;
       border-radius: 6px;
-      /* width: 20%; */
+
       & {
         span {
           width: 33%;
@@ -63,77 +64,75 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      &{
-        
-        .bill-section{
-            padding: 10px 0;
+      & {
+        .bill-section {
+          padding: 10px 0;
         }
-        .checkout-btn{
-            border: none;
-            padding: 10px 26px;
-            border-radius: 6px;
-            cursor: pointer;
+        .checkout-btn {
+          border: none;
+          padding: 10px 26px;
+          border-radius: 6px;
+          cursor: pointer;
         }
-        
       }
     }
-    .coupon-section{
-        &{
-            .coupon-input{
-                border:solid 1px #cbcbcb;
-                padding:  16px;
-                border-radius: 6px;
-                &{
-                    input{
-                        width: 100%;
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        color: white;
-                        &::placeholder{
-                            color: #605F5F;
-                        }
-                    }
-                    button{
-                        background-color: transparent;
-                        border: none;
-                        color: white;
-                        cursor: pointer;
-                    }
-                }
+    .coupon-section {
+      & {
+        .coupon-input {
+          border: solid 1px #cbcbcb;
+          padding: 16px;
+          border-radius: 6px;
+          & {
+            input {
+              width: 100%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: white;
+              &::placeholder {
+                color: #605f5f;
+              }
             }
+            button {
+              background-color: transparent;
+              border: none;
+              color: white;
+              cursor: pointer;
+            }
+          }
         }
+      }
     }
   }
 }
 /* Media Quries */
-@media screen and (max-width:991px){
-    .main-cart{
-        flex-wrap: wrap;
-        row-gap: 50px;
-    }
-    .cart-items-desktop{
-        width: 100%;
-    }
-    .cart-sidebar{
-        width: 100%;
-    }
+@media screen and (max-width: 991px) {
+  .main-cart {
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .cart-items-desktop {
+    width: 100%;
+  }
+  .cart-sidebar {
+    width: 100%;
+  }
 }
-@media screen and (min-width:676px){
-    .cart-items-mobile{
-        display: none;
-    }
+@media screen and (min-width: 676px) {
+  .cart-items-mobile {
+    display: none;
+  }
 }
-@media screen and (max-width:676px){
-    .cart-items-desktop{
-        display: none;
+@media screen and (max-width: 676px) {
+  .cart-items-desktop {
+    display: none;
+  }
+  .cart-items-mobile {
+    width: 100%;
+    & {
+      .cart-item {
+        padding: 20px;
+      }
     }
-    .cart-items-mobile{
-        width: 100%;
-        &{
-            .cart-item{
-                padding: 20px;
-            }
-        }
-    }
+  }
 }
