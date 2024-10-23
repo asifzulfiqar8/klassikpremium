@@ -304,3 +304,46 @@ function filterTable() {
     }
   }
 }
+
+// Function to toggle password visibility
+function togglePasswordVisibility(inputId, toggleId) {
+  const passwordInput = document.getElementById(inputId);
+  const icon = document.querySelector(`#${toggleId}`);
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    icon.setAttribute("data-feather", "eye");
+  } else {
+    passwordInput.type = "password";
+    icon.setAttribute("data-feather", "eye-off");
+  }
+  feather.replace();
+}
+
+document
+  .getElementById("toggle-password")
+  .addEventListener("click", function () {
+    togglePasswordVisibility("password", "eye-kholo");
+  });
+
+document
+  .getElementById("toggle-password-confirm")
+  .addEventListener("click", function () {
+    togglePasswordVisibility("password-confirm", "eye-kholo-confirm");
+  });
+
+document
+  .getElementById("registration-form")
+  .addEventListener("submit", function (e) {
+    const password = document.getElementById("password").value;
+    const passwordConfirm = document.getElementById("password-confirm").value;
+    const errorMessageDiv = document.getElementById("error-message");
+
+    if (password !== passwordConfirm) {
+      e.preventDefault(); // Prevent form submission
+      errorMessageDiv.textContent = "Passwords do not match";
+      errorMessageDiv.style.display = "block";
+    } else {
+      errorMessageDiv.style.display = "none"; // Hide error message if passwords match
+    }
+  });
