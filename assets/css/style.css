@@ -586,6 +586,9 @@ body {
   right: 10px;
   top: 25px;
 }
+.border-bottom{
+  border-bottom: 1px solid #a7a7a7;
+}
 
 /* ScrollBar */
 
