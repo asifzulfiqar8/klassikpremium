@@ -4,6 +4,16 @@
 .main-cart {
   padding: 20px;
 }
+.empty-main-cart{
+  align-items: start;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  &{
+    .cart-items-mobile{
+      padding: 24px;
+    }
+  }
+}
 .cart-items-desktop {
   width: 64%;
 }
