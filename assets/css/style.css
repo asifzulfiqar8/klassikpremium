@@ -25,7 +25,7 @@ body {
 body {
   font-family: "Inter", sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
 .container-fluid {
@@ -92,6 +92,10 @@ a{
 }
 .bg-white {
   background-color: var(--white);
+}
+/* Boder */
+.border-bottom {
+  border-bottom: 1px solid #a7a7a7;
 }
 
 /* Padding */
@@ -589,7 +593,7 @@ a{
   right: 10px;
   top: 25px;
 }
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid #a7a7a7;
 }
 
