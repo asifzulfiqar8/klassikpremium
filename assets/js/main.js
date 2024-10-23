@@ -55,16 +55,34 @@ document.addEventListener("DOMContentLoaded", function () {
           tab.classList.add("completed");
           tab.querySelector(".number").innerHTML = "";
           tab.querySelector(".number").classList.add("checked");
-          tab.querySelector('.edit').classList.add('active'); 
+          tab.querySelector(".edit").classList.add("active");
         } else {
           tab.classList.remove("completed");
           tab.querySelector(".number").innerHTML = i + 1;
           tab.querySelector(".number").classList.remove("checked");
-          tab.querySelector('.edit').classList.remove('active'); 
+          tab.querySelector(".edit").classList.remove("active");
         }
       });
       chkTab.classList.add("active");
     });
+  });
+  // For Nav DropDown
+  let allWineItem = document.querySelector(".all-wines-nav-item");
+  let navDropDown = document.querySelector(".nav-dropdown__wrapper");
+  allWineItem.addEventListener("mouseover", () => {
+    navDropDown.style.display = "flex";
+  });
+
+  allWineItem.addEventListener("mouseleave", () => {
+    navDropDown.style.display = "none";
+  });
+
+  navDropDown.addEventListener("mouseleave", () => {
+    navDropDown.style.display = "none";
+  });
+
+  navDropDown.addEventListener("mouseover", () => {
+    navDropDown.style.display = "flex";
   });
 });
 
