@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Config Email</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #000;
+        color: white;
+      }
+      .template-wrapper {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      /* Table CSS */
+      .table-section {
+        padding: 32px;
+        background: #202224;
+      }
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      .styled-table th,
+      .styled-table td {
+        border: 1px solid #999;
+        padding: 10px;
+      }
+
+      .styled-table th {
+        background-color: #444;
+        font-weight: bold;
+      }
+
+      .section-header {
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        background-color: #444;
+        border: 1px solid #999;
+      }
+
+      .table-of-total tr td:last-child {
+        font-weight: bold;
+        text-align: right;
+      }
+
+      /* Moiz */
+      .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        padding: 30px 0;
+        border-bottom: 2px solid #999;
+        & {
+          a {
+            display: flex;
+            justify-content: center;
+          }
+          img {
+            width: 80%;
+          }
+          h2,
+          h4 {
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+      main {
+        & {
+          section {
+            padding: 40px 0;
+          }
+          .order-details {
+            & {
+              h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: underline;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+              }
+              p {
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .lower-info-box {
+        & {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          font-size: 16px;
+          border-bottom: 1px solid #fff;
+          h3 {
+            color: #facc15;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            border-bottom: solid 1px #fff;
+          }
+          .cp-box {
+            display: flex;
+            justify-content: space-between;
+            & {
+              h6 {
+                font-size: 16px;
+                font-weight: normal;
+              }
+            }
+          }
+          .address-info {
+            display: flex;
+            justify-content: center;
+            column-gap: 40px;
+            & {
+              div {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                row-gap: 20px;
+                flex-direction: column;
+              }
+              h4 {
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-align: center;
+              }
+              span {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      /* Footer */
+      .main-footer {
+        & {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          span {
+            opacity: 0.6;
+            font-weight: 400;
+            font-size: 12px;
+          }
+          h4 {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          .__left {
+            width: 58%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            justify-content: start;
+            & {
+              img {
+                width: 80%;
+              }
+              .contact-info {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+          .__right {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+        }
+      }
+      .footer-social {
+        display: flex;
+        column-gap: 20px;
+        padding: 16px 0;
+        justify-content: center;
+        & {
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="template-wrapper">
+      <header>
+        <section class="header-wrapper">
+          <a href="#"><img src="..//assets/images/Header Logo.png" alt="" /></a>
+          <h2><< Hi {firstname} {lastname}, >></h2>
+          <h4>Thank you for creating account with enjoy wine</h4>
+        </section>
+      </header>
+      <main>
+        <!-- Order Details -->
+        <section class="order-details">
+          <h3>Order Details</h3>
+
+          <p class="order-detail">
+            Order: <span> {order_name} Placed on {date} </span>
+          </p>
+          <p class="payment-detail">Payment: <span> {payment} </span></p>
+        </section>
+
+        <!-- Lower Information Box -->
+        <section class="lower-info-box">
+          <h3>You have selected to pay by wire transfer</h3>
+          <!-- Carrier and Payment Block -->
+          <div class="carrier cp-box">
+            <h6>Carrier</h6>
+            <span>{carrier}</span>
+          </div>
+          <div class="payment cp-box">
+            <h6>Payment</h6>
+            <span>{payment}</span>
+          </div>
+          <!-- Address Block -->
+          <div class="address-info">
+            <div class="__delivery-address">
+              <h4>Delivery Address</h4>
+              <hr />
+              <p>{delivery_block_html}</p>
+            </div>
+            <div class="__billing-address">
+              <h4>Billing Address</h4>
+              <hr />
+              <p>{invoice_block_html}</p>
+            </div>
+          </div>
+          <!-- Lower Text -->
+          <p>
+            You can review your order and download your invoice from the “Order
+            history” section of your customer account by clicking “My account”
+            on our shop.
+          </p>
+          <p>
+            If you have a guest account, you can follow your order via the
+            “Guest Tracking” section on our shop.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <section class="main-footer">
+          <div class="__left">
+            <a href="#"
+              ><img src="../assets/images/Header Logo.png" alt=""
+            /></a>
+            <div class="contact-info">
+              <span>Monday-Friday: 09:00-19:00</span>
+              <h4>+34 932 684 286 / +34 608 845 245</h4>
+            </div>
+          </div>
+          <div class="__right location-info">
+            <span>Our Location:</span>
+            <h4>
+              Avenida Cornella 144, 7.4 08950 Esplugues De Llobregat Barcelona,
+              Spain
+            </h4>
+          </div>
+        </section>
+        <section class="footer-social">
+          <a href=""><img src="../assets/images/Instagram.png" alt="" /></a>
+          <a href=""><img src="../assets/images/facebook.png" alt="" /></a>
+          <a href=""> <img src="../assets/images/Twitter.png" alt="" /></a>
+          <a href=""><img src="../assets/images/Youtube.png" alt="" /></a>
+        </section>
+      </footer>
+    </section>
+  </body>
+</html>
