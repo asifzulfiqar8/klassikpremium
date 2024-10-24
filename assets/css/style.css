@@ -743,7 +743,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   right: 0;
   background-color: var(--primary-color);
