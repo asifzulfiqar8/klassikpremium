@@ -26,7 +26,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .container-fluid {
   width: 100%;
@@ -740,7 +740,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Off Canvas */
 .offcanvas {
-  height: 100%;
+  height: 100% !important;
   width: 0;
   position: fixed;
   z-index: 99;
@@ -1573,46 +1573,46 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 991px) {
   .font-12 {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .font-14 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .font-16 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .font-18 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .font-20 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .font-22 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .font-24 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .font-26 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .font-28 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .font-32 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .font-34 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .font-36 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .font-40 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
   .font-54 {
-    font-size: 48px;
+    font-size: 48px !important;
   }
   .w-50 {
     width: 92%;
@@ -1893,45 +1893,45 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
   }
   .font-12 {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .font-14 {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .font-16 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .font-18 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .font-20 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .font-22 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .font-24 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .font-26 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .font-28 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .font-32 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .font-34 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .font-36 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
   .font-40 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .font-54 {
-    font-size: 42px;
+    font-size: 42px !important;
   }
 }

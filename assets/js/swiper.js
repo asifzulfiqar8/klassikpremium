@@ -14,6 +14,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+  
   //   For Product Section
   var productSwiper = new Swiper(".productSwiper", {
     slidesPerView: 4, // Display 4 products at a time
