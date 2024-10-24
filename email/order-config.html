@@ -27,42 +27,7 @@
         margin: 0 auto;
         padding: 0 20px;
       }
-      /* Table CSS */
-      .table-section {
-        padding: 32px;
-        background: #202224;
-      }
-      .styled-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-      }
 
-      .styled-table th,
-      .styled-table td {
-        border: 1px solid #999;
-        padding: 10px;
-      }
-
-      .styled-table th {
-        background-color: #444;
-        font-weight: bold;
-      }
-
-      .section-header {
-        text-align: center;
-        font-weight: bold;
-        padding: 10px 0;
-        background-color: #444;
-        border: 1px solid #999;
-      }
-
-      .table-of-total tr td:last-child {
-        font-weight: bold;
-        text-align: right;
-      }
-
-      /* Moiz */
       .header-wrapper {
         display: flex;
         flex-direction: column;
@@ -210,6 +175,40 @@
           }
         }
       }
+      /* Table */
+      .table-section {
+        background: #202224;
+        padding: 32px;
+      }
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .styled-table th,
+      .styled-table td {
+        border: 1px solid #999;
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .styled-table th {
+        font-weight: bold;
+      }
+
+      .section-header {
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        border: 1px solid #999;
+      }
+
+      .table-of-total tr td:last-child {
+        font-weight: bold;
+        text-align: right;
+        font-weight: normal;
+      }
     </style>
   </head>
   <body>
@@ -232,6 +231,56 @@
           <p class="payment-detail">Payment: <span> {payment} </span></p>
         </section>
 
+        <section class="table-section">
+          <table class="styled-table">
+            <!-- Header Row -->
+            <thead>
+              <tr class="box-border">
+                <th class="box-border">REFERENCE</th>
+                <th class="box-border">PRODUCT</th>
+                <th class="box-border">UNIT PRICE</th>
+                <th class="box-border">QUANTITY</th>
+                <th class="box-border">TOTAL PRICE</th>
+              </tr>
+            </thead>
+
+            <!-- Body Section -->
+            <tbody>
+              <tr class="box-border">
+                <td colspan="5" class="section-header box-border">(PAYMENT)</td>
+              </tr>
+              <tr class="box-border">
+                <td colspan="5" class="section-header box-border">
+                  (DISCOUNTS)
+                </td>
+              </tr>
+            </tbody>
+
+            <!-- Footer for Totals -->
+            <tfoot class="table-of-total">
+              <tr class="box-border">
+                <td colspan="4" class="box-border">PRODUCT</td>
+                <td class="box-border">{{TOTAL_PRODUCTS}}</td>
+              </tr>
+              <tr class="box-border">
+                <td colspan="4" class="box-border">DISCOUNTS</td>
+                <td class="box-border">{{TOTAL_DISCOUNTS}}</td>
+              </tr>
+              <tr class="box-border">
+                <td colspan="4" class="box-border">GIFT-WRAPPING</td>
+                <td class="box-border">{{TOTAL_SHIPPING}}</td>
+              </tr>
+              <tr class="box-border">
+                <td colspan="4" class="box-border">TOTAL TAX PAID</td>
+                <td class="box-border">{{TOTAL_TAX_PAID}}</td>
+              </tr>
+              <tr class="box-border">
+                <td colspan="4" class="box-border">TOTAL PAID</td>
+                <td class="box-border">{{TOTAL_PAID}}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
         <!-- Lower Information Box -->
         <section class="lower-info-box">
           <h3>You have selected to pay by wire transfer</h3>
