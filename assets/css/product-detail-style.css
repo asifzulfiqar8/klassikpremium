@@ -94,8 +94,7 @@
 }
 
 .product-tabs__item.active h5 {
-  color: black;
-  text-decoration: underline;
+  color: black; 
 }
 
 @media screen and (max-width: 991px) {
