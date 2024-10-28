@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySwiper", {
   var productSwiper = new Swiper(".productSwiper", {
     slidesPerView: 4, // Display 4 products at a time
     spaceBetween: 30, // Space between the products
-    loop: true, // Infinite loop
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

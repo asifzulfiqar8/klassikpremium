@@ -62,7 +62,7 @@
             <div class="mid-header__logo">
               <a href="/">
                 <img
-                  src="assets/images/Header Logo.png"
+                  src="../assets/images/Header Logo.png"
                   alt=""
                   class="header-logo"
                 />
@@ -76,31 +76,43 @@
                 placeholder="Search Wines"
                 class="header-search"
               />
-              <img src="assets/images/search.svg" alt="" />
-              <div class="search-template">
+              <img src="../assets/images/search.svg" alt="" />
+              <div class="search-template ">
                 <h4 class="font-18 text-black font-semi-bold">Products</h4>
                 <hr />
                 <div class="prod-item flex cgap-20">
-                  <img src="assets/images/cart-product-image.png" alt="" />
+                  <img src="../assets/images/cart-product-image.png" alt="" />
                   <div class="item-info flex flex-col rgap-10">
                     <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
                     <span class="font-18 font-semi-bold">$ 15,319.80</span>
                   </div>
                 </div>
                 <div class="prod-item flex cgap-20">
-                  <img src="assets/images/cart-product-image.png" alt="" />
+                  <img src="../assets/images/cart-product-image.png" alt="" />
                   <div class="item-info flex flex-col rgap-10">
                     <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
                     <span class="font-18 font-semi-bold">$ 15,319.80</span>
                   </div>
                 </div>
                 <div class="prod-item flex cgap-20">
-                  <img src="assets/images/cart-product-image.png" alt="" />
+                  <img src="../assets/images/cart-product-image.png" alt="" />
                   <div class="item-info flex flex-col rgap-10">
                     <h5 class="font-16 font-semi-bold">Clos de papes 2012</h5>
                     <span class="font-18 font-semi-bold">$ 15,319.80</span>
                   </div>
                 </div>
+              </div>
+              <div class="search-options flex flex-col">
+                <h3 class="font-18 font-semi-bold">WINERIES</h3>
+                <hr />
+                <h3 class="font-18 font-semi-bold">
+                  Domaine de la Romanee- Conti
+                </h3>
+                <h3 class="font-18 font-semi-bold">REGIONS</h3>
+                <hr />
+                <h3 class="font-18 font-semi-bold">La Romanee AOC</h3>
+                <h3 class="font-18 font-semi-bold">Romanee-Conti AOC</h3>
+                <h3 class="font-18 font-semi-bold">Romanee-Saint-Vivant AOC</h3>
               </div>
             </div>
             <!-- Right Container -->
@@ -130,7 +142,7 @@
                 class="icon-boxes flex cgap-20 items-center justify-center rgap-5"
               >
                 <div class="account_box flex flex-col items-center rgap-5">
-                  <img src="assets/images/user.svg" alt="" />
+                  <img src="../assets/images/user.svg" alt="" />
                   <span class="font-12 font-semi-bold text-white"
                     >My Account</span
                   >
@@ -138,7 +150,7 @@
                 <div
                   class="cart_box flex flex-col items-center justify-center rgap-5"
                 >
-                  <img src="assets/images/bag.svg" alt="" />
+                  <img src="../assets/images/bag.svg" alt="" />
                   <span class="font-12 font-semi-bold text-white">Cart</span>
                 </div>
               </div>
@@ -175,7 +187,7 @@
                 <i class="fa-solid fa-chevron-down font-14 text-white"></i>
               </div>
             </div>
-            <div class="nav-item">
+            <div class="nav-item price-list-item">
               <div
                 class="item-wrapper flex items-center justify-center cgap-10"
               >
@@ -265,6 +277,23 @@
                 <li>Vermut</li>
                 <li>Lambrusco</li>
               </ul>
+            </div>
+          </div>
+        </section>
+        <!-- PriceList Dropdown -->
+        <section class="pricelist-dropdown">
+          <div class="pricelist-dropdown__wrapper">
+            <h3 class="font-18 font-semi-bold">Downlaod Our Catalogue</h3>
+            <hr />
+            <div class="__options">
+              <div class="option flex items-center justify-center cgap-1 v 0">
+                <img src="assets/images/xls.png" alt="" />
+                <h4>XLS</h4>
+              </div>
+              <div class="option flex items-center justify-center cgap-1 v 0">
+                <img src="assets/images/pdf.png" alt="" />
+                <h4>PDF</h4>
+              </div>
             </div>
           </div>
         </section>
@@ -482,7 +511,7 @@
           </div>
           <hr />
           <div>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center offcanvas-search">
               <input
                 class="dark-search"
                 type="text"
@@ -1853,10 +1882,14 @@
               class="link-item font-14 font-normal text-black-300"
               >About us</a
             >
-            <a href="/pages/contact-us.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/contact-us.html"
+              class="link-item font-14 font-normal text-black-300"
               >Contact Us</a
             >
-            <a href="/pages/general-conditions.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/general-conditions.html"
+              class="link-item font-14 font-normal text-black-300"
               >Conditions of Purchase</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
@@ -1888,16 +1921,22 @@
           <!-- My Account -->
           <div class="footer-links__wrapper flex flex-col rgap-10">
             <h5 class="font-14 font-normal text-white">My Account</h5>
-            <a href="/pages/order-history.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/order-history.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Orders</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
               >My Murchandise Return</a
             >
-            <a href="/pages/invoice.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/invoice.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Credits Slip</a
             >
-            <a href="/pages/edit-information.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/edit-information.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Personal Info</a
             >
           </div>

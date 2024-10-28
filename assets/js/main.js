@@ -84,8 +84,23 @@ document.addEventListener("DOMContentLoaded", function () {
   navDropDown.addEventListener("mouseover", () => {
     navDropDown.style.display = "block";
   });
+  // price List Drop Down
+  let priceLsitItem = document.querySelector(".price-list-item");
+  let priceDropDown = document.querySelector(".pricelist-dropdown");
+  let priceOpen = true;
+  priceLsitItem.addEventListener("click", () => {
+    if (priceOpen) {
+      priceDropDown.style.display = "block";
+      priceOpen = false;
+    } else {
+      priceDropDown.style.display = "none";
+      priceOpen = true;
+    }
+  });
   window.addEventListener("scroll", () => {
     navDropDown.style.display = "none";
+    priceDropDown.style.display = "none";
+    priceOpen = true;
   });
   // Close Top Bar
   let closeTopHeader = document.querySelectorAll(".close-top-header");
@@ -101,20 +116,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // For Serach template
   let searchInput = document.querySelector(".header-search");
   let searchTemplate = document.querySelector(".search-template");
+  let searchOptions = document.querySelector(".search-options");
 
   searchInput.addEventListener("click", () => {
     searchTemplate.classList.add("active");
-    console.log("searching");
+    searchOptions.classList.add("active");
   });
 
   searchInput.addEventListener("blur", () => {
     // Small delay to allow clicks inside the dropdown before it hides
     setTimeout(() => {
       searchTemplate.classList.remove("active");
+      searchOptions.classList.remove("active");
     }, 200);
   });
-});
 
+  
+});
 // See More Script
 // Select all toggle buttons
 const toggleButtons = document.querySelectorAll(".toggle-content");

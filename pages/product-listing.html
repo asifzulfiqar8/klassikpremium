@@ -11,8 +11,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Listing</title>
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -552,7 +552,9 @@
         <section
           class="container filter-bar font-16 font-semi-bold text-white flex cgap-30 items-center justify-end"
         >
-          <div class="filter-bar__filter flex cgap-5 items-center">
+          <div
+            class="filter-bar__filter filter-collapse flex cgap-5 items-center"
+          >
             <span>Filter</span>
             <svg
               width="20"
@@ -586,9 +588,14 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <div class="sort__select bg-white text-black">
+              <span class="font-14">Sort by Price</span>
+              <span class="font-14">Sort by Title</span>
+              <span class="font-14">Sort by Year</span>
+            </div>
           </div>
           <div class="filter-bar__orientation flex items-center">
-            <div class="vertical bg-black-800">
+            <div class="vertical active">
               <svg
                 width="24"
                 height="24"
@@ -629,8 +636,10 @@
           <!-- Filter Sidebar -->
           <div class="filter-sidebar bg-black-800 flex flex-col rgap-10">
             <h5 class="font-22 font-bold text-white">Search Filters</h5>
-            <div class="filter-tools flex items-center cgap-10 text-white">
-              <div class="filter-sidebar__sort flex cgap-5 items-center">
+            <div
+              class="filter-tools filter-main flex items-center cgap-10 text-white"
+            >
+              <div class="filter-bar__sort flex cgap-5 items-center">
                 <span>Sort by</span>
                 <svg
                   width="20"
@@ -647,8 +656,15 @@
                     stroke-linejoin="round"
                   />
                 </svg>
+                <div class="sort__select bg-white text-black">
+                  <span class="font-14">Sort by Price</span>
+                  <span class="font-14">Sort by Title</span>
+                  <span class="font-14">Sort by Year</span>
+                </div>
               </div>
-              <div class="filter-sidebar__filter flex cgap-5 items-center">
+              <div
+                class="filter-sidebar__filter filter-collapse flex cgap-5 items-center"
+              >
                 <span>Filter</span>
                 <svg
                   width="20"
@@ -1771,10 +1787,14 @@
               class="link-item font-14 font-normal text-black-300"
               >About us</a
             >
-            <a href="/pages/contact-us.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/contact-us.html"
+              class="link-item font-14 font-normal text-black-300"
               >Contact Us</a
             >
-            <a href="/pages/general-conditions.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/general-conditions.html"
+              class="link-item font-14 font-normal text-black-300"
               >Conditions of Purchase</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
@@ -1806,16 +1826,22 @@
           <!-- My Account -->
           <div class="footer-links__wrapper flex flex-col rgap-10">
             <h5 class="font-14 font-normal text-white">My Account</h5>
-            <a href="/pages/order-history.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/order-history.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Orders</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
               >My Murchandise Return</a
             >
-            <a href="/pages/invoice.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/invoice.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Credits Slip</a
             >
-            <a href="/pages/edit-information.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/edit-information.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Personal Info</a
             >
           </div>
@@ -1904,6 +1930,7 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/fitler.js"></script>
     <script src="../assets/js/range.js"></script>
   </body>
 </html>
