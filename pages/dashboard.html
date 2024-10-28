@@ -9,8 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <!-- Font Awesome -->
@@ -23,6 +23,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .sign-out-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sign-out-btn a {
+        background-color: var(--bg-yellow-500);
+        padding: 5px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        width: 293px;
+        height: 72px;
+        font-size: 22px !important;
+        font-weight: 500;
+        line-height: 34px;
+      }
+
+      @media screen and (max-width: 676px) {
+        .sign-out-btn a  {
+          width: 219px;
+          height: 52px;
+          font-size: 18px !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -556,7 +587,11 @@
                         />
                       </svg>
                     </div>
-                    <a href="edit-information.html" class="text-white font-28 cursor-pointer">Information</a>
+                    <a
+                      href="edit-information.html"
+                      class="text-white font-28 cursor-pointer"
+                      >Information</a
+                    >
                   </div>
                 </div>
                 <div class="dashboard-container">
@@ -587,7 +622,9 @@
                         </defs>
                       </svg>
                     </div>
-                    <a href="new-address.html" class="text-white font-28 cursor-pointer"
+                    <a
+                      href="new-address.html"
+                      class="text-white font-28 cursor-pointer"
                       >Add First Address</a
                     >
                   </div>
@@ -611,7 +648,9 @@
                       </svg>
                     </div>
 
-                    <a href="order-history.html" class="text-white font-28 cursor-pointer"
+                    <a
+                      href="order-history.html"
+                      class="text-white font-28 cursor-pointer"
                       >Order History</a
                     >
                   </div>
@@ -634,7 +673,9 @@
                         />
                       </svg>
                     </div>
-                    <a href="filled-cart.html" class="text-white font-28 cursor-pointer"
+                    <a
+                      href="filled-cart.html"
+                      class="text-white font-28 cursor-pointer"
                       >Credit Slips</a
                     >
                   </div>
@@ -657,7 +698,9 @@
                         />
                       </svg>
                     </div>
-                    <a href="gdpr.html" class="text-white font-28 cursor-pointer"
+                    <a
+                      href="gdpr.html"
+                      class="text-white font-28 cursor-pointer"
                       >GDPR - Personal Data</a
                     >
                   </div>
@@ -681,7 +724,11 @@
                       </svg>
                     </div>
 
-                    <a href="about-us.html" class="text-white font-28 cursor-pointer">My Alerts</a>
+                    <a
+                      href="about-us.html"
+                      class="text-white font-28 cursor-pointer"
+                      >My Alerts</a
+                    >
                   </div>
                 </div>
               </div>
@@ -689,8 +736,8 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 pt-50">
-                  <div class="flex justify-center">
-                    <a href="sign-in.html" class="font-22 text-yellow">Sign Out</a>
+                  <div class="sign-out-btn">
+                    <a href="sign-in.html">Sign Out</a>
                   </div>
                 </div>
               </div>
@@ -711,10 +758,14 @@
               class="link-item font-14 font-normal text-black-300"
               >About us</a
             >
-            <a href="/pages/contact-us.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/contact-us.html"
+              class="link-item font-14 font-normal text-black-300"
               >Contact Us</a
             >
-            <a href="/pages/general-conditions.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/general-conditions.html"
+              class="link-item font-14 font-normal text-black-300"
               >Conditions of Purchase</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
@@ -746,16 +797,22 @@
           <!-- My Account -->
           <div class="footer-links__wrapper flex flex-col rgap-10">
             <h5 class="font-14 font-normal text-white">My Account</h5>
-            <a href="/pages/order-history.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/order-history.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Orders</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
               >My Murchandise Return</a
             >
-            <a href="/pages/invoice.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/invoice.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Credits Slip</a
             >
-            <a href="/pages/edit-information.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/edit-information.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Personal Info</a
             >
           </div>
@@ -1022,18 +1079,12 @@
         </div>
         <div>
           <p class="text-white font-14">
-            Currency ><span
-              class="text-white font-14"
-              >Euro</span
-            >
+            Currency ><span class="text-white font-14">Euro</span>
           </p>
         </div>
         <div>
           <p class="text-white font-14">
-            Language ><span
-              class="text-white font-14"
-              >English (US)</span
-            >
+            Language ><span class="text-white font-14">English (US)</span>
           </p>
         </div>
       </div>

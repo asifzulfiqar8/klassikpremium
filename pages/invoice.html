@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
@@ -20,7 +20,6 @@
     <title>Order Slip</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/invoice-style.css" />
-    <style></style>
   </head>
   <body>
     <header>
@@ -563,6 +562,7 @@
               <p>271 Richmond Rd, Grey Lynn, Auckland 1022, New Zealand</p>
             </div>
 
+            <!--  invoice table desktop -->
             <div class="invoice-table-container">
               <table>
                 <thead>
@@ -595,7 +595,43 @@
                 </tbody>
               </table>
             </div>
+            <!-- end invoice table -->
+            <!-- start mobile version of invoice table  -->
+            <div class="mobile-invoice-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2">Order Reference</th>
+                    <th colspan="1">Date</th>
+                    <th>Total Price</th>
+                    <th>Payment</th>
+                    <th class="text-end">Status</th>
+                    <th colspan="1">
+                      <select class="select-dropdown-style">
+                        <option value=""></option>
+                      </select>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">00923929</td>
+                    <td colspan="1">23/11/2022</td>
+                    <td>$55.50</td>
+                    <td>Payment Online</td>
+                    <td>
+                      <div class="status-paid-invoice">
+                        <p>Paid</p>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end mobile invoice table container -->
 
+            <!-- invoice description table desktop -->
             <div class="invoice-description-table-container">
               <table>
                 <thead>
@@ -632,7 +668,41 @@
                 </tbody>
               </table>
             </div>
-
+            <!-- invoice description table desktop ended -->
+            <!--  mobile invoice description table desktop ended -->
+            <div class="mobile-invoice-description-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="show-on-small">Description</th>
+                    <th class="show-on-small">Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Unit Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="show-on-small">Clos de papes 2012</td>
+                    <td class="show-on-small">2</td>
+                    <td>$50.00</td>
+                    <td>$50.00</td>
+                  </tr>
+                  <tr>
+                    <td class="show-on-small">Clos de papes 2012</td>
+                    <td class="show-on-small">1</td>
+                    <td>$50.00</td>
+                    <td>$50.00</td>
+                  </tr>
+                  <tr>
+                    <td class="show-on-small"></td>
+                    <td class="show-on-small">Total</td>
+                    <td class="show-on-small">$55.50</td>
+                    <td>$50.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- mobile invoice description table  -->
             <div class="total-price-invoice-table-container">
               <table>
                 <tbody>
@@ -676,10 +746,14 @@
               class="link-item font-14 font-normal text-black-300"
               >About us</a
             >
-            <a href="/pages/contact-us.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/contact-us.html"
+              class="link-item font-14 font-normal text-black-300"
               >Contact Us</a
             >
-            <a href="/pages/general-conditions.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/general-conditions.html"
+              class="link-item font-14 font-normal text-black-300"
               >Conditions of Purchase</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
@@ -711,16 +785,22 @@
           <!-- My Account -->
           <div class="footer-links__wrapper flex flex-col rgap-10">
             <h5 class="font-14 font-normal text-white">My Account</h5>
-            <a href="/pages/order-history.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/order-history.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Orders</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
               >My Murchandise Return</a
             >
-            <a href="/pages/invoice.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/invoice.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Credits Slip</a
             >
-            <a href="/pages/edit-information.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/edit-information.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Personal Info</a
             >
           </div>
