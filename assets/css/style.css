@@ -129,7 +129,9 @@ a {
 .py-30 {
   padding: 30px 0;
 }
-
+.px-30{
+  padding: 0 30px;
+}
 .pr-20 {
   padding-right: 20px;
 }
@@ -574,24 +576,6 @@ a {
   font-size: 16px;
 }
 
-.save-btn-register {
-  display: flex;
-  justify-content: end;
-}
-.save-btn-register button {
-  width: 219px;
-  height: 72px;
-  border-radius: 6px;
-  padding: 15px;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-  background-color: var(--bg-yellow-500);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .eye-icon {
   position: absolute;
   right: 10px;
@@ -1513,6 +1497,28 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 8px;
   text-align: center;
 }
+.sign-out-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-out-btn a {
+  background-color: var(--bg-yellow-500);
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 293px;
+  height: 72px;
+  font-size: 22px !important;
+  font-weight: 500;
+  line-height: 34px;
+}
+
 
 /* About us */
 .about-intro {
@@ -1824,11 +1830,56 @@ input[type="number"]::-webkit-outer-spin-button {
       }
     }
   }
+
+  .checkout-btn {
+    display: flex;
+    justify-content: center !important;
+  }
+  
+  .checkout-btn button {
+    width: 90% !important;
+    height: 52px !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: var(--bg-yellow-500);
+    border-radius: 6px;
+    padding: 0 !important;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .cart-btn {
+    display: flex;
+    justify-content: center !important;
+  }
+  
+  .cart-btn button {
+    width: 100% !important;
+    height: 42px !important;
+    color: var(--black800) !important;
+    font-size: 18px !important;
+    display: flex !important;
+    color: var(--black800);
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: var(--bg-yellow-500);
+    border-radius: 6px;
+    padding: 0 !important;
+    font-weight: 500;
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 768px) {
   .hide-bread-crumb {
     display: none;
   }
+  .save-btn-register {
+    display: flex;
+    justify-content: center !important;
+  } 
 }
 @media screen and (max-width: 768px) {
   .grid-cols-4 {
@@ -1892,21 +1943,70 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .radio-mark2 {
-  margin-left: 15px;
+  margin-left: 5px;
   padding-top: 10px;
 }
 .save-btn-register {
   display: flex;
-  justify-content: center !important;
+  justify-content: end !important;
 }
 
 .save-btn-register button {
+  width: 219px;
   height: 52px !important;
   text-align: center !important;
   font-size: 18px !important;
   display: flex;
   justify-content: center !important;
+  align-items: center;
+  background-color: var(--bg-yellow-500);
+  border-radius: 6px;
+  padding: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
+
+.checkout-btn {
+  display: flex ;
+  justify-content: end;
+}
+
+.checkout-btn button {
+  width: 293px;
+  height: 72px;
+  text-align: center !important;
+  font-size: 22px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  background-color: var(--bg-yellow-500);
+  border-radius: 6px;
+  padding: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cart-btn {
+  display: flex ;
+  justify-content: center;
+}
+
+.cart-btn button {
+  width: 100%;
+  height: 52px;
+  text-align: center !important;
+  color: var(--black800) !important;
+  font-size: 22px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  background-color: var(--bg-yellow-500);
+  border-radius: 6px;
+  padding: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .social-title {
   display: flex;
   flex-flow: nowrap;
@@ -1980,6 +2080,11 @@ input[type="number"]::-webkit-outer-spin-button {
         font-size: 12px;
       }
     }
+  }
+  .sign-out-btn a  {
+    width: 96%;
+    height: 52px;
+    font-size: 18px !important;
   }
 }
 

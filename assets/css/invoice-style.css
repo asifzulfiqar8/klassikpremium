@@ -304,6 +304,7 @@ td {
   display: none;
 }
 
+
 @media screen and (max-width: 786px) {
   .invoice-table-container {
     display: none;
@@ -315,6 +316,9 @@ td {
 
   .mobile-invoice-table-container table thead tr {
     border-bottom: 2px solid #fff;
+  }
+  .mobile-invoice-table-container table thead tr th:last-child{
+    text-align: end;
   }
 
   .mobile-invoice-table-container th:nth-child(3),
