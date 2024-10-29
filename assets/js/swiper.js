@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
       enabled: true,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-hero",
       clickable: true,
     },
     navigation: {
@@ -26,8 +26,8 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+      // el: ".swiper-pagination",
+      clickable: false,
     },
     breakpoints: {
       1280: {
@@ -54,11 +54,11 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30, // Space between the products
     loop: true, // Infinite loop
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swp-icon-next",
+      prevEl: ".swp-icon-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
+      // el: ".swiper-pagination",
       clickable: true,
     },
     breakpoints: {
