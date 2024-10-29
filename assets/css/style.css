@@ -129,7 +129,7 @@ a {
 .py-30 {
   padding: 30px 0;
 }
-.px-30{
+.px-30 {
   padding: 0 30px;
 }
 .pr-20 {
@@ -701,12 +701,17 @@ input[type="number"]::-webkit-outer-spin-button {
   content: "";
 }
 .swiper-button-prev {
-  left: var(--swiper-navigation-sides-offset, 40px);
+  left: var(--swiper-navigation-sides-offset, -40px);
   right: auto;
 }
 .swiper-button-next {
-  right: var(--swiper-navigation-sides-offset, 40px);
+  right: var(--swiper-navigation-sides-offset, -40px);
   left: auto;
+}
+.swiper-hero-btns {
+  position: absolute;
+  width: 100%;
+  inset: 0;
 }
 .swiper-btn img {
   width: 52px;
@@ -1115,6 +1120,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hero__swiper {
   padding: 80px 0 50px 0;
+  position: relative;
 }
 .hero__icon__box {
   width: 24%;
@@ -1520,7 +1526,6 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 34px;
 }
 
-
 /* About us */
 .about-intro {
   & {
@@ -1627,6 +1632,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* ======== Media Quries============= */
+@media screen and (max-width: 1540px) {
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
@@ -1836,7 +1851,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center !important;
   }
-  
+
   .checkout-btn button {
     width: 90% !important;
     height: 52px !important;
@@ -1856,7 +1871,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center !important;
   }
-  
+
   .cart-btn button {
     width: 100% !important;
     height: 42px !important;
@@ -1880,7 +1895,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .save-btn-register {
     display: flex;
     justify-content: center !important;
-  } 
+  }
 }
 @media screen and (max-width: 768px) {
   .grid-cols-4 {
@@ -1968,7 +1983,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .checkout-btn {
-  display: flex ;
+  display: flex;
   justify-content: end;
 }
 
@@ -1988,7 +2003,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .cart-btn {
-  display: flex ;
+  display: flex;
   justify-content: center;
 }
 
@@ -2082,7 +2097,7 @@ input[type="number"]::-webkit-outer-spin-button {
       }
     }
   }
-  .sign-out-btn a  {
+  .sign-out-btn a {
     width: 96%;
     height: 52px;
     font-size: 18px !important;
