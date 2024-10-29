@@ -703,10 +703,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, -40px);
   right: auto;
+  margin-top: 0;
 }
 .swiper-button-next {
   right: var(--swiper-navigation-sides-offset, -40px);
   left: auto;
+  margin-top: 0;
 }
 .swiper-hero-btns {
   position: absolute;
@@ -1191,10 +1193,12 @@ input[type="number"]::-webkit-outer-spin-button {
   .swiper-button-prev {
     left: var(--swiper-navigation-sides-offset, 05px);
     right: auto;
+    margin-top: 0;
   }
   .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 05px);
     left: auto;
+    margin-top: 0;
   }
 }
 .productSwiper .swiper-product {
@@ -1636,10 +1640,12 @@ input[type="number"]::-webkit-outer-spin-button {
   .swiper-button-prev {
     left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
+    margin-top: 0;
   }
   .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 10px);
     left: auto;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1796,10 +1802,12 @@ input[type="number"]::-webkit-outer-spin-button {
       .swiper-button-prev {
         left: var(--swiper-navigation-sides-offset, 4px);
         right: auto;
+        margin-top: 0;
       }
       .swiper-button-next {
         right: var(--swiper-navigation-sides-offset, 4px);
         left: auto;
+        margin-top: 0;
       }
     }
   }
@@ -1933,6 +1941,16 @@ input[type="number"]::-webkit-outer-spin-button {
   /* About us */
   .our-founder__team {
     padding: 30px 0 30px 0;
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+    margin-top: 0;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+    margin-top: 0;
   }
 }
 /* Sign in */
