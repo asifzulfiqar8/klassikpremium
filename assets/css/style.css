@@ -687,7 +687,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Swiper Start */
 
 .swiper {
-  width: 100%;
+  width: 95%;
 }
 
 .swiper-slide,
@@ -710,12 +710,12 @@ input[type="number"]::-webkit-outer-spin-button {
   content: "";
 }
 .swiper-button-prev {
-  left: var(--swiper-navigation-sides-offset, -40px) !important;
+  left: var(--swiper-navigation-sides-offset, 20px) !important;
   right: auto;
   margin-top: 0;
 }
 .swiper-button-next {
-  right: var(--swiper-navigation-sides-offset, -40px) !important;
+  right: var(--swiper-navigation-sides-offset, 20px) !important;
   left: auto;
   margin-top: 0;
 }
@@ -1652,12 +1652,12 @@ input[type="number"]::-webkit-outer-spin-button {
 /* ======== Media Quries============= */
 @media screen and (max-width: 1540px) {
   .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset, 20px) !important;
+    left: var(--swiper-navigation-sides-offset, 10px) !important;
     right: auto;
     margin-top: 0;
   }
   .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset, 20px) !important;
+    right: var(--swiper-navigation-sides-offset, 10px) !important;
     left: auto;
     margin-top: 0;
   }
