@@ -175,16 +175,20 @@ a {
 .pt-10 {
   padding-top: 10px;
 }
-
 .pb-20 {
   padding-bottom: 20px;
 }
-
 .pt-50 {
   padding-top: 50px;
 }
+.pt-100 {
+  padding-top: 100px;
+}
 .pb-50 {
   padding-bottom: 50px;
+}
+.pb-70 {
+  padding-bottom: 70px;
 }
 /* Margin */
 
@@ -1083,12 +1087,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 /* Price List DropDown */
 .pricelist-dropdown {
-  width: 25%;
+  width: 256px;
   position: absolute;
   background: white;
   z-index: 12;
-  right: 20%;
-  top: 28%;
+  right: 80%;
+  top: 131%;
   padding: 20px;
   display: none;
   & {
@@ -1888,18 +1892,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .cart-btn button {
     width: 100% !important;
-    height: 42px !important;
-    color: var(--black800) !important;
+    height: 52px !important;
     font-size: 18px !important;
     display: flex !important;
-    color: var(--black800);
+    color: #000 !important;
     justify-content: center !important;
     align-items: center !important;
-    background-color: var(--bg-yellow-500);
-    border-radius: 6px;
+    background-color: var(--bg-yellow-500) !important;
+    border-radius: 6px !important;
     padding: 0 !important;
-    font-weight: 500;
-    cursor: pointer;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    border: none !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1994,6 +1998,8 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 15px;
   font-weight: 500;
   cursor: pointer;
+  color: #000;
+  border: none !important;
 }
 
 .checkout-btn {
@@ -2014,6 +2020,8 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 15px;
   font-weight: 500;
   cursor: pointer;
+  color: #000;
+  border: none;
 }
 
 .cart-btn {
@@ -2022,19 +2030,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .cart-btn button {
-  width: 100%;
-  height: 52px;
+  width: 100% !important;
+  height: 52px !important;
   text-align: center !important;
-  color: var(--black800) !important;
-  font-size: 22px;
-  display: flex;
+  color: #000 !important;
+  font-size: 22px !important;
+  display: flex !important;
   justify-content: center !important;
-  align-items: center;
-  background-color: var(--bg-yellow-500);
-  border-radius: 6px;
-  padding: 15px;
-  font-weight: 500;
-  cursor: pointer;
+  align-items: center !important;
+  background-color: var(--bg-yellow-500) !important;
+  border-radius: 6px !important;
+  padding: 15px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  border: none !important;
 }
 
 .social-title {

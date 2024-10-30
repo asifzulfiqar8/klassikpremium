@@ -120,6 +120,8 @@
   font-weight: 500;
   cursor: pointer;
   padding: 0 30px;
+  color: #000;
+  border: none;
 }
 .checkout-personal-info-text{
   width: 52% !important;
