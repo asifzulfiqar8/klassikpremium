@@ -37,6 +37,10 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
+/* Footer Border */
+.ft-br{
+  border-top: solid 1px var(--black300);
+}
 /* Positions */
 .position-relative {
   position: relative;
