@@ -1,6 +1,8 @@
 // Product Listing Filter Orientation
 const vertical = document.querySelector(".filter-bar__orientation .vertical");
-const horizontal = document.querySelector(".filter-bar__orientation .horizontal");
+const horizontal = document.querySelector(
+  ".filter-bar__orientation .horizontal"
+);
 
 vertical.addEventListener("click", () => {
   vertical.classList.add("active");
@@ -20,7 +22,6 @@ sortBtns.forEach((btn) => {
   let isSortOpen = false;
 
   btn.addEventListener("click", (event) => {
-
     sortBtns.forEach((otherBtn) => {
       if (otherBtn !== btn) {
         otherBtn.querySelector(".sort__select").style.display = "none";
@@ -28,13 +29,11 @@ sortBtns.forEach((btn) => {
       }
     });
 
-    
     sortModal.style.display = isSortOpen ? "none" : "flex";
     isSortOpen = !isSortOpen;
-    event.stopPropagation(); 
+    event.stopPropagation();
   });
 
-  
   document.addEventListener("click", (event) => {
     if (isSortOpen && !btn.contains(event.target)) {
       sortModal.style.display = "none";
@@ -46,14 +45,31 @@ sortBtns.forEach((btn) => {
 // Filter Sidebar Toggle
 const filterSideBar = document.querySelector(".filter-sidebar");
 const filterCollapseBtns = document.querySelectorAll(".filter-collapse");
-const productCat = document.querySelector(".product-listing");
+// const productCat = document.querySelector(".product-listing");
 let sidebarOpen = false;
 
+// Function to toggle sidebar visibility on smaller screens
 const handleSidebarToggle = () => {
-  filterSideBar.style.display = sidebarOpen ? "none" : "flex";
-  productCat.style.justifyContent = sidebarOpen ? "center" : "space-between";
-  sidebarOpen = !sidebarOpen;
+  if (window.matchMedia("(max-width: 1100px)").matches) {
+    filterSideBar.style.display = sidebarOpen ? "none" : "flex";
+    sidebarOpen = !sidebarOpen;
+  }
 };
+
+// Function to update sidebar and productCat styles based on screen width
+const updateLayoutForScreenSize = () => {
+  if (window.matchMedia("(max-width: 1100px)").matches) {
+    filterSideBar.style.display = sidebarOpen ? "flex" : "none";
+    console.log("mobile");
+  } else {
+    filterSideBar.style.display = "flex";
+    console.log("Desktop");
+  }
+};
+
+updateLayoutForScreenSize();
+
+window.addEventListener("resize", updateLayoutForScreenSize);
 
 filterCollapseBtns.forEach((collapse) => {
   collapse.addEventListener("click", handleSidebarToggle);
