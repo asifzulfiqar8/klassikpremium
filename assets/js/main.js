@@ -97,6 +97,21 @@ document.addEventListener("DOMContentLoaded", function () {
       priceOpen = true;
     }
   });
+  allWineItem.addEventListener("mouseover", () => {
+    priceDropDown.style.display = "none";
+  });
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (event) => {
+    if (
+      !priceOpen &&
+      !priceLsitItem.contains(event.target) &&
+      !priceDropDown.contains(event.target)
+    ) {
+      priceDropDown.style.display = "none";
+      priceOpen = true;
+    }
+  });
+
   window.addEventListener("scroll", () => {
     navDropDown.style.display = "none";
     priceDropDown.style.display = "none";
@@ -130,8 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
       searchOptions.classList.remove("active");
     }, 200);
   });
-
-  
 });
 // See More Script
 // Select all toggle buttons
