@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   allWineItem.addEventListener("mouseover", () => {
     priceDropDown.style.display = "none";
+    priceOpen = true;
   });
   // Close dropdown when clicking outside
   document.addEventListener("click", (event) => {
