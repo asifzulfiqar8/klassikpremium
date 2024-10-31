@@ -665,7 +665,7 @@
         </section>
         <!-- Hero Icons Section for Mobile -->
         <section
-          class="hero__icons-mobile py-50 container flex justify-center flex-wrap rgap-40"
+          class="hero__icons-mobile py-50 container flex justify-center flex-wrap rgap-40 position-relative"
         >
           <div class="swiper iconSwiper">
             <div class="swiper-wrapper">
@@ -742,19 +742,18 @@
                 </div>
               </div>
             </div>
-
-            <div class="swiper-button-next swp-icon-next swiper-btn">
-              <img src="assets/images/nav-next.png" alt="Next" />
-            </div>
-            <div class="swiper-button-prev swp-icon-prev swiper-btn">
-              <img src="assets/images/nav-prev.png" alt="Previous" />
-            </div>
+          </div>
+          <div class="swiper-button-next swp-icon-next swiper-btn position-absolute">
+            <img src="assets/images/nav-next.png" alt="Next" />
+          </div>
+          <div class="swiper-button-prev swp-icon-prev swiper-btn position-absolute">
+            <img src="assets/images/nav-prev.png" alt="Previous" />
           </div>
         </section>
       </section>
       <!-- Featured Brands Section -->
       <section
-        class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white"
+        class="brand-logos py-70 container-fluid flex flex-col rgap-40 items-center bg-white position-relative"
       >
         <div class="brand-logos__title section-title-black container">
           <div class="line"></div>
@@ -898,12 +897,12 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next swiper-btn swp-icon-next">
-            <img src="assets/images/nav-next.png" alt="Next" />
-          </div>
-          <div class="swiper-button-prev swiper-btn swp-icon-prev">
-            <img src="assets/images/nav-prev.png" alt="Previous" />
-          </div>
+        </div>
+        <div class="swiper-button-next swiper-btn swp-icon-next swp-icon-brand-next position-absolute">
+          <img src="assets/images/nav-next.png" alt="Next" />
+        </div>
+        <div class="swiper-button-prev swiper-btn swp-icon-prev swp-icon-brand-prev position-absolute">
+          <img src="assets/images/nav-prev.png" alt="Previous" />
         </div>
       </section>
       <!-- Product Carousels -->
