@@ -134,7 +134,7 @@
     flex-wrap: wrap;
     row-gap: 50px;
     flex-direction: column-reverse;
-    padding: 40px 20px;
+    padding: 0 20px;
   }
   .checkout-tabs {
     width: 100%;
