@@ -150,8 +150,8 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30, // Space between the products
     loop: true, // Infinite loop
     navigation: {
-      nextEl: ".iconSwiper2 .swp-icon-next",
-      prevEl: ".iconSwiper2 .swp-icon-prev",
+      nextEl: ".swp-icon-brand-next",
+      prevEl: ".swp-icon-brand-prev",
     },
     pagination: {
       // el: ".swiper-pagination",
