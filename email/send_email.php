@@ -1,83 +1,83 @@
 <?php
 function sendEmail($to, $subject, $body)
 {
-    $smtpServer = "smtp.titan.email";
-    $port = 465;
-    $username = "development@tetratechnologies.io";
-    $password = 'ZIm DE~.r9lD>PF';
-    $fromEmail = "development@tetratechnologies.io";
-    $fromName = "Tetra InTech";
+  $smtpServer = "smtp.titan.email";
+  $port = 465;
+  $username = "development@tetratechnologies.io";
+  $password = 'ZIm DE~.r9lD>PF';
+  $fromEmail = "development@tetratechnologies.io";
+  $fromName = "Tetra InTech";
 
-    $headers = "From: $fromName <$fromEmail>\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+  $headers = "From: $fromName <$fromEmail>\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    $connection = fsockopen("ssl://$smtpServer", $port, $errno, $errstr, 10);
-    if (!$connection) {
-        echo "Could not connect to SMTP server: $errstr ($errno)";
-        return false;
+  $connection = fsockopen("ssl://$smtpServer", $port, $errno, $errstr, 10);
+  if (!$connection) {
+    echo "Could not connect to SMTP server: $errstr ($errno)";
+    return false;
+  }
+  function getServerResponse($connection)
+  {
+    $response = "";
+    while ($str = fgets($connection, 515)) {
+      $response .= $str;
+      if (substr($str, 3, 1) == " ") break;
     }
-    function getServerResponse($connection)
-    {
-        $response = "";
-        while ($str = fgets($connection, 515)) {
-            $response .= $str;
-            if (substr($str, 3, 1) == " ") break;
-        }
-        return $response;
-    }
+    return $response;
+  }
 
-    fputs($connection, "EHLO $smtpServer\r\n");
-    getServerResponse($connection);
+  fputs($connection, "EHLO $smtpServer\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, "AUTH LOGIN\r\n");
-    getServerResponse($connection);
+  fputs($connection, "AUTH LOGIN\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, base64_encode($username) . "\r\n");
-    getServerResponse($connection);
+  fputs($connection, base64_encode($username) . "\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, base64_encode($password) . "\r\n");
-    getServerResponse($connection);
+  fputs($connection, base64_encode($password) . "\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, "MAIL FROM: <$fromEmail>\r\n");
-    getServerResponse($connection);
+  fputs($connection, "MAIL FROM: <$fromEmail>\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, "RCPT TO: <$to>\r\n");
-    getServerResponse($connection);
+  fputs($connection, "RCPT TO: <$to>\r\n");
+  getServerResponse($connection);
 
-    fputs($connection, "DATA\r\n");
-    getServerResponse($connection);
+  fputs($connection, "DATA\r\n");
+  getServerResponse($connection);
 
-    $message = "Subject: $subject\r\n$headers\r\n\r\n$body\r\n.\r\n";
-    fputs($connection, $message);
-    getServerResponse($connection);
+  $message = "Subject: $subject\r\n$headers\r\n\r\n$body\r\n.\r\n";
+  fputs($connection, $message);
+  getServerResponse($connection);
 
-    fputs($connection, "QUIT\r\n");
-    fclose($connection);
+  fputs($connection, "QUIT\r\n");
+  fclose($connection);
 
-    echo "Email sent successfully!";
+  echo "Email sent successfully!";
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userMessage = $_POST['message'];
-    $to = "wahidforjob.com";
-    $subject = "New Message from Tetra Intech";
-    $body = '<!DOCTYPE html>
+  $userMessage = $_POST['message'];
+  $to = "wahidforjob@gmail.com";
+  $subject = "New Message from Tetra Intech";
+  $body = '<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Config Email</title>
   </head>
-  <body style="font-family: Arial, sans-serif; background-color: #000; color: white; margin: 0; padding: 0;">
-    <table width="100%" bgcolor="#000" cellpadding="0" cellspacing="0" border="0">
+  <body style="font-family: Arial, sans-serif; background-color: #000; color: white; margin: 0; padding: 0; max-width: 640px; text-align: center;">
+    <table bgcolor="#000" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td align="center">
           <table width="640" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px; padding: 20px;">
             <!-- Header Section -->
             <tr>
               <td align="center" style="padding: 30px 0; border-bottom: 2px solid #999;">
-                <a href="#"><img src="..//assets/images/Header Logo.png" alt="Logo" style="width: 80%;" /></a>
+                <a href="#"><img src="https://klassikpremium.vercel.app/assets/images/Header%20Logo.png" alt="Logo" style="width: 248px; height: 34px;" /></a>
                 <h2 style="color: white; font-size: 16px; font-weight: 700; text-transform: uppercase;">Hi {firstname} {lastname}</h2>
                 <h4 style="color: white; font-size: 16px; font-weight: 700; text-transform: uppercase;">Thank you for creating an account with enjoy wine</h4>
               </td>
@@ -138,7 +138,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </table>
               </td>
             </tr>
-
             <!-- Lower Information Box -->
             <tr>
               <td style="padding: 40px 0; font-size: 16px; border-bottom: 1px solid #fff;">
@@ -178,7 +177,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td width="60%" style="padding-right: 20px;">
-                      <a href="#"><img src="../assets/images/Header Logo.png" alt="Logo" style="width: 80%;" /></a>
+                      <a href="#"><img src="https://klassikpremium.vercel.app/assets/images/Header%20Logo.png" alt="Logo" style="width: 188px; height: 26px;" /></a>
                       <p style="font-size: 12px; opacity: 0.6;">Monday-Friday: 09:00-19:00</p>
                       <h4 style="font-size: 14px; font-weight: 700;" color: #fff;>+34 932 684 286 / +34 608 845 245</h4>
                     </td>
@@ -190,14 +189,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </td>
                   </tr>
                 </table>
-                <table width="100%" cellpadding="0" cellspacing="0" style="text-align: center; padding: 16px 0;">
-                  <tr>
-                    <td><a href="#"><img src="../assets/images/Instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a></td>
-                    <td><a href="#"><img src="../assets/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a></td>
-                    <td><a href="#"><img src="../assets/images/Twitter.png" alt="Twitter" style="width: 24px; height: 24px;"></a></td>
-                    <td><a href="#"><img src="../assets/images/Youtube.png" alt="YouTube" style="width: 24px; height: 24px;"></a></td>
-                  </tr>
-                </table>
+               <table width="100%" cellpadding="0" cellspacing="0" style="padding: 16px 0; background-color: #000; text-align: center;">
+                <tr>
+                  <td>
+                    <a href="#" style="margin: 0 8px;"><img src="https://klassikpremium.vercel.app/assets/images/Instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
+                    <a href="#" style="margin: 0 8px;"><img src="https://klassikpremium.vercel.app/assets/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
+                    <a href="#" style="margin: 0 8px;"><img src="https://klassikpremium.vercel.app/assets/images/Twitter.png" alt="Twitter" style="width: 24px; height: 24px;"></a>
+                    <a href="#" style="margin: 0 8px;"><img src="https://klassikpremium.vercel.app/assets/images/Youtube.png" alt="YouTube" style="width: 24px; height: 24px;"></a>
+                  </td>
+                </tr>
+              </table>
               </td>
             </tr>
           </table>
@@ -206,9 +207,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </table>
   </body>
 </html>
-
-
 ';
 
-    sendEmail($to, $subject, $body);
+  sendEmail($to, $subject, $body);
 }
