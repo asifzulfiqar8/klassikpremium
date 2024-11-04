@@ -1790,14 +1790,14 @@
                         </div>
                       </div>
                     </div>
-  
+
                     <h2 class="font-26 font-semi-bold text-white">
                       Clos de papes 2012
                     </h2>
                     <span class="text-black-400 font-18 font-semi-bold"
                       >Red Wine</span
                     >
-  
+
                     <hr />
                     <div
                       class="swiper-product__price-container flex items-center cgap-10 py-10"
@@ -1805,7 +1805,8 @@
                       <span class="price text-white font-18 font-semi-bold"
                         >$19.99</span
                       >
-                      <span class="sale-price text-yellow font-26 font-extra-bold"
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
                         >$14.99</span
                       >
                     </div>
@@ -1859,14 +1860,14 @@
                         </div>
                       </div>
                     </div>
-  
+
                     <h2 class="font-26 font-semi-bold text-white">
                       Clos de papes 2012
                     </h2>
                     <span class="text-black-400 font-18 font-semi-bold"
                       >Red Wine</span
                     >
-  
+
                     <hr />
                     <div
                       class="swiper-product__price-container flex items-center cgap-10 py-10"
@@ -1874,7 +1875,8 @@
                       <span class="price text-white font-18 font-semi-bold"
                         >$19.99</span
                       >
-                      <span class="sale-price text-yellow font-26 font-extra-bold"
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
                         >$14.99</span
                       >
                     </div>
@@ -1928,14 +1930,14 @@
                         </div>
                       </div>
                     </div>
-  
+
                     <h2 class="font-26 font-semi-bold text-white">
                       Clos de papes 2012
                     </h2>
                     <span class="text-black-400 font-18 font-semi-bold"
                       >Red Wine</span
                     >
-  
+
                     <hr />
                     <div
                       class="swiper-product__price-container flex items-center cgap-10 py-10"
@@ -1943,7 +1945,8 @@
                       <span class="price text-white font-18 font-semi-bold"
                         >$19.99</span
                       >
-                      <span class="sale-price text-yellow font-26 font-extra-bold"
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
                         >$14.99</span
                       >
                     </div>
@@ -1997,14 +2000,14 @@
                         </div>
                       </div>
                     </div>
-  
+
                     <h2 class="font-26 font-semi-bold text-white">
                       Clos de papes 2012
                     </h2>
                     <span class="text-black-400 font-18 font-semi-bold"
                       >Red Wine</span
                     >
-  
+
                     <hr />
                     <div
                       class="swiper-product__price-container flex items-center cgap-10 py-10"
@@ -2012,7 +2015,8 @@
                       <span class="price text-white font-18 font-semi-bold"
                         >$19.99</span
                       >
-                      <span class="sale-price text-yellow font-26 font-extra-bold"
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
                         >$14.99</span
                       >
                     </div>
@@ -2066,14 +2070,14 @@
                         </div>
                       </div>
                     </div>
-  
+
                     <h2 class="font-26 font-semi-bold text-white">
                       Clos de papes 2012
                     </h2>
                     <span class="text-black-400 font-18 font-semi-bold"
                       >Red Wine</span
                     >
-  
+
                     <hr />
                     <div
                       class="swiper-product__price-container flex items-center cgap-10 py-10"
@@ -2081,7 +2085,8 @@
                       <span class="price text-white font-18 font-semi-bold"
                         >$19.99</span
                       >
-                      <span class="sale-price text-yellow font-26 font-extra-bold"
+                      <span
+                        class="sale-price text-yellow font-26 font-extra-bold"
                         >$14.99</span
                       >
                     </div>
@@ -2486,41 +2491,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/search.js"></script>
-    <script>
-      function openOffcanvas() {
-        document.getElementById("offcanvas").classList.add("open");
-      }
-
-      function closeOffcanvas() {
-        document.getElementById("offcanvas").classList.remove("open");
-      }
-
-      function openModal() {
-        closeOffcanvas();
-        document.getElementById("listModalpreview").style.display = "block";
-        document.getElementById("modalOverlay").style.display = "flex";
-        document.body.classList.add("no-scroll");
-      }
-
-      function closeModal() {
-        document.getElementById("listModalpreview").style.display = "none";
-        document.getElementById("modalOverlay").style.display = "none";
-        document.body.classList.remove("no-scroll");
-      }
-      document
-        .getElementById("searchInput")
-        .addEventListener("click", openModal);
-      document
-        .getElementById("searchIcon")
-        .addEventListener("click", openModal);
-
-      window.onclick = function (event) {
-        const modal = document.getElementById("listModalpreview");
-        const overlay = document.getElementById("modalOverlay");
-        if (event.target === modal || event.target === overlay) {
-          closeModal();
-        }
-      };
-    </script>
+    <script src="assets/js/offcanvas.js"></script>
   </body>
 </html>
