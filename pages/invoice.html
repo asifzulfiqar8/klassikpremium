@@ -371,7 +371,9 @@
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Personal info</a
           >
-          <a class="offcanvas-links text-decoration-underline cursor-pointer">Order</a>
+          <a class="offcanvas-links text-decoration-underline cursor-pointer"
+            >Order</a
+          >
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Order History</a
           >
@@ -890,7 +892,7 @@
       </section>
     </main>
     <footer>
-      <section class="container-fluid bg-black py-50 ft-br main-footer" >
+      <section class="container-fluid bg-black py-50 ft-br main-footer">
         <!-- Footer Links -->
         <section class="container footer-links grid-cols-5 rgap-40">
           <!-- Information -->
@@ -1043,41 +1045,23 @@
       </section>
     </footer>
     <script src="../assets/js/main.js"></script>
-    <script>
-      function openOffcanvas() {
-  document.getElementById("offcanvas").classList.add("open");
-}
-
-function closeOffcanvas() {
-  document.getElementById("offcanvas").classList.remove("open");
-}
-
-function openModal() {
-  closeOffcanvas();
-  document.getElementById("listModalpreview").style.display = "block";
-  document.getElementById("modalOverlay").style.display = "flex"; 
-  document.body.classList.add("no-scroll"); 
-}
-
-function closeModal() {
-  document.getElementById("listModalpreview").style.display = "none";
-  document.getElementById("modalOverlay").style.display = "none"; 
-  document.body.classList.remove("no-scroll"); 
-}
-document
-  .getElementById("searchInput")
-  .addEventListener("click", openModal);
-document
-  .getElementById("searchIcon")
-  .addEventListener("click", openModal);
-
-window.onclick = function (event) {
-  const modal = document.getElementById("listModalpreview");
-  const overlay = document.getElementById("modalOverlay");
-  if (event.target === modal || event.target === overlay) {
-    closeModal();
-  }
-};
-    </script>
+    <script src="../assets/js/offcanvas.js"></script>
+    function openOffcanvas() {
+    document.getElementById("offcanvas").classList.add("open"); } function
+    closeOffcanvas() {
+    document.getElementById("offcanvas").classList.remove("open"); } function
+    openModal() { closeOffcanvas();
+    document.getElementById("listModalpreview").style.display = "block";
+    document.getElementById("modalOverlay").style.display = "flex";
+    document.body.classList.add("no-scroll"); } function closeModal() {
+    document.getElementById("listModalpreview").style.display = "none";
+    document.getElementById("modalOverlay").style.display = "none";
+    document.body.classList.remove("no-scroll"); } document
+    .getElementById("searchInput") .addEventListener("click", openModal);
+    document .getElementById("searchIcon") .addEventListener("click",
+    openModal); window.onclick = function (event) { const modal =
+    document.getElementById("listModalpreview"); const overlay =
+    document.getElementById("modalOverlay"); if (event.target === modal ||
+    event.target === overlay) { closeModal(); } };
   </body>
 </html>
