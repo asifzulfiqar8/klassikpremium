@@ -259,14 +259,14 @@ Tabs.forEach((tab) => {
     document.querySelector(`#${tab.dataset.tab}`).classList.add("active");
   });
 });
-// Off Canvas Toggle
-function openOffcanvas() {
-  document.getElementById("offcanvas").classList.add("open");
-}
+// // Off Canvas Toggle
+// function openOffcanvas() {
+//   document.getElementById("offcanvas").classList.add("open");
+// }
 
-function closeOffcanvas() {
-  document.getElementById("offcanvas").classList.remove("open");
-}
+// function closeOffcanvas() {
+//   document.getElementById("offcanvas").classList.remove("open");
+// }
 
 // Table pagination
 let currentPage = 1;
