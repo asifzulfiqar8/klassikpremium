@@ -559,8 +559,8 @@ a {
 
 .radio-mark2::after {
   content: "";
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   background-color: transparent;
   border-radius: 50%;
   transition: background-color 0.3s ease;
@@ -582,8 +582,8 @@ a {
   display: block;
   margin: 0;
   padding: 0;
-  top: 25%;
-  left: 4px;
+  top: 24%;
+  left: 21%;
 }
 
 .custom-radio2 .radio-mark:after {
