@@ -1005,9 +1005,13 @@ input[type="number"]::-webkit-outer-spin-button {
   & {
     span {
       position: absolute;
+      color: black !important;
+      font-weight: bold !important;
       top: 20%;
       right: 3%;
       cursor: pointer;
+      width: 15px;
+      padding-left: 6px;
     }
   }
 }
