@@ -185,11 +185,23 @@ a {
 .pb-20 {
   padding-bottom: 20px;
 }
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-30 { 
+  padding-top: 30px;
+}
 .pt-50 {
   padding-top: 50px;
 }
 .pt-100 {
   padding-top: 100px;
+}
+.pb-30 { 
+  padding-bottom: 30px;
+}
+.pb-40 {
+  padding-bottom: 40px;
 }
 .pb-50 {
   padding-bottom: 50px;
@@ -199,6 +211,12 @@ a {
 }
 /* Margin */
 
+.mt-40{
+  margin-top: 40px;
+}
+.mt-30{
+  margin-top: 30px;
+}
 .my-50 {
   margin-top: 50px;
   margin-bottom: 50px;
