@@ -121,10 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close Top Bar
   let closeTopHeader = document.querySelectorAll(".close-top-header");
   let topHeaderBar = document.querySelectorAll(".top-header");
+  let topHeaderBarMobile = document.querySelectorAll(".top-header-mobile");
 
   closeTopHeader.forEach((close) => {
     close.addEventListener("click", () => {
       topHeaderBar.forEach((header) => {
+        header.style.display = "none";
+      });
+      topHeaderBarMobile.forEach((header) => {
         header.style.display = "none";
       });
     });
