@@ -1,17 +1,27 @@
 function openCartModal() {
-    document.getElementById("cartModal").style.display = "block";
-  }
+  document.getElementById("cartModal").style.display = "block";
+}
 
-  function closeCartModal() {
-    document.getElementById("cartModal").style.display = "none";
-  }
+function closeCartModal() {
+  document.getElementById("cartModal").style.display = "none";
+}
 
-  window.onclick = function (event) {
-    var modal = document.getElementById("cartModal");
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+window.onclick = function (event) {
+  var modal = document.getElementById("cartModal");
+  if (event.target == modal) {
+    closeCartModal();
+  }
+};
+
+window.onresize = function () {
+  if (window.innerWidth < 1100) {
+    closeCartModal();
+  }
+};
+
+// window.onscroll = function () {
+//   closeCartModal();
+// };
 
 
   function increment() {
