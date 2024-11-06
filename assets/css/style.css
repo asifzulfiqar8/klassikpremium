@@ -1152,6 +1152,16 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 10px;
 }
 
+.cart-modal__summary{
+  padding: 20px;
+  &{
+    .cart-summary-new{
+      padding:20px;
+      background-color: var(--black800);
+      border-radius: 6px;
+    }
+  }
+}
 .search-template {
   position: absolute;
   background-color: white;
