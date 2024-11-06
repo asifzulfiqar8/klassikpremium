@@ -1,37 +1,33 @@
-function openCartModal() {
-  document.getElementById("cartModal").style.display = "block";
-}
+let modal = document.getElementById("cartModal");
+let open = false;
+let cartIcon = document.querySelector(".cart-icon");
 
-function closeCartModal() {
-  document.getElementById("cartModal").style.display = "none";
-}
-
-window.onclick = function (event) {
-  var modal = document.getElementById("cartModal");
-  if (event.target == modal) {
-    closeCartModal();
+cartIcon.addEventListener("click", (event) => {
+  event.stopPropagation();
+  if (!open) {
+    modal.style.display = "block";
+    open = true;
+    // console.log("Modal opened");
   }
-};
+});
 
-window.onresize = function () {
-  if (window.innerWidth < 1100) {
-    closeCartModal();
+document.body.addEventListener("click", (event) => {
+  // Check if the click is outside the modal and cart icon
+  if (open && !modal.contains(event.target) && event.target !== cartIcon) {
+    modal.style.display = "none";
+    open = false;
+    // console.log("Modal closed");
   }
-};
+});
 
-// window.onscroll = function () {
-//   closeCartModal();
-// };
-
-
-  function increment() {
-    let counter = document.getElementById("counter");
-    counter.value = parseInt(counter.value) + 1;
+function increment() {
+  let counter = document.getElementById("counter");
+  counter.value = parseInt(counter.value) + 1;
 }
 
 function decrement() {
-    let counter = document.getElementById("counter");
-    if (parseInt(counter.value) > 1) { 
-        counter.value = parseInt(counter.value) - 1;
-    }
+  let counter = document.getElementById("counter");
+  if (parseInt(counter.value) > 1) {
+    counter.value = parseInt(counter.value) - 1;
+  }
 }

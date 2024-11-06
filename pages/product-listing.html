@@ -149,12 +149,11 @@
                   >
                 </div>
                 <div
-                onclick="openCartModal()"
-                class="cart_box flex flex-col items-center justify-center rgap-5"
-              >
-                <img src="../assets/images/bag.svg" alt="" />
-                <span class="font-12 font-semi-bold text-white">Cart</span>
-              </div>
+                  class="cart_box flex flex-col items-center justify-center rgap-5 cart-icon"
+                >
+                  <img src="../assets/images/bag.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white">Cart</span>
+                </div>
               </div>
             </div>
           </section>
@@ -378,7 +377,9 @@
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Personal info</a
           >
-          <a class="offcanvas-links text-decoration-underline cursor-pointer">Order</a>
+          <a class="offcanvas-links text-decoration-underline cursor-pointer"
+            >Order</a
+          >
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Order History</a
           >
@@ -1932,256 +1933,186 @@
         </section>
       </section>
     </main>
-       <!--------Cart Modal ---------->
-       <div id="cartModal" class="cart-modal hidden">
-        <div class="cart-modal-content">
-          <h4 class="cart-modal-title font-semi-bold pl-20">
-            SHOPPING BAG (3 items)
-          </h4>
-          <div class="px-20">
-            <hr />
-          </div>
-          <div class="py-15">
-            <div class="cart-item flex flex-col rgap-20">
-              <div class="product-info flex cgap-20">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-3 p-0">
-                      <img
-                        src="../assets/images/cart-product-image.png"
-                        alt="Product Image"
+    <!--------Cart Modal ---------->
+    <div id="cartModal" class="cart-modal hidden">
+      <div class="cart-modal-content">
+        <h4 class="cart-modal-title font-semi-bold pl-20">
+          SHOPPING BAG (3 items)
+        </h4>
+        <div class="px-20">
+          <hr />
+        </div>
+        <div class="py-15">
+          <div class="cart-item flex flex-col rgap-20">
+            <div class="product-info flex cgap-20">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <img
+                      src="../assets/images/cart-product-image.png"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <div class="prod-text flex flex-col rgap-10">
+                      <b class="font-14">Clos de papes 2012</b>
+                      <span class="font-12">Red Wine</span>
+                      <span class="font-12 text-red">50% Off</span>
+                    </div>
+                    <div class="counter-cart">
+                      <div class="counter-btn" onclick="decrement()">−</div>
+                      <input
+                        type="text"
+                        id="counter"
+                        class="counter-input"
+                        value="1"
+                        readonly
                       />
+                      <div class="counter-btn" onclick="increment()">+</div>
                     </div>
-                    <div class="col-6">
-                      <div class="prod-text flex flex-col rgap-10">
-                        <b class="font-14">Clos de papes 2012</b>
-                        <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
-                      </div>
-                      <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
-                          −
-                        </div>
-                        <input
-                          type="text"
-                          id="counter"
-                          class="counter-input"
-                          value="1"
-                          readonly
-                        />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
-                          +
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 text-right flex items-end">
-                      <div class="cart-modal-price">
-                        <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
-                          $14.99
-                        </p>
-                      </div>
+                  </div>
+                  <div class="col-3 text-right flex items-end">
+                    <div class="cart-modal-price">
+                      <h3>$29.98</h3>
+                      <p class="font-14 pt-10 text-black-400 line-through">
+                        $14.99
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="px-20">
-            <hr />
-          </div>
-          <div class="py-15">
-            <div class="cart-item flex flex-col rgap-20">
-              <div class="product-info flex cgap-20">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-3 p-0">
-                      <img
-                        src="../assets/images/cart-product-image.png"
-                        alt="Product Image"
-                      />
-                    </div>
-                    <div class="col-6">
-                      <div class="prod-text flex flex-col rgap-10">
-                        <b class="font-14">Clos de papes 2012</b>
-                        <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
-                      </div>
-                      <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
-                          −
-                        </div>
-                        <input
-                          type="text"
-                          id="counter"
-                          class="counter-input"
-                          value="1"
-                          readonly
-                        />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
-                          +
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 text-right flex items-end">
-                      <div class="cart-modal-price">
-                        <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
-                          $14.99
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-20">
-            <hr />
-          </div>
-          <div class="py-15">
-            <div class="cart-item flex flex-col rgap-20">
-              <div class="product-info flex cgap-20">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-3 p-0">
-                      <img
-                        src="../assets/images/cart-product-image.png"
-                        alt="Product Image"
-                      />
-                    </div>
-                    <div class="col-6">
-                      <div class="prod-text flex flex-col rgap-10">
-                        <b class="font-14">Clos de papes 2012</b>
-                        <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
-                      </div>
-                      <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
-                          −
-                        </div>
-                        <input
-                          type="text"
-                          id="counter"
-                          class="counter-input"
-                          value="1"
-                          readonly
-                        />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
-                          +
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 text-right flex items-end">
-                      <div class="cart-modal-price">
-                        <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
-                          $14.99
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-20">
-            <hr />
           </div>
         </div>
-        <!-- Cart Summary Box -->
-        <div class="cart-modal__summary">
-          <div
-            class="cart-summary-new flex flex-col rgap-20"
-          >
-            <h4 class="font-22 font-semi-bold text-white">
-              Cart Summary
-            </h4>
-            <div class="bill-section flex flex-col rgap-10">
-              <div
-                class="sub-total flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Subtotal</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $89.94
-                </h6>
-              </div>
-              <div
-                class="discount flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Discount</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $0.00
-                </h6>
-              </div>
-              <div
-                class="shipping flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Shipping</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $0.00
-                </h6>
-              </div>
-            </div>
-            <hr />
-            <div class="bill-section flex flex-col rgap-10">
-              <div class="total flex justify-between items-center">
-                <span class="font-18 font-semi-bold text-white"
-                  >Total</span
-                >
-                <h6 class="font-18 font-semi-bold text-white">
-                  $89.94
-                </h6>
+        <div class="px-20">
+          <hr />
+        </div>
+        <div class="py-15">
+          <div class="cart-item flex flex-col rgap-20">
+            <div class="product-info flex cgap-20">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <img
+                      src="../assets/images/cart-product-image.png"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <div class="prod-text flex flex-col rgap-10">
+                      <b class="font-14">Clos de papes 2012</b>
+                      <span class="font-12">Red Wine</span>
+                      <span class="font-12 text-red">50% Off</span>
+                    </div>
+                    <div class="counter-cart">
+                      <div class="counter-btn" onclick="decrement()">−</div>
+                      <input
+                        type="text"
+                        id="counter"
+                        class="counter-input"
+                        value="1"
+                        readonly
+                      />
+                      <div class="counter-btn" onclick="increment()">+</div>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right flex items-end">
+                    <div class="cart-modal-price">
+                      <h3>$29.98</h3>
+                      <p class="font-14 pt-10 text-black-400 line-through">
+                        $14.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="cart-btn">
-              <button
-                class="bg-yellow-500 color-black font-18 font-semi-bold"
-              >
-                Checkout
-              </button>
+          </div>
+        </div>
+        <div class="px-20">
+          <hr />
+        </div>
+        <div class="py-15">
+          <div class="cart-item flex flex-col rgap-20">
+            <div class="product-info flex cgap-20">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <img
+                      src="../assets/images/cart-product-image.png"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <div class="prod-text flex flex-col rgap-10">
+                      <b class="font-14">Clos de papes 2012</b>
+                      <span class="font-12">Red Wine</span>
+                      <span class="font-12 text-red">50% Off</span>
+                    </div>
+                    <div class="counter-cart">
+                      <div class="counter-btn" onclick="decrement()">−</div>
+                      <input
+                        type="text"
+                        id="counter"
+                        class="counter-input"
+                        value="1"
+                        readonly
+                      />
+                      <div class="counter-btn" onclick="increment()">+</div>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right flex items-end">
+                    <div class="cart-modal-price">
+                      <h3>$29.98</h3>
+                      <p class="font-14 pt-10 text-black-400 line-through">
+                        $14.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="px-20">
+          <hr />
+        </div>
+      </div>
+      <!-- Cart Summary Box -->
+      <div class="cart-modal__summary">
+        <div class="cart-summary-new flex flex-col rgap-20">
+          <h4 class="font-22 font-semi-bold text-white">Cart Summary</h4>
+          <div class="bill-section flex flex-col rgap-10">
+            <div class="sub-total flex justify-between items-center">
+              <span class="font-16 font-normal text-white">Subtotal</span>
+              <h6 class="font-16 font-semi-bold text-white">$89.94</h6>
+            </div>
+            <div class="discount flex justify-between items-center">
+              <span class="font-16 font-normal text-white">Discount</span>
+              <h6 class="font-16 font-semi-bold text-white">$0.00</h6>
+            </div>
+            <div class="shipping flex justify-between items-center">
+              <span class="font-16 font-normal text-white">Shipping</span>
+              <h6 class="font-16 font-semi-bold text-white">$0.00</h6>
+            </div>
+          </div>
+          <hr />
+          <div class="bill-section flex flex-col rgap-10">
+            <div class="total flex justify-between items-center">
+              <span class="font-18 font-semi-bold text-white">Total</span>
+              <h6 class="font-18 font-semi-bold text-white">$89.94</h6>
+            </div>
+          </div>
+          <div class="cart-btn">
+            <button class="bg-yellow-500 color-black font-18 font-semi-bold">
+              Checkout
+            </button>
           </div>
         </div>
       </div>
+    </div>
     <footer>
-      <section class="container-fluid bg-black py-50 ft-br main-footer" >
+      <section class="container-fluid bg-black py-50 ft-br main-footer">
         <!-- Footer Links -->
         <section class="container footer-links grid-cols-5 rgap-40">
           <!-- Information -->
