@@ -25,6 +25,34 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Klassik Premium</title>
+    <style>
+    
+      .cart-modal {
+        display: none;
+        position: absolute;
+        z-index: 1050;
+        left: -375px;
+        top: 60px;
+        max-width: 400px;
+        width: 400px;
+        height: auto;
+        background-color: white;
+      }
+      .cart-modal-content {
+        background-color: white;
+        /* margin: 15% auto; */
+        /* padding: 20px; */
+        border-radius: 8px;
+        width: 100%;
+        max-width: 500px;
+      }
+      .cart-close {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+    </style>
   </head>
   <body>
     <header>
@@ -147,11 +175,24 @@
                     >My Account</span
                   >
                 </div>
-                <div
-                  class="cart_box flex flex-col items-center justify-center rgap-5"
-                >
-                  <img src="assets/images/bag.svg" alt="" />
-                  <span class="font-12 font-semi-bold text-white">Cart</span>
+
+                <div class="position-relative">
+                  <div
+                    onclick="openCartModal()"
+                    class="cart_box flex flex-col items-center justify-center rgap-5"
+                  >
+                    <img src="assets/images/bag.svg" alt="" />
+                    <span class="font-12 font-semi-bold text-white">Cart</span>
+                  </div>
+                  <!-- Cart Modal -->
+                  <div id="cartModal" class="cart-modal hidden">
+                    <div class="cart-modal-content">
+                      <span onclick="closeCartModal()" class="cart-close"
+                        >&times;</span
+                      >
+                      <h2>Shopping Cart</h2>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2493,5 +2534,21 @@
     <script src="assets/js/search.js"></script>
     <script src="assets/js/offcanvas.js"></script>
     <script src="/assets/js/top-header.js"></script>
+    <script>
+      function openCartModal() {
+        document.getElementById("cartModal").style.display = "block";
+      }
+
+      function closeCartModal() {
+        document.getElementById("cartModal").style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        var modal = document.getElementById("cartModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
