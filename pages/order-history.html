@@ -19,12 +19,15 @@
     />
 
     <link rel="stylesheet" href="../assets/css/style.css" />
-<<<<<<< Updated upstream
-    <link rel="stylesheet" href="../assets/css/order-history-style.css">
-    <link rel="stylesheet" href="../assets/css/cart-style.css" />
-=======
+    <<<<<<< Updated upstream
     <link rel="stylesheet" href="../assets/css/order-history-style.css" />
->>>>>>> Stashed changes
+    <link rel="stylesheet" href="../assets/css/cart-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-DyZ88mC6Up2uqSx72brVE6C1WjG9mD7Djz1LrgX8JG1E9qwN9F9k53JdgMJH+dME"
+      crossorigin="anonymous"
+    />
     <title>Order History</title>
   </head>
   <body>
@@ -149,7 +152,8 @@
                   >
                 </div>
                 <div
-                  class="cart_box flex flex-col items-center justify-center rgap-5 cart-icon"
+                  onclick="openCartModal()"
+                  class="cart_box flex flex-col items-center justify-center rgap-5"
                 >
                   <img src="../assets/images/bag.svg" alt="" />
                   <span class="font-12 font-semi-bold text-white">Cart</span>
@@ -304,66 +308,120 @@
       </section>
 
       <!-- Header for Mobile -->
-      <section class="header-mobile container-fluid">
-        <!-- Header Top Line -->
-        <section class="top-header-mobile container-fluid bg-yellow">
-          <section class="container top-header-wrapper">
-            <p class="font-14 text-black font-semi-bold text-center">
-              Free delivery on your first order of $100 or more* with the promo
-              code : KILLASIK1ST
-            </p>
-            <span class="close-top-header">X</span>
-          </section>
-        </section>
-
-        <!-- Social Icons -->
-        <section class="container-fluid bg-black">
-          <section class="container header-icons">
-            <div class="header-social flex cgap-20">
-              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
-              <div class="header-social__icons">
-                <img src="../assets/images/Twitter.png" alt="" />
-                <img src="../assets/images/facebook.png" alt="" />
-                <img src="../assets/images/Pinterest.png" alt="" />
-                <img src="../assets/images/Youtube.png" alt="" />
-                <img src="../assets/images/Instagram.png" alt="" />
-              </div>
-            </div>
-          </section>
-        </section>
-        <!-- Header Main -->
-
-        <section class="container-fluid bg-black">
+      <section class="header-mobile container-fluid bg-white">
+        <section class="container-fluid">
           <section
             class="container flex items-center justify-between main-header-mobile"
           >
-            <a href="/">
+            <div class="flex justify-start items-center gap-10">
+              <div class="menu-toggle" onclick="openOffcanvas()">
+                <svg
+                  width="17"
+                  height="13"
+                  viewBox="0 0 17 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h4 class="text-black">Menu</h4>
+            </div>
+            <a class="flex justify-center" href="/">
               <img
                 src="../assets/images/Header Logo.png"
                 alt=""
                 class="header-logo w-80"
               />
             </a>
-            <div class="menu-toggle" onclick="openOffcanvas()">
-              <svg
-                width="17"
-                height="13"
-                viewBox="0 0 17 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <div
+              onclick="openCartModal()"
+              class="cart_box flex flex-col items-center justify-center rgap-5 position-relative"
+            >
+              <img
+                src="../assets/images/cart-black-icon.png"
+                width="24px"
+                height="24px"
+              />
+              <span class="mobile-header-cart-badge">0</span>
+            </div>
+          </section>
+          <section>
+            <div class="container-fluid">
+              <div class="row mobile-middle-header-searc-bar">
+                <div class="col-12 flex justify-center items-center px-50">
+                  <div class="mobile-header-search-input-container">
+                    <button class="mobile-header-search-input-button">
+                      Search
+                    </button>
+                    <input
+                      type="text"
+                      class="mobile-header-search-input-field"
+                      placeholder="search..."
+                    />
+                    <span class="mobile-header-search-input-icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 flex justify-end items-center px-50">
+                  <div class="mobile-header-options-buttons">
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        Tax incl.<i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>Option 1</p>
+                        <p>Option 2</p>
+                        <p>Option 3</p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        <img
+                          src="https://www.clipartmax.com/png/small/315-3159296_us-program-usa-flag-icon-svg.png"
+                          width="15px"
+                          height="15px"
+                        />
+                        Español <i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>Español</p>
+                        <p>English</p>
+                        <p>Français</p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        € EUR <i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>USD</p>
+                        <p>EUR</p>
+                        <p>GBP</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </section>
       </section>
+
       <!-- Offcanvas Menu -->
       <div id="offcanvas" class="offcanvas">
         <div class="offcanvas-content">
@@ -1122,7 +1180,7 @@
         </div>
       </section>
     </main>
-    <!--------Cart Modal ---------->
+    <!-------- Cart Modal ---------->
     <div id="cartModal" class="cart-modal hidden">
       <div class="cart-modal-content">
         <h4 class="cart-modal-title font-semi-bold pl-20">
@@ -1131,6 +1189,8 @@
         <div class="px-20">
           <hr />
         </div>
+
+        <!-- First Product Item -->
         <div class="py-15">
           <div class="cart-item flex flex-col rgap-20">
             <div class="product-info flex cgap-20">
@@ -1149,15 +1209,59 @@
                       <span class="font-12 text-red">50% Off</span>
                     </div>
                     <div class="counter-cart">
-                      <div class="counter-btn" onclick="decrement()">−</div>
+                      <div class="counter-btn" onclick="decrement(this)">−</div>
                       <input
                         type="text"
-                        id="counter"
                         class="counter-input"
                         value="1"
                         readonly
                       />
-                      <div class="counter-btn" onclick="increment()">+</div>
+                      <div class="counter-btn" onclick="increment(this)">+</div>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right flex items-end">
+                    <div class="cart-modal-price">
+                      <h3>$29.98</h3>
+                      <p class="font-14 pt-10 text-black-400 line-through">
+                        $14.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-20">
+          <hr />
+        </div>
+        <div class="py-15">
+          <div class="cart-item flex flex-col rgap-20">
+            <div class="product-info flex cgap-20">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <img
+                      src="../assets/images/cart-product-image.png"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <div class="prod-text flex flex-col rgap-10">
+                      <b class="font-14">Clos de papes 2012</b>
+                      <span class="font-12">Red Wine</span>
+                      <span class="font-12 text-red">50% Off</span>
+                    </div>
+                    <div class="counter-cart">
+                      <div class="counter-btn" onclick="decrement(this)">−</div>
+                      <input
+                        type="text"
+                        class="counter-input"
+                        value="1"
+                        readonly
+                      />
+                      <div class="counter-btn" onclick="increment(this)">+</div>
                     </div>
                   </div>
                   <div class="col-3 text-right flex items-end">
@@ -1194,15 +1298,14 @@
                       <span class="font-12 text-red">50% Off</span>
                     </div>
                     <div class="counter-cart">
-                      <div class="counter-btn" onclick="decrement()">−</div>
+                      <div class="counter-btn" onclick="decrement(this)">−</div>
                       <input
                         type="text"
-                        id="counter"
                         class="counter-input"
                         value="1"
                         readonly
                       />
-                      <div class="counter-btn" onclick="increment()">+</div>
+                      <div class="counter-btn" onclick="increment(this)">+</div>
                     </div>
                   </div>
                   <div class="col-3 text-right flex items-end">
@@ -1218,55 +1321,13 @@
             </div>
           </div>
         </div>
-        <div class="px-20">
-          <hr />
-        </div>
-        <div class="py-15">
-          <div class="cart-item flex flex-col rgap-20">
-            <div class="product-info flex cgap-20">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-3 p-0">
-                    <img
-                      src="../assets/images/cart-product-image.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                  <div class="col-6">
-                    <div class="prod-text flex flex-col rgap-10">
-                      <b class="font-14">Clos de papes 2012</b>
-                      <span class="font-12">Red Wine</span>
-                      <span class="font-12 text-red">50% Off</span>
-                    </div>
-                    <div class="counter-cart">
-                      <div class="counter-btn" onclick="decrement()">−</div>
-                      <input
-                        type="text"
-                        id="counter"
-                        class="counter-input"
-                        value="1"
-                        readonly
-                      />
-                      <div class="counter-btn" onclick="increment()">+</div>
-                    </div>
-                  </div>
-                  <div class="col-3 text-right flex items-end">
-                    <div class="cart-modal-price">
-                      <h3>$29.98</h3>
-                      <p class="font-14 pt-10 text-black-400 line-through">
-                        $14.99
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <!-- Additional Products End -->
         <div class="px-20">
           <hr />
         </div>
       </div>
+
       <!-- Cart Summary Box -->
       <div class="cart-modal__summary">
         <div class="cart-summary-new flex flex-col rgap-20">
@@ -1300,6 +1361,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <section class="container-fluid bg-black py-50 ft-br main-footer">
         <!-- Footer Links -->

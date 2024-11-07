@@ -151,6 +151,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 200);
   });
 });
+
+// mobile header
+
+document.querySelectorAll(".dropdown-button").forEach((button) => {
+  button.addEventListener("click", function () {
+    const dropdown = this.closest(".dropdown");
+    const dropdownContent = dropdown.querySelector(".dropdown-content");
+    const arrow = this.querySelector("i");
+    dropdown.classList.toggle("open");
+    document.querySelectorAll(".dropdown").forEach((otherDropdown) => {
+      if (otherDropdown !== dropdown) {
+        otherDropdown.classList.remove("open");
+      }
+    });
+  });
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".dropdown")) {
+    document.querySelectorAll(".dropdown").forEach((dropdown) => {
+      dropdown.classList.remove("open");
+    });
+  }
+});
+
 // See More Script
 // Select all toggle buttons
 const toggleButtons = document.querySelectorAll(".toggle-content");
@@ -264,14 +289,7 @@ Tabs.forEach((tab) => {
     document.querySelector(`#${tab.dataset.tab}`).classList.add("active");
   });
 });
-// // Off Canvas Toggle
-// function openOffcanvas() {
-//   document.getElementById("offcanvas").classList.add("open");
-// }
 
-// function closeOffcanvas() {
-//   document.getElementById("offcanvas").classList.remove("open");
-// }
 
 // Table pagination
 let currentPage = 1;

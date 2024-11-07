@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -20,8 +20,13 @@
 
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/cart-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-DyZ88mC6Up2uqSx72brVE6C1WjG9mD7Djz1LrgX8JG1E9qwN9F9k53JdgMJH+dME"
+      crossorigin="anonymous"
+    />
     <title>Edit Information</title>
-
   </head>
   <body>
     <header>
@@ -145,12 +150,12 @@
                   >
                 </div>
                 <div
-          
-                class="cart_box flex flex-col items-center justify-center rgap-5 cart-icon"
-              >
-                <img src="../assets/images/bag.svg" alt="" />
-                <span class="font-12 font-semi-bold text-white">Cart</span>
-              </div>
+                  onclick="openCartModal()"
+                  class="cart_box flex flex-col items-center justify-center rgap-5"
+                >
+                  <img src="../assets/images/bag.svg" alt="" />
+                  <span class="font-12 font-semi-bold text-white">Cart</span>
+                </div>
               </div>
             </div>
           </section>
@@ -301,66 +306,120 @@
       </section>
 
       <!-- Header for Mobile -->
-      <section class="header-mobile container-fluid">
-        <!-- Header Top Line -->
-        <section class="top-header-mobile container-fluid bg-yellow">
-          <section class="container top-header-wrapper">
-            <p class="font-14 text-black font-semi-bold text-center">
-              Free delivery on your first order of $100 or more* with the promo
-              code : KILLASIK1ST
-            </p>
-            <span class="close-top-header">X</span>
-          </section>
-        </section>
-
-        <!-- Social Icons -->
-        <section class="container-fluid bg-black">
-          <section class="container header-icons">
-            <div class="header-social flex cgap-20">
-              <h5 class="font-18 font-semi-bold text-white">Follow Us:</h5>
-              <div class="header-social__icons">
-                <img src="../assets/images/Twitter.png" alt="" />
-                <img src="../assets/images/facebook.png" alt="" />
-                <img src="../assets/images/Pinterest.png" alt="" />
-                <img src="../assets/images/Youtube.png" alt="" />
-                <img src="../assets/images/Instagram.png" alt="" />
-              </div>
-            </div>
-          </section>
-        </section>
-        <!-- Header Main -->
-
-        <section class="container-fluid bg-black">
+      <section class="header-mobile container-fluid bg-white">
+        <section class="container-fluid">
           <section
             class="container flex items-center justify-between main-header-mobile"
           >
-            <a href="/">
+            <div class="flex justify-start items-center gap-10">
+              <div class="menu-toggle" onclick="openOffcanvas()">
+                <svg
+                  width="17"
+                  height="13"
+                  viewBox="0 0 17 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h4 class="text-black">Menu</h4>
+            </div>
+            <a class="flex justify-center" href="/">
               <img
                 src="../assets/images/Header Logo.png"
                 alt=""
                 class="header-logo w-80"
               />
             </a>
-            <div class="menu-toggle" onclick="openOffcanvas()">
-              <svg
-                width="17"
-                height="13"
-                viewBox="0 0 17 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.75391 11.3984H15.7539M1.75391 6.39844H15.7539M1.75391 1.39844H15.7539"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <div
+              onclick="openCartModal()"
+              class="cart_box flex flex-col items-center justify-center rgap-5 position-relative"
+            >
+              <img
+                src="../assets/images/cart-black-icon.png"
+                width="24px"
+                height="24px"
+              />
+              <span class="mobile-header-cart-badge">0</span>
+            </div>
+          </section>
+          <section>
+            <div class="container-fluid">
+              <div class="row mobile-middle-header-searc-bar">
+                <div class="col-12 flex justify-center items-center px-50">
+                  <div class="mobile-header-search-input-container">
+                    <button class="mobile-header-search-input-button">
+                      Search
+                    </button>
+                    <input
+                      type="text"
+                      class="mobile-header-search-input-field"
+                      placeholder="search..."
+                    />
+                    <span class="mobile-header-search-input-icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 flex justify-end items-center px-50">
+                  <div class="mobile-header-options-buttons">
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        Tax incl.<i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>Option 1</p>
+                        <p>Option 2</p>
+                        <p>Option 3</p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        <img
+                          src="https://www.clipartmax.com/png/small/315-3159296_us-program-usa-flag-icon-svg.png"
+                          width="15px"
+                          height="15px"
+                        />
+                        Español <i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>Español</p>
+                        <p>English</p>
+                        <p>Français</p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropdown-button">
+                        € EUR <i class="fas fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>USD</p>
+                        <p>EUR</p>
+                        <p>GBP</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </section>
       </section>
+
       <!-- Offcanvas Menu -->
       <div id="offcanvas" class="offcanvas">
         <div class="offcanvas-content">
@@ -374,7 +433,9 @@
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Personal info</a
           >
-          <a class="offcanvas-links text-decoration-underline cursor-pointer">Order</a>
+          <a class="offcanvas-links text-decoration-underline cursor-pointer"
+            >Order</a
+          >
           <a class="offcanvas-links text-decoration-underline cursor-pointer"
             >Order History</a
           >
@@ -689,262 +750,265 @@
             </div>
           </div>
 
-        <div class="flex justify-center py-50">
-          <div class="edit-information-container">
-            <form>
-              <div class="row">
-                <div class="col-12">
-                  <div class="row social-title pb-30">
-                    <div class="col-4 pt-25">
-                      <div>
-                        <p class="font-20 text-white">Social Title</p>
+          <div class="flex justify-center py-50">
+            <div class="edit-information-container">
+              <form>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row social-title pb-30">
+                      <div class="col-4 pt-25">
+                        <div>
+                          <p class="font-20 text-white">Social Title</p>
+                        </div>
+                      </div>
+                      <div class="col-8 pt-25">
+                        <div class="flex justify-start radio-group gap-30">
+                          <label class="custom-radio">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option"
+                              value="option1"
+                            />
+                            <span class="radio-mark"></span> Mr
+                          </label>
+                          <label class="custom-radio">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option"
+                              value="option2"
+                            />
+                            <span class="radio-mark"></span> Mrs
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-8 pt-25">
-                      <div class="flex justify-start radio-group gap-30">
-                        <label class="custom-radio">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option"
-                            value="option1"
-                          />
-                          <span class="radio-mark"></span> Mr
-                        </label>
-                        <label class="custom-radio">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option"
-                            value="option2"
-                          />
-                          <span class="radio-mark"></span> Mrs
-                        </label>
+
+                    <div class="row">
+                      <div class="col-4 pt-25">
+                        <p class="font-20 text-white">First Name</p>
                       </div>
-                    </div>
-                  </div>
 
-                  <div class="row">
-                    <div class="col-4 pt-25">
-                      <p class="font-20 text-white">First Name</p>
-                    </div>
-
-                    <div class="col-8">
-                      <input
-                        class="dark-form"
-                        type="text"
-                        class="form-control"
-                        placeholder="name"
-                        required
-                      />
-                      <p class="text-black-400">
-                        Only letters and the dot (.) character, followed by a
-                        space, are allowed.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="row pt-20">
-                    <div class="col-4 pt-25">
-                      <p class="font-20 text-white">Last Name</p>
-                    </div>
-
-                    <div class="col-8">
-                      <input
-                        class="dark-form"
-                        type="text"
-                        class="form-control"
-                        placeholder="last name"
-                        required
-                      />
-                      <p class="text-black-400">
-                        Only letters and the dot (.) character, followed by a
-                        space, are allowed.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row pt-20">
-                    <div class="col-4 flex items-center">
-                      <p class="font-20 text-white">Email</p>
-                    </div>
-
-                    <div class="col-8">
-                      <input
-                        class="dark-form"
-                        type="email"
-                        class="form-control"
-                        placeholder="email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="row pt-20">
-                    <div class="col-4 pt-25">
-                      <p class="font-20 text-white">Password</p>
-                    </div>
-                    <div class="col-8">
-                      <div class="position-relative">
+                      <div class="col-8">
                         <input
                           class="dark-form"
-                          type="password"
+                          type="text"
                           class="form-control"
-                          placeholder="Password"
+                          placeholder="name"
                           required
                         />
-                        <div class="eye-icon">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
-                              stroke="#A7A7A7"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
-                              stroke="#A7A7A7"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
-                        <p class="text-black-400">(Optional)</p>
+                        <p class="text-black-400">
+                          Only letters and the dot (.) character, followed by a
+                          space, are allowed.
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row pt-20">
-                    <div class="col-4 pt-25">
-                      <p class="font-20 text-white">Birthday</p>
                     </div>
 
-                    <div class="col-8">
-                      <input
-                        class="dark-form"
-                        type="text"
-                        class="form-control"
-                        placeholder="Birthday date "
-                        required
-                      />
-                      <p class="text-black-400">(E.g.: 05/31/1970)(Optional)</p>
-                    </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="row">
-                      <div class="pl-20 flex pt-50 gap-20">
-                        <label class="custom-radio2">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option"
-                            value="option1"
-                          />
-                          <span class="radio-mark2"></span>
-                        </label>
-                        <p class="font-12 text-white">
-                           Receive offers from our partners
+                    <div class="row pt-20">
+                      <div class="col-4 pt-25">
+                        <p class="font-20 text-white">Last Name</p>
+                      </div>
+
+                      <div class="col-8">
+                        <input
+                          class="dark-form"
+                          type="text"
+                          class="form-control"
+                          placeholder="last name"
+                          required
+                        />
+                        <p class="text-black-400">
+                          Only letters and the dot (.) character, followed by a
+                          space, are allowed.
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="row">
-                      <div class="pl-20 flex pt-20 gap-20">
-                        <label class="custom-radio2">
+                    <div class="row pt-20">
+                      <div class="col-4 flex items-center">
+                        <p class="font-20 text-white">Email</p>
+                      </div>
+
+                      <div class="col-8">
+                        <input
+                          class="dark-form"
+                          type="email"
+                          class="form-control"
+                          placeholder="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="row pt-20">
+                      <div class="col-4 pt-25">
+                        <p class="font-20 text-white">Password</p>
+                      </div>
+                      <div class="col-8">
+                        <div class="position-relative">
                           <input
                             class="dark-form"
-                            type="radio"
-                            name="option2"
-                            value="option1"
+                            type="password"
+                            class="form-control"
+                            placeholder="Password"
+                            required
                           />
-                          <span class="radio-mark2"></span>
-                        </label>
-                        <p class="font-12 text-white">
-                           Receive offers from our partners
+                          <div class="eye-icon">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                                stroke="#A7A7A7"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M22 12C19.333 16.667 16 19 12 19C8 19 4.667 16.667 2 12C4.667 7.333 8 5 12 5C16 5 19.333 7.333 22 12Z"
+                                stroke="#A7A7A7"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <p class="text-black-400">(Optional)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row pt-20">
+                      <div class="col-4 pt-25">
+                        <p class="font-20 text-white">Birthday</p>
+                      </div>
+
+                      <div class="col-8">
+                        <input
+                          class="dark-form"
+                          type="text"
+                          class="form-control"
+                          placeholder="Birthday date "
+                          required
+                        />
+                        <p class="text-black-400">
+                          (E.g.: 05/31/1970)(Optional)
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="row">
-                      <div class="pl-20 flex pt-20 gap-20">
-                        <label class="custom-radio2">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option3"
-                            value="option1"
-                          />
-                          <span class="radio-mark2"></span>
-                        </label>
-                        <p class="font-12 text-white">
-                           I agree to the terms and conditions and the privacy
-                          policy
-                        </p>
+                    <div class="w-100">
+                      <div class="row">
+                        <div class="pl-20 flex pt-50 gap-20">
+                          <label class="custom-radio2">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option"
+                              value="option1"
+                            />
+                            <span class="radio-mark2"></span>
+                          </label>
+                          <p class="font-12 text-white">
+                             Receive offers from our partners
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="row">
-                      <div class="pl-20 flex pt-20 gap-20">
-                        <label class="custom-radio2">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option4"
-                            value="option1"
-                          />
-                          <span class="radio-mark2"></span>
-                        </label>
-                        <p class="font-12 text-white">
-                           Sign up for our newsletter You may unsubscribe at any
-                          moment. For that purpose, please find our contact info
-                          in the legal notice.
-                        </p>
+                    <div class="w-100">
+                      <div class="row">
+                        <div class="pl-20 flex pt-20 gap-20">
+                          <label class="custom-radio2">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option2"
+                              value="option1"
+                            />
+                            <span class="radio-mark2"></span>
+                          </label>
+                          <p class="font-12 text-white">
+                             Receive offers from our partners
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="row">
-                      <div class="pl-20 flex pt-20 gap-20">
-                        <label class="custom-radio2">
-                          <input
-                            class="dark-form"
-                            type="radio"
-                            name="option5"
-                            value="option1"
-                          />
-                          <span class="radio-mark2"></span>
-                        </label>
-                        <p class="font-12 text-white">
-                          Customer data privacyThe personal data you provide is
-                          used to answer queries, process orders or allow access
-                          to specific information. You have the right to modify
-                          and delete all the personal information found in the
-                          "My Account" page..
-                        </p>
+                    <div class="w-100">
+                      <div class="row">
+                        <div class="pl-20 flex pt-20 gap-20">
+                          <label class="custom-radio2">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option3"
+                              value="option1"
+                            />
+                            <span class="radio-mark2"></span>
+                          </label>
+                          <p class="font-12 text-white">
+                             I agree to the terms and conditions and the privacy
+                            policy
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100">
+                      <div class="row">
+                        <div class="pl-20 flex pt-20 gap-20">
+                          <label class="custom-radio2">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option4"
+                              value="option1"
+                            />
+                            <span class="radio-mark2"></span>
+                          </label>
+                          <p class="font-12 text-white">
+                             Sign up for our newsletter You may unsubscribe at
+                            any moment. For that purpose, please find our
+                            contact info in the legal notice.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100">
+                      <div class="row">
+                        <div class="pl-20 flex pt-20 gap-20">
+                          <label class="custom-radio2">
+                            <input
+                              class="dark-form"
+                              type="radio"
+                              name="option5"
+                              value="option1"
+                            />
+                            <span class="radio-mark2"></span>
+                          </label>
+                          <p class="font-12 text-white">
+                            Customer data privacyThe personal data you provide
+                            is used to answer queries, process orders or allow
+                            access to specific information. You have the right
+                            to modify and delete all the personal information
+                            found in the "My Account" page..
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <div class="font-20 text-white pt-50 save-btn-register">
-                  <button>Save</button>
+                <div class="w-100">
+                  <div class="font-20 text-white pt-50 save-btn-register">
+                    <button>Save</button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </section>
-       <!--------Cart Modal ---------->
-       <div id="cartModal" class="cart-modal hidden">
+      <!-------- Cart Modal ---------->
+      <div id="cartModal" class="cart-modal hidden">
         <div class="cart-modal-content">
           <h4 class="cart-modal-title font-semi-bold pl-20">
             SHOPPING BAG (3 items)
@@ -952,6 +1016,8 @@
           <div class="px-20">
             <hr />
           </div>
+
+          <!-- First Product Item -->
           <div class="py-15">
             <div class="cart-item flex flex-col rgap-20">
               <div class="product-info flex cgap-20">
@@ -967,28 +1033,19 @@
                       <div class="prod-text flex flex-col rgap-10">
                         <b class="font-14">Clos de papes 2012</b>
                         <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
+                        <span class="font-12 text-red">50% Off</span>
                       </div>
                       <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
+                        <div class="counter-btn" onclick="decrement(this)">
                           −
                         </div>
                         <input
                           type="text"
-                          id="counter"
                           class="counter-input"
                           value="1"
                           readonly
                         />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
+                        <div class="counter-btn" onclick="increment(this)">
                           +
                         </div>
                       </div>
@@ -996,9 +1053,56 @@
                     <div class="col-3 text-right flex items-end">
                       <div class="cart-modal-price">
                         <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
+                        <p class="font-14 pt-10 text-black-400 line-through">
+                          $14.99
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-20">
+            <hr />
+          </div>
+          <div class="py-15">
+            <div class="cart-item flex flex-col rgap-20">
+              <div class="product-info flex cgap-20">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <img
+                        src="../assets/images/cart-product-image.png"
+                        alt="Product Image"
+                      />
+                    </div>
+                    <div class="col-6">
+                      <div class="prod-text flex flex-col rgap-10">
+                        <b class="font-14">Clos de papes 2012</b>
+                        <span class="font-12">Red Wine</span>
+                        <span class="font-12 text-red">50% Off</span>
+                      </div>
+                      <div class="counter-cart">
+                        <div class="counter-btn" onclick="decrement(this)">
+                          −
+                        </div>
+                        <input
+                          type="text"
+                          class="counter-input"
+                          value="1"
+                          readonly
+                        />
+                        <div class="counter-btn" onclick="increment(this)">
+                          +
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 text-right flex items-end">
+                      <div class="cart-modal-price">
+                        <h3>$29.98</h3>
+                        <p class="font-14 pt-10 text-black-400 line-through">
                           $14.99
                         </p>
                       </div>
@@ -1026,28 +1130,19 @@
                       <div class="prod-text flex flex-col rgap-10">
                         <b class="font-14">Clos de papes 2012</b>
                         <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
+                        <span class="font-12 text-red">50% Off</span>
                       </div>
                       <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
+                        <div class="counter-btn" onclick="decrement(this)">
                           −
                         </div>
                         <input
                           type="text"
-                          id="counter"
                           class="counter-input"
                           value="1"
                           readonly
                         />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
+                        <div class="counter-btn" onclick="increment(this)">
                           +
                         </div>
                       </div>
@@ -1055,9 +1150,7 @@
                     <div class="col-3 text-right flex items-end">
                       <div class="cart-modal-price">
                         <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
+                        <p class="font-14 pt-10 text-black-400 line-through">
                           $14.99
                         </p>
                       </div>
@@ -1067,124 +1160,40 @@
               </div>
             </div>
           </div>
-          <div class="px-20">
-            <hr />
-          </div>
-          <div class="py-15">
-            <div class="cart-item flex flex-col rgap-20">
-              <div class="product-info flex cgap-20">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-3 p-0">
-                      <img
-                        src="../assets/images/cart-product-image.png"
-                        alt="Product Image"
-                      />
-                    </div>
-                    <div class="col-6">
-                      <div class="prod-text flex flex-col rgap-10">
-                        <b class="font-14">Clos de papes 2012</b>
-                        <span class="font-12">Red Wine</span>
-                        <span class="font-12 text-red"
-                          >50% Off</span
-                        >
-                      </div>
-                      <div class="counter-cart">
-                        <div
-                          class="counter-btn"
-                          onclick="decrement()"
-                        >
-                          −
-                        </div>
-                        <input
-                          type="text"
-                          id="counter"
-                          class="counter-input"
-                          value="1"
-                          readonly
-                        />
-                        <div
-                          class="counter-btn"
-                          onclick="increment()"
-                        >
-                          +
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 text-right flex items-end">
-                      <div class="cart-modal-price">
-                        <h3>$29.98</h3>
-                        <p
-                          class="font-14 pt-10 text-black-400 line-through"
-                        >
-                          $14.99
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <!-- Additional Products End -->
           <div class="px-20">
             <hr />
           </div>
         </div>
+
         <!-- Cart Summary Box -->
         <div class="cart-modal__summary">
-          <div
-            class="cart-summary-new flex flex-col rgap-20"
-          >
-            <h4 class="font-22 font-semi-bold text-white">
-              Cart Summary
-            </h4>
+          <div class="cart-summary-new flex flex-col rgap-20">
+            <h4 class="font-22 font-semi-bold text-white">Cart Summary</h4>
             <div class="bill-section flex flex-col rgap-10">
-              <div
-                class="sub-total flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Subtotal</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $89.94
-                </h6>
+              <div class="sub-total flex justify-between items-center">
+                <span class="font-16 font-normal text-white">Subtotal</span>
+                <h6 class="font-16 font-semi-bold text-white">$89.94</h6>
               </div>
-              <div
-                class="discount flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Discount</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $0.00
-                </h6>
+              <div class="discount flex justify-between items-center">
+                <span class="font-16 font-normal text-white">Discount</span>
+                <h6 class="font-16 font-semi-bold text-white">$0.00</h6>
               </div>
-              <div
-                class="shipping flex justify-between items-center"
-              >
-                <span class="font-16 font-normal text-white"
-                  >Shipping</span
-                >
-                <h6 class="font-16 font-semi-bold text-white">
-                  $0.00
-                </h6>
+              <div class="shipping flex justify-between items-center">
+                <span class="font-16 font-normal text-white">Shipping</span>
+                <h6 class="font-16 font-semi-bold text-white">$0.00</h6>
               </div>
             </div>
             <hr />
             <div class="bill-section flex flex-col rgap-10">
               <div class="total flex justify-between items-center">
-                <span class="font-18 font-semi-bold text-white"
-                  >Total</span
-                >
-                <h6 class="font-18 font-semi-bold text-white">
-                  $89.94
-                </h6>
+                <span class="font-18 font-semi-bold text-white">Total</span>
+                <h6 class="font-18 font-semi-bold text-white">$89.94</h6>
               </div>
             </div>
             <div class="cart-btn">
-              <button
-                class="bg-yellow-500 color-black font-18 font-semi-bold"
-              >
+              <button class="bg-yellow-500 color-black font-18 font-semi-bold">
                 Checkout
               </button>
             </div>
@@ -1193,7 +1202,7 @@
       </div>
     </main>
     <footer>
-      <section class="container-fluid bg-black py-50 ft-br main-footer" >
+      <section class="container-fluid bg-black py-50 ft-br main-footer">
         <!-- Footer Links -->
         <section class="container footer-links grid-cols-5 rgap-40">
           <!-- Information -->
@@ -1204,10 +1213,14 @@
               class="link-item font-14 font-normal text-black-300"
               >About us</a
             >
-            <a href="/pages/contact-us.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/contact-us.html"
+              class="link-item font-14 font-normal text-black-300"
               >Contact Us</a
             >
-            <a href="/pages/general-conditions.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/general-conditions.html"
+              class="link-item font-14 font-normal text-black-300"
               >Conditions of Purchase</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
@@ -1239,16 +1252,22 @@
           <!-- My Account -->
           <div class="footer-links__wrapper flex flex-col rgap-10">
             <h5 class="font-14 font-normal text-white">My Account</h5>
-            <a href="/pages/order-history.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/order-history.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Orders</a
             >
             <a href="#" class="link-item font-14 font-normal text-black-300"
               >My Murchandise Return</a
             >
-            <a href="/pages/invoice.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/invoice.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Credits Slip</a
             >
-            <a href="/pages/edit-information.html" class="link-item font-14 font-normal text-black-300"
+            <a
+              href="/pages/edit-information.html"
+              class="link-item font-14 font-normal text-black-300"
               >My Personal Info</a
             >
           </div>
