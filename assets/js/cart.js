@@ -1,28 +1,21 @@
-function openCartModal() {
-  document.getElementById("cartModal").style.display = "block";
-}
+let modal = document.getElementById("cartModal");
+let open = false;
+let cartIcon = document.querySelector(".cart-icon");
 
-function closeCartModal() {
-  document.getElementById("cartModal").style.display = "none";
-}
-
-window.onclick = function (event) {
-  var modal = document.getElementById("cartModal");
-  if (event.target == modal) {
-    closeCartModal();
+cartIcon.addEventListener("click", (event) => {
+  event.stopPropagation();
+  if (!open) {
+    modal.style.display = "block";
+    open = true;
   }
-};
+});
 
-window.onresize = function () {
-  if (window.innerWidth < 1100) {
-    closeCartModal();
+document.body.addEventListener("click", (event) => {
+  if (open && !modal.contains(event.target) && event.target !== cartIcon) {
+    modal.style.display = "none";
+    open = false;
   }
-};
-
-// window.onscroll = function () {
-//   closeCartModal();
-// };
-
+});
 
 function increment(button) {
   let counterInput = button.closest(".counter-cart").querySelector(".counter-input");
